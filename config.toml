@@ -18,8 +18,15 @@ disableLandingPage = false
 disableNextPrev = true
 themeVariant = "blue"
 version = "v0.1"
+landingPageURL = "/"
+landingPageName = "<i class='fas fa-home'></i> Home"
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-tags'></i> Tags"
 url = "/tags"
 weight = 30
+
+[Lanugages]
+[Lanugages.en]
+landingPageURL = "/en"
+landingPageName = "<i class='fas fa-home'></i> Redirect to Home"
