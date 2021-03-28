@@ -2,6 +2,7 @@ baseURL = "https://pythonbiellagroup.github.io/ModernPythonDevelopment/"
 languageCode = "en-us"
 title = "Python Biella Group Learning Page"
 theme = "hugo-theme-learn"
+publishDir = "docs"
 
 # For search functionality
 [outputs]
