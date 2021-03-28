@@ -1,4 +1,4 @@
-baseURL = "https://pythonbiellagroup.github.io/ModernPythonDevelopment"
+baseURL = "https://pythonbiellagroup.github.io/ModernPythonDevelopment/"
 languageCode = "en-us"
 defaultcontentLanguage = "it"
 title = "Python Biella Group Learning Page"
