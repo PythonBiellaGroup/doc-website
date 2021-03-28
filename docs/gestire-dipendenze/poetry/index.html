@@ -11,22 +11,22 @@
     <title>Poetry :: Python Biella Group Learning Page</title>
 
     
-    <link href="/ModernPythonDevelopment/css/nucleus.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/fontawesome-all.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/hybrid.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/featherlight.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/perfect-scrollbar.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/auto-complete.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/atom-one-dark-reasonable.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/theme.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/tabs.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/hugo-theme.css?1616973605" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/nucleus.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/fontawesome-all.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hybrid.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/featherlight.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/perfect-scrollbar.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/auto-complete.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/atom-one-dark-reasonable.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/theme.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/tabs.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hugo-theme.css?1616974133" rel="stylesheet">
     
-    <link href="/ModernPythonDevelopment/css/theme-blue.css?1616973605" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/theme-blue.css?1616974133" rel="stylesheet">
     
     
 
-    <script src="/ModernPythonDevelopment/js/jquery-3.3.1.min.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/jquery-3.3.1.min.js?1616974133"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ModernPythonDevelopment/js/lunr.min.js?1616973605"></script>
-<script type="text/javascript" src="/ModernPythonDevelopment/js/auto-complete.js?1616973605"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/lunr.min.js?1616974133"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/auto-complete.js?1616974133"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.github.io\/ModernPythonDevelopment\/";
     
 </script>
-<script type="text/javascript" src="/ModernPythonDevelopment/js/search.js?1616973605"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/search.js?1616974133"></script>
 
     
   </div>
@@ -684,7 +684,7 @@
             
           
           
-            <a href='/ModernPythonDevelopment/'>Home</a> > <a href='/ModernPythonDevelopment/gestire-dipendenze/'>Gestire Dipendenze</a> > Poetry
+            <a href='/ModernPythonDevelopment/'>ModernPythonDevelopment</a> > <a href='/ModernPythonDevelopment/gestire-dipendenze/'>Gestire Dipendenze</a> > Poetry
           
         
           
@@ -739,94 +739,94 @@
 <p>Il cuore di Poetry è il file <code>pyproject.toml</code> che viene creato all&rsquo;interno del progetto al momento dell&rsquo;inizializzazione.</p>
 <p>Questo file consente di definire tutte le caratteristiche di progetto e di gestire l&rsquo;intero progetto (come se usassimo un package.json su javascript per intenderci)</p>
 <p>Vediamo quindi come usare Poetry in un <strong>nuovo progetto</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Inizializzare poetry all&#39;interno di una cartella</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Inizializzare poetry all&#39;interno di una cartella</span>
 poetry init
 
-<span style="color:#75715e"># Oppure creare un nuovo progetto</span>
+<span class="c1"># Oppure creare un nuovo progetto</span>
 poetry new &lt;app_name&gt;
 
-<span style="color:#75715e"># All&#39;interno del progetto modificare il file: pyproject.tml come desiderate</span>
+<span class="c1"># All&#39;interno del progetto modificare il file: pyproject.tml come desiderate</span>
 
-<span style="color:#75715e"># Se vuoi utilizzare un venv all&#39;interno del progetto fare:</span>
-poetry config virtualenvs.in-project true
-<span style="color:#75715e"># Se non si usa questa impostazione rimarrà all&#39;interno della cartella generale di poetry</span>
+<span class="c1"># Se vuoi utilizzare un venv all&#39;interno del progetto fare:</span>
+poetry config virtualenvs.in-project <span class="nb">true</span>
+<span class="c1"># Se non si usa questa impostazione rimarrà all&#39;interno della cartella generale di poetry</span>
 
-<span style="color:#75715e"># Compilare il file pyproject.toml per creare il venv di progetto</span>
+<span class="c1"># Compilare il file pyproject.toml per creare il venv di progetto</span>
 poetry shell
 
-<span style="color:#75715e"># Aggiungere nuove dipendenze (al pyproject.toml)</span>
+<span class="c1"># Aggiungere nuove dipendenze (al pyproject.toml)</span>
 poetry add pandas
 
-<span style="color:#75715e"># Installare dipendenze (in automatico aggiunte al pyproject.toml)</span>
+<span class="c1"># Installare dipendenze (in automatico aggiunte al pyproject.toml)</span>
 poetry install
 
-<span style="color:#75715e"># lanciare un file</span>
+<span class="c1"># lanciare un file</span>
 poetry run &lt;script&gt;
 
-<span style="color:#75715e"># Visualizzare il path di dove si trova il venv di quel progetto (e anche l&#39;elenco delle librerie)</span>
+<span class="c1"># Visualizzare il path di dove si trova il venv di quel progetto (e anche l&#39;elenco delle librerie)</span>
 poetry show -v
 
-<span style="color:#75715e">#Uscire da una shell lanciata da poetry</span>
-exit
+<span class="c1">#Uscire da una shell lanciata da poetry</span>
+<span class="nb">exit</span>
 </code></pre></div><p>Attenzione: su windows utilizzando PowerShell quando fate: <code>poetry shell</code> in automatico vi butta fuori da powershell e vi farà usare cmd.</p>
 <p>È un bug noto e comunque c&rsquo;è un modo per risolverlo (un workaround)</p>
 <p><a href="https://github.com/python-poetry/poetry/issues/2030">https://github.com/python-poetry/poetry/issues/2030</a></p>
 <p>Come usare poetry in un progetto già esistente?</p>
 <p>Magari che contiene già un <code>requirements.txt</code> file</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Inizializzare poetry all&#39;interno di una directory</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Inizializzare poetry all&#39;interno di una directory</span>
 poetry init
 
-<span style="color:#75715e"># Se vuoi mantenere il .venv all&#39;interno della cartella di progetto fare:</span>
-poetry config virtualenvs.in-project true
+<span class="c1"># Se vuoi mantenere il .venv all&#39;interno della cartella di progetto fare:</span>
+poetry config virtualenvs.in-project <span class="nb">true</span>
 
-<span style="color:#75715e">## Import requirements.txt libraries all&#39;interno di poetry</span>
-cat requirements.txt|xargs poetry add
+<span class="c1">## Import requirements.txt libraries all&#39;interno di poetry</span>
+cat requirements.txt<span class="p">|</span>xargs poetry add
 
-<span style="color:#75715e"># Se non esiste un requirements.txt continuare con classico format</span>
+<span class="c1"># Se non esiste un requirements.txt continuare con classico format</span>
 </code></pre></div><p><strong>Generate poetry requirements.txt</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Creare un file requirements.txt dalla configurazione di poetry</span>
-poetry export -f requirements.txt --output requirements.txt
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#Creare un file requirements.txt dalla configurazione di poetry</span>
+poetry <span class="nb">export</span> -f requirements.txt --output requirements.txt
 </code></pre></div><p>Esempio di pyproject.toml</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>tool.poetry<span style="color:#f92672">]</span>
-name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;poetry-tutorial-project&#34;</span>
-version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.1.0&#34;</span>
-description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple python project built with poetry&#34;</span>
-authors <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;Andrea Guzzo &lt;andrea.guzzo92@gmail.com&gt;&#34;</span><span style="color:#f92672">]</span>
-maintainers <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;Andrea Guzzo &lt;andrea.guzzo92@gmail.com&gt;&#34;</span><span style="color:#f92672">]</span>
-license <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;MIT&#34;</span>
-readme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;README.md&#34;</span>
-homepage <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://localhost:5000&#34;</span>
-repository <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://github.com/jeydi/&#34;</span>
-documentation <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://github.com/jeydi/&#34;</span>
-keywords <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>
-	<span style="color:#e6db74">&#34;Poetry&#34;</span>,
-	<span style="color:#e6db74">&#34;Venv&#34;</span>,
-	<span style="color:#e6db74">&#34;Virtual enviroments&#34;</span>,
-	<span style="color:#e6db74">&#34;Packages&#34;</span>,
-	<span style="color:#e6db74">&#34;Packaging&#34;</span>
-<span style="color:#f92672">]</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>tool.poetry<span class="o">]</span>
+<span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;poetry-tutorial-project&#34;</span>
+<span class="nv">version</span> <span class="o">=</span> <span class="s2">&#34;0.1.0&#34;</span>
+<span class="nv">description</span> <span class="o">=</span> <span class="s2">&#34;Simple python project built with poetry&#34;</span>
+<span class="nv">authors</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&#34;Andrea Guzzo &lt;andrea.guzzo92@gmail.com&gt;&#34;</span><span class="o">]</span>
+<span class="nv">maintainers</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&#34;Andrea Guzzo &lt;andrea.guzzo92@gmail.com&gt;&#34;</span><span class="o">]</span>
+<span class="nv">license</span> <span class="o">=</span> <span class="s2">&#34;MIT&#34;</span>
+<span class="nv">readme</span> <span class="o">=</span> <span class="s2">&#34;README.md&#34;</span>
+<span class="nv">homepage</span> <span class="o">=</span> <span class="s2">&#34;http://localhost:5000&#34;</span>
+<span class="nv">repository</span> <span class="o">=</span> <span class="s2">&#34;https://github.com/jeydi/&#34;</span>
+<span class="nv">documentation</span> <span class="o">=</span> <span class="s2">&#34;https://github.com/jeydi/&#34;</span>
+<span class="nv">keywords</span> <span class="o">=</span> <span class="o">[</span>
+	<span class="s2">&#34;Poetry&#34;</span>,
+	<span class="s2">&#34;Venv&#34;</span>,
+	<span class="s2">&#34;Virtual enviroments&#34;</span>,
+	<span class="s2">&#34;Packages&#34;</span>,
+	<span class="s2">&#34;Packaging&#34;</span>
+<span class="o">]</span>
 
-<span style="color:#f92672">[</span>tool.poetry.dependencies<span style="color:#f92672">]</span>
-python <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;^3.7&#34;</span>
-loguru <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;*&#34;</span>
-psutil <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;*&#34;</span>
-pandas <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;*&#34;</span>
-numpy <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;*&#34;</span>
-fastapi <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;*&#34;</span>
-typer <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;^0.3.2&#34;</span>
+<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
+<span class="nv">python</span> <span class="o">=</span> <span class="s2">&#34;^3.7&#34;</span>
+<span class="nv">loguru</span> <span class="o">=</span> <span class="s2">&#34;*&#34;</span>
+<span class="nv">psutil</span> <span class="o">=</span> <span class="s2">&#34;*&#34;</span>
+<span class="nv">pandas</span> <span class="o">=</span> <span class="s2">&#34;*&#34;</span>
+<span class="nv">numpy</span> <span class="o">=</span> <span class="s2">&#34;*&#34;</span>
+<span class="nv">fastapi</span> <span class="o">=</span> <span class="s2">&#34;*&#34;</span>
+<span class="nv">typer</span> <span class="o">=</span> <span class="s2">&#34;^0.3.2&#34;</span>
 
-<span style="color:#f92672">[</span>tool.poetry.dev-dependencies<span style="color:#f92672">]</span>
-pytest <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;^5.2&#34;</span>
+<span class="o">[</span>tool.poetry.dev-dependencies<span class="o">]</span>
+<span class="nv">pytest</span> <span class="o">=</span> <span class="s2">&#34;^5.2&#34;</span>
 
-<span style="color:#f92672">[</span>build-system<span style="color:#f92672">]</span>
-requires <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;poetry-core&gt;=1.0.0&#34;</span><span style="color:#f92672">]</span>
-build-backend <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;poetry.core.masonry.api&#34;</span>
+<span class="o">[</span>build-system<span class="o">]</span>
+<span class="nv">requires</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&#34;poetry-core&gt;=1.0.0&#34;</span><span class="o">]</span>
+build-backend <span class="o">=</span> <span class="s2">&#34;poetry.core.masonry.api&#34;</span>
 
-<span style="color:#f92672">[</span>tool.poetry.scripts<span style="color:#f92672">]</span>
-run <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;wsgi:main&#34;</span>
+<span class="o">[</span>tool.poetry.scripts<span class="o">]</span>
+<span class="nv">run</span> <span class="o">=</span> <span class="s2">&#34;wsgi:main&#34;</span>
 
-<span style="color:#f92672">[</span>tool.poetry.urls<span style="color:#f92672">]</span>
-issues <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://github.com/jeydi/&#34;</span>
+<span class="o">[</span>tool.poetry.urls<span class="o">]</span>
+<span class="nv">issues</span> <span class="o">=</span> <span class="s2">&#34;https://github.com/jeydi/&#34;</span>
 </code></pre></div>
 
 <footer class="footline">
@@ -1221,19 +1221,19 @@ issues <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;htt
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ModernPythonDevelopment/js/clipboard.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.jquery.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/jquery.sticky.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/featherlight.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/highlight.pack.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/clipboard.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.jquery.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/jquery.sticky.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/featherlight.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/highlight.pack.js?1616974133"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ModernPythonDevelopment/js/modernizr.custom-3.6.0.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/learn.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/hugo-learn.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/modernizr.custom-3.6.0.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/learn.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/hugo-learn.js?1616974133"></script>
     
         
-            <script src="/ModernPythonDevelopment/mermaid/mermaid.js?1616973605"></script>
+            <script src="/ModernPythonDevelopment/mermaid/mermaid.js?1616974133"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

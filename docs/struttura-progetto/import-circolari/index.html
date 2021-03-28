@@ -11,22 +11,22 @@
     <title>Import circolari :: Python Biella Group Learning Page</title>
 
     
-    <link href="/ModernPythonDevelopment/css/nucleus.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/fontawesome-all.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/hybrid.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/featherlight.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/perfect-scrollbar.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/auto-complete.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/atom-one-dark-reasonable.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/theme.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/tabs.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/hugo-theme.css?1616973605" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/nucleus.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/fontawesome-all.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hybrid.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/featherlight.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/perfect-scrollbar.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/auto-complete.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/atom-one-dark-reasonable.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/theme.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/tabs.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hugo-theme.css?1616974133" rel="stylesheet">
     
-    <link href="/ModernPythonDevelopment/css/theme-blue.css?1616973605" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/theme-blue.css?1616974133" rel="stylesheet">
     
     
 
-    <script src="/ModernPythonDevelopment/js/jquery-3.3.1.min.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/jquery-3.3.1.min.js?1616974133"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ModernPythonDevelopment/js/lunr.min.js?1616973605"></script>
-<script type="text/javascript" src="/ModernPythonDevelopment/js/auto-complete.js?1616973605"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/lunr.min.js?1616974133"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/auto-complete.js?1616974133"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.github.io\/ModernPythonDevelopment\/";
     
 </script>
-<script type="text/javascript" src="/ModernPythonDevelopment/js/search.js?1616973605"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/search.js?1616974133"></script>
 
     
   </div>
@@ -684,7 +684,7 @@
             
           
           
-            <a href='/ModernPythonDevelopment/'>Home</a> > <a href='/ModernPythonDevelopment/struttura-progetto/'>Struttura di progetto</a> > Import circolari
+            <a href='/ModernPythonDevelopment/'>ModernPythonDevelopment</a> > <a href='/ModernPythonDevelopment/struttura-progetto/'>Struttura di progetto</a> > Import circolari
           
         
           
@@ -726,31 +726,31 @@
 
 <h2 id="import-circolari">Import circolari</h2>
 <p>Questo è un problema molto grave in un progetto e l&rsquo;errore accade quando a partire da un modulo si cerca di importare l&rsquo;altro e viceversa (crendo appunto una circolarità negli import).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># file_a.py</span>
-<span style="color:#f92672">from</span> file_b <span style="color:#f92672">import</span> hello_world
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># file_a.py</span>
+<span class="kn">from</span> <span class="nn">file_b</span> <span class="kn">import</span> <span class="n">hello_world</span>
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span>():
-    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;hello&#34;</span>
+<span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s2">&#34;hello&#34;</span>
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">first_program</span>():
-    <span style="color:#66d9ef">return</span> hello_world()
+<span class="k">def</span> <span class="nf">first_program</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">hello_world</span><span class="p">()</span>
 
-first_program()
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># file_b.py</span>
-<span style="color:#f92672">from</span> file_a <span style="color:#f92672">import</span> hello
+<span class="n">first_program</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># file_b.py</span>
+<span class="kn">from</span> <span class="nn">file_a</span> <span class="kn">import</span> <span class="n">hello</span>
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello_world</span>():
+<span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
 
-    <span style="color:#66d9ef">return</span> hello() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; world&#34;</span>
+    <span class="k">return</span> <span class="n">hello</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&#34; world&#34;</span>
 </code></pre></div><p>Quando si lancia <code>python file_a.py</code> si avrà il seguente errore:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Traceback <span style="color:#f92672">(</span>most recent call last<span style="color:#f92672">)</span>:
-  File <span style="color:#e6db74">&#34;file_a.py&#34;</span>, line 1, in &lt;module&gt;
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+  File <span class="s2">&#34;file_a.py&#34;</span>, line 1, in &lt;module&gt;
     from file_b import hello_world
-  File <span style="color:#e6db74">&#34;/my_module/file_b.py&#34;</span>, line 2, in &lt;module&gt;
+  File <span class="s2">&#34;/my_module/file_b.py&#34;</span>, line 2, in &lt;module&gt;
     from file_a import hello
-  File <span style="color:#e6db74">&#34;/my_module/file_a.py&#34;</span>, line 1, in &lt;module&gt;
+  File <span class="s2">&#34;/my_module/file_a.py&#34;</span>, line 1, in &lt;module&gt;
     from file_b import hello_world
-ImportError: cannot import name <span style="color:#e6db74">&#39;hello_world&#39;</span>
+ImportError: cannot import name <span class="s1">&#39;hello_world&#39;</span>
 </code></pre></div><p>Ci sono anche qui molti modi per fixare questi problemi di import circolari, fate attenzione però a quando scrivete il codice in modo tale che non si verifichino questi problemi.</p>
 
 
@@ -1146,19 +1146,19 @@ ImportError: cannot import name <span style="color:#e6db74">&#39;hello_world&#39
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ModernPythonDevelopment/js/clipboard.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.jquery.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/jquery.sticky.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/featherlight.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/highlight.pack.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/clipboard.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.jquery.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/jquery.sticky.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/featherlight.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/highlight.pack.js?1616974133"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ModernPythonDevelopment/js/modernizr.custom-3.6.0.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/learn.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/hugo-learn.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/modernizr.custom-3.6.0.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/learn.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/hugo-learn.js?1616974133"></script>
     
         
-            <script src="/ModernPythonDevelopment/mermaid/mermaid.js?1616973605"></script>
+            <script src="/ModernPythonDevelopment/mermaid/mermaid.js?1616974133"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

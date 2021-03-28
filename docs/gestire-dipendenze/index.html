@@ -11,22 +11,22 @@
     <title>Gestire Dipendenze :: Python Biella Group Learning Page</title>
 
     
-    <link href="/ModernPythonDevelopment/css/nucleus.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/fontawesome-all.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/hybrid.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/featherlight.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/perfect-scrollbar.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/auto-complete.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/atom-one-dark-reasonable.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/theme.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/tabs.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/hugo-theme.css?1616973605" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/nucleus.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/fontawesome-all.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hybrid.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/featherlight.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/perfect-scrollbar.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/auto-complete.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/atom-one-dark-reasonable.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/theme.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/tabs.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hugo-theme.css?1616974133" rel="stylesheet">
     
-    <link href="/ModernPythonDevelopment/css/theme-blue.css?1616973605" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/theme-blue.css?1616974133" rel="stylesheet">
     
     
 
-    <script src="/ModernPythonDevelopment/js/jquery-3.3.1.min.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/jquery-3.3.1.min.js?1616974133"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ModernPythonDevelopment/js/lunr.min.js?1616973605"></script>
-<script type="text/javascript" src="/ModernPythonDevelopment/js/auto-complete.js?1616973605"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/lunr.min.js?1616974133"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/auto-complete.js?1616974133"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.github.io\/ModernPythonDevelopment\/";
     
 </script>
-<script type="text/javascript" src="/ModernPythonDevelopment/js/search.js?1616973605"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/search.js?1616974133"></script>
 
     
   </div>
@@ -678,7 +678,7 @@
             
           
           
-            <a href='/ModernPythonDevelopment/'>Home</a> > Gestire Dipendenze
+            <a href='/ModernPythonDevelopment/'>ModernPythonDevelopment</a> > Gestire Dipendenze
           
         
           
@@ -717,7 +717,7 @@
 <h1 id="gestione-delle-dipendenze">Gestione delle dipendenze</h1>
 <p>Per gestire le dipendenze da Python 3.3 esiste un built-in module chiamato <strong>venv</strong> che consente di creare dei virtualenv all&rsquo;interno del vostro progetto.</p>
 <p>Questa ovviamente è la &ldquo;vecchia maniera&rdquo; però è sempre funzionante</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python -m venv my-virtualenv
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">python -m venv my-virtualenv
 </code></pre></div><p>Il comando consente di creare una directory <code>my-virtualenv</code> che contiene:</p>
 <ul>
 <li>python binary</li>
@@ -726,28 +726,28 @@
 <li>binary files utilizzate da Python</li>
 </ul>
 <p>Per attivare un virtualenv si può fare:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Su Linux o Mac</span>
-source ./my-virtualenv/bin/activate
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#Su Linux o Mac</span>
+<span class="nb">source</span> ./my-virtualenv/bin/activate
 
-<span style="color:#75715e">#Su windows</span>
-my-virtualenv<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate.bat
+<span class="c1">#Su windows</span>
+my-virtualenv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate.bat
 
-<span style="color:#75715e">#Disattivare virtualenv</span>
+<span class="c1">#Disattivare virtualenv</span>
 deactivate
 </code></pre></div><p>I virtualenv sono molto comodi e si possono usare in combinazione con i file <code>requirements.txt</code></p>
 <p>Certamente è un metodo molto comodo, tuttavia ci sono degli strumenti più potenti ed efficaci per gestire il proprio ambiente.</p>
 <h2 id="pyenv-virtualenv">pyenv-virtualenv</h2>
 <p>Pyenv mette a disposizione uno strumento ancora più efficace per costruire ambienti virtuali attraverso un plugin <code>pyenv-virtualenv</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Creare un virtualenv</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#Creare un virtualenv</span>
 pyenv virtualenv 3.7.4 my-project
 
-<span style="color:#75715e">#lista di tutti i virtual environments</span>
+<span class="c1">#lista di tutti i virtual environments</span>
 pyenv virtualenvs
 
-<span style="color:#75715e">#attivare un virtualenv</span>
+<span class="c1">#attivare un virtualenv</span>
 pyenv activate my-project
 
-<span style="color:#75715e">#disattivare un virtualenv</span>
+<span class="c1">#disattivare un virtualenv</span>
 pyenv deactivate
 </code></pre></div><p>Oltre a virtualenv e pyenv-virtualenv ci sono altri strumenti molto utili e interessanti come:</p>
 <ul>
@@ -1152,19 +1152,19 @@ pyenv deactivate
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ModernPythonDevelopment/js/clipboard.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.jquery.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/jquery.sticky.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/featherlight.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/highlight.pack.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/clipboard.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.jquery.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/jquery.sticky.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/featherlight.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/highlight.pack.js?1616974133"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ModernPythonDevelopment/js/modernizr.custom-3.6.0.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/learn.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/hugo-learn.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/modernizr.custom-3.6.0.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/learn.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/hugo-learn.js?1616974133"></script>
     
         
-            <script src="/ModernPythonDevelopment/mermaid/mermaid.js?1616973605"></script>
+            <script src="/ModernPythonDevelopment/mermaid/mermaid.js?1616974133"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

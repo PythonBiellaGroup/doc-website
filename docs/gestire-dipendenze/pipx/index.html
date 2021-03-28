@@ -11,22 +11,22 @@
     <title>Pipx :: Python Biella Group Learning Page</title>
 
     
-    <link href="/ModernPythonDevelopment/css/nucleus.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/fontawesome-all.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/hybrid.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/featherlight.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/perfect-scrollbar.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/auto-complete.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/atom-one-dark-reasonable.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/theme.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/tabs.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/hugo-theme.css?1616973605" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/nucleus.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/fontawesome-all.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hybrid.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/featherlight.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/perfect-scrollbar.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/auto-complete.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/atom-one-dark-reasonable.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/theme.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/tabs.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hugo-theme.css?1616974133" rel="stylesheet">
     
-    <link href="/ModernPythonDevelopment/css/theme-blue.css?1616973605" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/theme-blue.css?1616974133" rel="stylesheet">
     
     
 
-    <script src="/ModernPythonDevelopment/js/jquery-3.3.1.min.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/jquery-3.3.1.min.js?1616974133"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ModernPythonDevelopment/js/lunr.min.js?1616973605"></script>
-<script type="text/javascript" src="/ModernPythonDevelopment/js/auto-complete.js?1616973605"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/lunr.min.js?1616974133"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/auto-complete.js?1616974133"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.github.io\/ModernPythonDevelopment\/";
     
 </script>
-<script type="text/javascript" src="/ModernPythonDevelopment/js/search.js?1616973605"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/search.js?1616974133"></script>
 
     
   </div>
@@ -684,7 +684,7 @@
             
           
           
-            <a href='/ModernPythonDevelopment/'>Home</a> > <a href='/ModernPythonDevelopment/gestire-dipendenze/'>Gestire Dipendenze</a> > Pipx
+            <a href='/ModernPythonDevelopment/'>ModernPythonDevelopment</a> > <a href='/ModernPythonDevelopment/gestire-dipendenze/'>Gestire Dipendenze</a> > Pipx
           
         
           
@@ -726,29 +726,29 @@
 <p>Ecco quindi che viene in soccorso <code>pipx</code> che consente di installare queste librerie globali e usarle globalmente su tutta la macchina.</p>
 <p><a href="https://github.com/pipxproject/pipx">https://github.com/pipxproject/pipx</a></p>
 <p>Sostanzialmente quando volete installare delle librerie su tutta la macchina globalmente, invece di fare <code>pip install my_package</code> fate <code>pipx install my_package</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Lista di tutti i pacchetti</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#Lista di tutti i pacchetti</span>
 pipx list
 
-<span style="color:#75715e"># rimuovere un pacchetto</span>
+<span class="c1"># rimuovere un pacchetto</span>
 pipx uninstall my_package
 
-<span style="color:#75715e"># Lanciare una liberia o un comando</span>
+<span class="c1"># Lanciare una liberia o un comando</span>
 pipx run black my_file
 
-<span style="color:#75715e"># Si può anche specificare una determinata versione del pacchetto</span>
-pipx run --spec black<span style="color:#f92672">==</span>18.3a1 black --version
+<span class="c1"># Si può anche specificare una determinata versione del pacchetto</span>
+pipx run --spec <span class="nv">black</span><span class="o">==</span>18.3a1 black --version
 </code></pre></div><p>Ogni volta che viene lanciato <code>pipx run my_package</code> quello che succede è che viene creato temporaneamente un virtualenvironment dentro al quale viene eseguito il comando per poi essere distrutto.</p>
 <p>Su visual studio è importante fare questo settaggio se si vuole usare pipx (lo si fa una volta sola)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Installare il pacchetto</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Installare il pacchetto</span>
 pipx install flake8
 
-<span style="color:#75715e"># visualizzare dove viene installato il pacchetto</span>
+<span class="c1"># visualizzare dove viene installato il pacchetto</span>
 which flake8
 &lt;path&gt;
 
-<span style="color:#75715e"># Copiare il path e dire a visual studio quale binario prendere</span>
-<span style="color:#75715e"># Dentro al file settings.json (vedere come si fa a prendere) inserire</span>
-<span style="color:#e6db74">&#34;python.linting.flake8Path&#34;</span>: <span style="color:#e6db74">&#34;/Users/YOUR_USERNAME/.local/bin/flake8&#34;</span>
+<span class="c1"># Copiare il path e dire a visual studio quale binario prendere</span>
+<span class="c1"># Dentro al file settings.json (vedere come si fa a prendere) inserire</span>
+<span class="s2">&#34;python.linting.flake8Path&#34;</span>: <span class="s2">&#34;/Users/YOUR_USERNAME/.local/bin/flake8&#34;</span>
 </code></pre></div>
 
 <footer class="footline">
@@ -1143,19 +1143,19 @@ which flake8
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ModernPythonDevelopment/js/clipboard.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.jquery.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/jquery.sticky.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/featherlight.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/highlight.pack.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/clipboard.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.jquery.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/jquery.sticky.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/featherlight.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/highlight.pack.js?1616974133"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ModernPythonDevelopment/js/modernizr.custom-3.6.0.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/learn.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/hugo-learn.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/modernizr.custom-3.6.0.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/learn.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/hugo-learn.js?1616974133"></script>
     
         
-            <script src="/ModernPythonDevelopment/mermaid/mermaid.js?1616973605"></script>
+            <script src="/ModernPythonDevelopment/mermaid/mermaid.js?1616974133"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

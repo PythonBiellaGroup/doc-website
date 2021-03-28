@@ -11,22 +11,22 @@
     <title>Flake8 :: Python Biella Group Learning Page</title>
 
     
-    <link href="/ModernPythonDevelopment/css/nucleus.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/fontawesome-all.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/hybrid.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/featherlight.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/perfect-scrollbar.min.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/auto-complete.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/atom-one-dark-reasonable.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/theme.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/tabs.css?1616973605" rel="stylesheet">
-    <link href="/ModernPythonDevelopment/css/hugo-theme.css?1616973605" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/nucleus.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/fontawesome-all.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hybrid.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/featherlight.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/perfect-scrollbar.min.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/auto-complete.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/atom-one-dark-reasonable.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/theme.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/tabs.css?1616974133" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hugo-theme.css?1616974133" rel="stylesheet">
     
-    <link href="/ModernPythonDevelopment/css/theme-blue.css?1616973605" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/theme-blue.css?1616974133" rel="stylesheet">
     
     
 
-    <script src="/ModernPythonDevelopment/js/jquery-3.3.1.min.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/jquery-3.3.1.min.js?1616974133"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ModernPythonDevelopment/js/lunr.min.js?1616973605"></script>
-<script type="text/javascript" src="/ModernPythonDevelopment/js/auto-complete.js?1616973605"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/lunr.min.js?1616974133"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/auto-complete.js?1616974133"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.github.io\/ModernPythonDevelopment\/";
     
 </script>
-<script type="text/javascript" src="/ModernPythonDevelopment/js/search.js?1616973605"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/search.js?1616974133"></script>
 
     
   </div>
@@ -684,7 +684,7 @@
             
           
           
-            <a href='/ModernPythonDevelopment/'>Home</a> > <a href='/ModernPythonDevelopment/code-style/'>Code Style</a> > Flake8
+            <a href='/ModernPythonDevelopment/'>ModernPythonDevelopment</a> > <a href='/ModernPythonDevelopment/code-style/'>Code Style</a> > Flake8
           
         
           
@@ -754,21 +754,21 @@
 <li>flake8-bandit - introduce the capabilities of bandit inside flake8</li>
 </ul>
 <p>Installare Flake 8</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install flake8
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pip install flake8
 
-<span style="color:#75715e">#anche qui è meglio utilizzare pipx</span>
+<span class="c1">#anche qui è meglio utilizzare pipx</span>
 pipx install flake8
 
-<span style="color:#75715e">#Installare estensioni</span>
+<span class="c1">#Installare estensioni</span>
 pip install flake8-docstrings flake8-isort
-<span style="color:#75715e">#Ancora meglio sempre con pipx</span>
+<span class="c1">#Ancora meglio sempre con pipx</span>
 pipx inject flake8 flake8-docstrings flake8-isort flake8-bandit
 
-<span style="color:#75715e"># Se esce un errore di path fare</span>
+<span class="c1"># Se esce un errore di path fare</span>
 pipx ensurepath
-<span style="color:#75715e"># Riavviare il terminale</span>
+<span class="c1"># Riavviare il terminale</span>
 </code></pre></div><p>Lanciare Flake8</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">flake8 my_project <span style="color:#75715e">#my_project = cartella di progetto</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">flake8 my_project <span class="c1">#my_project = cartella di progetto</span>
 </code></pre></div><p>Per usare al meglio Flake8 il consiglio è sempre quello di integrarlo all&rsquo;interno di Visual Studio Code lanciando il comando: <code>Python: Select Linter</code></p>
 <p>Per progetti grandi e per configurare al meglio Flake8 con tutti i suoi plugin è possibile utilizzare anche l&rsquo;ottima libreria: <code>FlakeHell</code> che è un wrapper che consente di definire un <code>pyproject.toml</code> file (lo stesso di Poetry) e di personalizzare le impostazioni al suo interno.</p>
 <p>Attenzione: la libreria di FlakeHell non è piu aggiornata dal 2019 (è archiviata su github) tuttavia è stabile e perfettamente utilizzabile</p>
@@ -1180,19 +1180,19 @@ pipx ensurepath
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ModernPythonDevelopment/js/clipboard.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.jquery.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/jquery.sticky.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/featherlight.min.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/highlight.pack.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/clipboard.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.jquery.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/jquery.sticky.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/featherlight.min.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/highlight.pack.js?1616974133"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ModernPythonDevelopment/js/modernizr.custom-3.6.0.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/learn.js?1616973605"></script>
-    <script src="/ModernPythonDevelopment/js/hugo-learn.js?1616973605"></script>
+    <script src="/ModernPythonDevelopment/js/modernizr.custom-3.6.0.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/learn.js?1616974133"></script>
+    <script src="/ModernPythonDevelopment/js/hugo-learn.js?1616974133"></script>
     
         
-            <script src="/ModernPythonDevelopment/mermaid/mermaid.js?1616973605"></script>
+            <script src="/ModernPythonDevelopment/mermaid/mermaid.js?1616974133"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

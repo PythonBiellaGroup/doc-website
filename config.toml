@@ -3,6 +3,11 @@ languageCode = "en-us"
 title = "Python Biella Group Learning Page"
 theme = "hugo-theme-learn"
 publishDir = "docs"
+defaultContentLanguageInSubdir= true
+
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+enableRobotsTXT = true
 
 # For search functionality
 [outputs]
@@ -18,15 +23,10 @@ disableLandingPage = false
 disableNextPrev = true
 themeVariant = "blue"
 version = "v0.1"
-landingPageURL = "/"
+landingPageURL = "/ModernPythonDevelopment/"
 landingPageName = "<i class='fas fa-home'></i> Home"
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-tags'></i> Tags"
 url = "/tags"
 weight = 30
-
-[Lanugages]
-[Lanugages.en]
-landingPageURL = "/en"
-landingPageName = "<i class='fas fa-home'></i> Redirect to Home"
