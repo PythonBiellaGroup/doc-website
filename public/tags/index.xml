@@ -2,107 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Python Biella Group Learning Page</title>
-    <link>http://example.org/tags/</link>
+    <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/</link>
     <description>Recent content in Tags on Python Biella Group Learning Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>code</title>
-      <link>http://example.org/tags/code/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/code/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>http://example.org/tags/code/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dipendenze</title>
-      <link>http://example.org/tags/dipendenze/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/dipendenze/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>http://example.org/tags/dipendenze/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/dipendenze/</guid>
       <description></description>
     </item>
     
     <item>
       <title>extra</title>
-      <link>http://example.org/tags/extra/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/extra/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>http://example.org/tags/extra/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/extra/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ide</title>
-      <link>http://example.org/tags/ide/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/ide/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>http://example.org/tags/ide/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/ide/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ipython</title>
-      <link>http://example.org/tags/ipython/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/ipython/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>http://example.org/tags/ipython/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/ipython/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pyenv</title>
-      <link>http://example.org/tags/pyenv/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/pyenv/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>http://example.org/tags/pyenv/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/pyenv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>REPL</title>
-      <link>http://example.org/tags/repl/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/repl/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>http://example.org/tags/repl/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/repl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>style</title>
-      <link>http://example.org/tags/style/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/style/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>http://example.org/tags/style/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/style/</guid>
       <description></description>
     </item>
     
     <item>
       <title>venv</title>
-      <link>http://example.org/tags/venv/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/venv/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>http://example.org/tags/venv/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/venv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>versions</title>
-      <link>http://example.org/tags/versions/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/versions/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>http://example.org/tags/versions/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/versions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vscode</title>
-      <link>http://example.org/tags/vscode/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/vscode/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>http://example.org/tags/vscode/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/vscode/</guid>
       <description></description>
     </item>
     

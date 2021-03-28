@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>extra on Python Biella Group Learning Page</title>
-    <link>http://example.org/tags/extra/</link>
+    <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/extra/</link>
     <description>Recent content in extra on Python Biella Group Learning Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="http://example.org/tags/extra/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/extra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Materiale utile</title>
-      <link>http://example.org/materiale-utile/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/materiale-utile/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>http://example.org/materiale-utile/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/materiale-utile/</guid>
       <description>Sezione Extra Materiale Utile Pycon 2020: https://www.youtube.com/watch?v=ndi55Ig6-SI&amp;amp;list=PL7zLksDxo500pt5884WWGV6xxb5WqVR91&amp;amp;ab_channel=PyConUS
 Best Python 2020: https://www.youtube.com/watch?v=tqUe0gcfqAU&amp;amp;list=PLCA4Z3rehf5nDNRqo4sLC_8KgU0tymlge&amp;amp;ab_channel=PyConUS
 Modern Python Developer&amp;rsquo;s toolkit: https://www.youtube.com/watch?v=WkUBx3g2QfQ&amp;amp;ab_channel=PyConUS

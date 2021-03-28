@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/en/categories/</loc>
+    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://example.org/categories/"
+                href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/categories/"
+                href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/en/categories/"
                 />
   </url><url>
-    <loc>http://example.org/en/</loc>
+    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://example.org/"
+                href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/"
+                href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/en/"
                 />
   </url><url>
-    <loc>http://example.org/en/tags/</loc>
+    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://example.org/tags/"
+                href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/tags/"
+                href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/en/tags/"
                 />
   </url>
 </urlset>

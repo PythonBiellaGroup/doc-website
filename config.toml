@@ -2,8 +2,6 @@ baseURL = "https://pythonbiellagroup.github.io/ModernPythonDevelopment/"
 languageCode = "en-us"
 defaultcontentLanguage = "it"
 title = "Python Biella Group Learning Page"
-
-# Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 
 # For search functionality
