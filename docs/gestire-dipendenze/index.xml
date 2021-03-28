@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gestire Dipendenze on Python Biella Group Learning Page</title>
+    <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/</link>
+    <description>Recent content in Gestire Dipendenze on Python Biella Group Learning Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pyenv-virtualenv</title>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/</guid>
+      <description>Pyenv mette a disposizione uno strumento ancora più efficace per costruire ambienti virtuali attraverso un plugin pyenv-virtualenv
+#Creare un virtualenv pyenv virtualenv 3.7.4 my-project #lista di tutti i virtual environments pyenv virtualenvs #attivare un virtualenv pyenv activate my-project #disattivare un virtualenv pyenv deactivate Oltre a virtualenv e pyenv-virtualenv ci sono altri strumenti molto utili e interessanti come:
+ conda (che introduce anche il conda package manager) che è molto invasivo virtualfish virtualenvwrapper pipenv: molto citato in tantissimi tutorial, ma è veramente poco mantenuto (l&amp;rsquo;ultima versione risale al 2018 con 300+ issue aperte) e può causare diversi problemi in un progetto (oltre ad esserci diverse controversie legate al progetto: https://github.</description>
+    </item>
+    
+    <item>
+      <title>Poetry</title>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/poetry/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/poetry/</guid>
+      <description>https://python-poetry.org/
+Poetry è un nuovo modo di gestire progetti con Python che si adatta ai linguaggi e ai framework moderni più famosi (come ad esempio node con npm o nuget per .NET)
+È a tutti gli effetti un package and dependency management tool che consente quindi di gestire pacchetti, dipendenze, versioni unendo sia la gestione della versione di python in un determinato progetto con le rispettive dipendenze oltre ad introdurre concetti molto più avanzati.</description>
+    </item>
+    
+    <item>
+      <title>Pipx</title>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pipx/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pipx/</guid>
+      <description>È vero che ogni progetto dovrebbe sempre avere le proprie dipendenze e vivere in maniera atomica e indipendente rispetto agli altri progetti.
+Tuttavia ci sono alcune librerie che possono essere globali su tutta la macchina e su tutto il sistema.
+Alcune di queste librerie sono quelle che servono per gestire la qualità del codice o lo stile, come ad esempio black o flake8
+Ecco quindi che viene in soccorso pipx che consente di installare queste librerie globali e usarle globalmente su tutta la macchina.</description>
+    </item>
+    
+  </channel>
+</rss>
