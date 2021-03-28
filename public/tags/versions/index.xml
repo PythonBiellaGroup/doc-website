@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>versions on Python Biella Group Learning Page</title>
+    <link>http://example.org/tags/versions/</link>
+    <description>Recent content in versions on Python Biella Group Learning Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="http://example.org/tags/versions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gestire Versioni di Python</title>
+      <link>http://example.org/gestire-python/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/gestire-python/</guid>
+      <description>Sezione 1 Gestire le versioni di Python Pyenv consente di gestire diverse versioni di python installate nella vostra macchina, consentendo di gestirle in modo molto semplice e veloce.
+È semplice e non troppo intrusivo, inoltre potete utilizzarlo su qualsiasi sistema operativo
+ Consente di cambiare la versione globale di python oppure locale per ogni progetto o utente Consente di gestire una versione locale di ogni progetto con la propria specifica versione di python Permette di fare override della versione di Python come variabili d&amp;rsquo;ambiente (non dovete più gestirle a mano Consente di ricercare diverse versioni di python e gestirle (con tox)  Alcuni aspetti molto importanti</description>
+    </item>
+    
+    <item>
+      <title>Gestire Dipendenze</title>
+      <link>http://example.org/gestire-dipendenze/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/gestire-dipendenze/</guid>
+      <description>Sezione 2 Gestione delle dipendenze Per gestire le dipendenze da Python 3.3 esiste un built-in module chiamato venv che consente di creare dei virtualenv all&amp;rsquo;interno del vostro progetto.
+Questa ovviamente è la &amp;ldquo;vecchia maniera&amp;rdquo; però è sempre funzionante
+python -m venv my-virtualenv Il comando consente di creare una directory my-virtualenv che contiene:
+ python binary pip/easy_install/wheel binary activation script binary files utilizzate da Python  Per attivare un virtualenv si può fare:</description>
+    </item>
+    
+    <item>
+      <title>Struttura di progetto</title>
+      <link>http://example.org/struttura-progetto/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/struttura-progetto/</guid>
+      <description>Sezione 3 Struttura di progetto Come strutturare un progetto in Python?
+Questa ovviamente è una domanda molto comune, ma allo stesso tempo molto difficile, non esiste una risposta corretta.
+Python non forza l&amp;rsquo;utilizzo di una determinata struttura, tuttavia ci sono alcune best practice che è possibile tenere a mente e alcune considerazioni che si possono (e spesso devono) fare.
+Un Modulo in Python è un contenitore che racchiude tutte le vostre funzioni o classe che vi serve importare da un&amp;rsquo;altra parte in modo da riciclare quello che avete scritto.</description>
+    </item>
+    
+    <item>
+      <title>Code Style</title>
+      <link>http://example.org/code-style/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/code-style/</guid>
+      <description>Sezione 4 Code Style Quando si lavora su progetti e si conivide il codice con un team di lavoro è importante cercare di mantenere uno stesso stile di scrittura del codice in modo da uniformarsi ed evitare di fraintendersi.
+In Python esistono
+ PEP8 = Default python style guide PEP257 = Docstring style guide  Alcuni esempi di PEP8:
+ Quando spazi si usano per l&amp;rsquo;indentazione = 4 spazi Come indentare le parentesi Lunghezza della linea di codice predefinita (79 caratteri per il codice e 72 caratteri per i commenti e docstrings) Come configurare gli import &amp;hellip;  Tuttavia nonostante le linee guida di PEP8 ci sono molte cose su cui di può discutere e che non sono chiare, lasciando spesso anche troppa libertà.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Python Biella Group Learning Page</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on Python Biella Group Learning Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>code</title>
+      <link>http://example.org/tags/code/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dipendenze</title>
+      <link>http://example.org/tags/dipendenze/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/tags/dipendenze/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>extra</title>
+      <link>http://example.org/tags/extra/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/tags/extra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ide</title>
+      <link>http://example.org/tags/ide/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/tags/ide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ipython</title>
+      <link>http://example.org/tags/ipython/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/tags/ipython/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pyenv</title>
+      <link>http://example.org/tags/pyenv/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/tags/pyenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>REPL</title>
+      <link>http://example.org/tags/repl/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/tags/repl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>style</title>
+      <link>http://example.org/tags/style/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/tags/style/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>venv</title>
+      <link>http://example.org/tags/venv/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/tags/venv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>versions</title>
+      <link>http://example.org/tags/versions/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/tags/versions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>http://example.org/tags/vscode/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>http://example.org/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

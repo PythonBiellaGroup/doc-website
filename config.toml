@@ -1,0 +1,38 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+defaultcontentLanguage = "it"
+title = "Python Biella Group Learning Page"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "hugo-theme-learn"
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+disableBreadcrumb = false
+editURL = ""
+author = "Andrea Guzzo"
+description = "Python Biella Group Reference Website and Guides"
+showVisitedLinks = true
+disableLandingPage = false
+disableNextPrev = true
+themeVariant = "blue"
+version = "v0.1"
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+url = "/tags"
+weight = 30
+
+[Languages]
+[Languages.en]
+landingPageURL = "/en"
+landingPageName = "<i class='fas fa-home'></i> Redirect to Home"
+[Languages.it]
+landingPageURL = "/it"
+landingPageName = "<i class='fas fa-home'></i> Torna alla Home"
+
+[markup.goldmark.renderer]
+unsafe = true

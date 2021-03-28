@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code Style on Python Biella Group Learning Page</title>
+    <link>http://example.org/code-style/</link>
+    <description>Recent content in Code Style on Python Biella Group Learning Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="http://example.org/code-style/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Black</title>
+      <link>http://example.org/code-style/black/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>http://example.org/code-style/black/</guid>
+      <description>https://black.now.sh/
+Black è un code formatter, prende i propri files e li formatta in accordo con PEP8 e PEP257 con alcune altre regole addizionali (ad esempio converte apostrofo singolo in apostrofo doppio).
+Permette di essere configurato (ad esempio mettendo --skip-string-normalization per preservare gli apostrofi singoli).
+Black è uno strumento molto discusso e a volte molto aggressivo, ma usandolo in un team consente di uniformare la scrittura del codice rendendolo comune.</description>
+    </item>
+    
+    <item>
+      <title>Flake8</title>
+      <link>http://example.org/code-style/flake8/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>http://example.org/code-style/flake8/</guid>
+      <description>Oltre agli strumenti che consentono di formattare il codice in Python esistono diversi linter e analizzatori statici di codice.
+Uno dei più popolari Linter su Python è Flake8 .
+Flake8 non cambia il codice in un progetto, ma fornisce uno strumento di warnings in real time
+Flake8 combina tre progetti differenti
+ pyflakes https://github.com/pycqa/pyflakes = da warnings su moduli non usati, variabili non definite, &amp;hellip; pycodestyle https://pycodestyle.pycqa.org/en/latest/ = da errori riguardo alle violazioni di PEP8 McCabe https://github.</description>
+    </item>
+    
+    <item>
+      <title>Bandit</title>
+      <link>http://example.org/code-style/bandit/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>http://example.org/code-style/bandit/</guid>
+      <description>Bandit è uno strumento per trovare problemi di sicurezza più comuni all&amp;rsquo;interno del codice Python.
+Utilizzandolo così com&amp;rsquo;è però, senza un&amp;rsquo;adeguata configurazione, fornisce anche un po&#39; di falsi positivi.
+Spendendo un po&#39; di tempo a configurarlo correttamente per i vostri progetti è possibile avere informazioni utili riguardo:
+ utilizzo insicuro di alcuni moduli possibili SQL Injection se il codice ignora silenziosamente alcune eccezioni e molto altro  È un utilissimo strumento soprattutto per principianti per revisionare il proprio codice.</description>
+    </item>
+    
+  </channel>
+</rss>
