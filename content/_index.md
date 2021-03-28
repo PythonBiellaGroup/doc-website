@@ -1,7 +1,7 @@
 +++
 title = "Home"
 date = 2021-03-28T20:10:53+02:00
-weight = 5
+weight = 1
 chapter = true
 pre = "<b>X. </b>"
 +++

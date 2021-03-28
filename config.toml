@@ -1,6 +1,5 @@
 baseURL = "https://pythonbiellagroup.github.io/ModernPythonDevelopment/"
 languageCode = "en-us"
-defaultcontentLanguage = "it"
 title = "Python Biella Group Learning Page"
 theme = "hugo-theme-learn"
 
@@ -10,7 +9,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [params]
 disableBreadcrumb = false
-editURL = ""
+editURL = "https://pythonbiellagroup.github.io/ModernPythonDevelopment/blob/master/content/"
 author = "Andrea Guzzo"
 description = "Python Biella Group Reference Website and Guides"
 showVisitedLinks = true
@@ -23,14 +22,3 @@ version = "v0.1"
 name = "<i class='fas fa-tags'></i> Tags"
 url = "/tags"
 weight = 30
-
-[Languages]
-[Languages.en]
-landingPageURL = "/en"
-landingPageName = "<i class='fas fa-home'></i> Redirect to Home"
-[Languages.it]
-landingPageURL = "/it"
-landingPageName = "<i class='fas fa-home'></i> Torna alla Home"
-
-[markup.goldmark.renderer]
-unsafe = true
