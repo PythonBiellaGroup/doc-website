@@ -8,6 +8,18 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Virtualenv</title>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/virtualenv/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/virtualenv/</guid>
+      <description>Packaging (and Enviroments) Virtualenv
+Pipenv vs virtualenv: https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853
+Venv: https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-environments-a53d1e191490
+# install virtualenv pip install virtualenv #Prima di lanciare il successivo comando controllare di essere su conda e fare: conda activate development #la versione di conda che usate deve essere &amp;gt;= versione desiderata # generate a new virtualenv in a specific path virtualenv --python=3.6 &amp;lt;path_nome_env&amp;gt; #### UNIX (mac and linux) source &amp;lt;path_nome_env&amp;gt;/bin/activate #### WINDOWS &amp;lt;path_nome_env&amp;gt;\scripts\activate #### Visual Studio Code  #(install Microsoft Python Extension and then click on python in the bottom tab) #Windows navigate to -&amp;gt; &amp;lt;path_nome_env&amp;gt;\scripts\&amp;lt;python3.</description>
+    </item>
+    
+    <item>
       <title>Pyenv-virtualenv</title>
       <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/</link>
       <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
@@ -16,18 +28,6 @@
       <description>Pyenv mette a disposizione uno strumento ancora più efficace per costruire ambienti virtuali attraverso un plugin pyenv-virtualenv
 #Creare un virtualenv pyenv virtualenv 3.7.4 my-project #lista di tutti i virtual environments pyenv virtualenvs #attivare un virtualenv pyenv activate my-project #disattivare un virtualenv pyenv deactivate Oltre a virtualenv e pyenv-virtualenv ci sono altri strumenti molto utili e interessanti come:
  conda (che introduce anche il conda package manager) che è molto invasivo virtualfish virtualenvwrapper pipenv: molto citato in tantissimi tutorial, ma è veramente poco mantenuto (l&amp;rsquo;ultima versione risale al 2018 con 300+ issue aperte) e può causare diversi problemi in un progetto (oltre ad esserci diverse controversie legate al progetto: https://github.</description>
-    </item>
-    
-    <item>
-      <title>Virtualenv</title>
-      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/virtualenv/</link>
-      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
-      
-      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/virtualenv/</guid>
-      <description>Packaging (and Enviroments) Virtualenv
-Pipenv vs virtualenv: https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853
-Venv: https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-environments-a53d1e191490
-# install virtualenv pip install virtualenv #Prima di lanciare il successivo comando controllare di essere su conda e fare: conda activate development #la versione di conda che usate deve essere &amp;gt;= versione desiderata # generate a new virtualenv in a specific path virtualenv --python=3.6 &amp;lt;path_nome_env&amp;gt; #### UNIX (mac and linux) source &amp;lt;path_nome_env&amp;gt;/bin/activate #### WINDOWS &amp;lt;path_nome_env&amp;gt;\scripts\activate #### Visual Studio Code  #(install Microsoft Python Extension and then click on python in the bottom tab) #Windows navigate to -&amp;gt; &amp;lt;path_nome_env&amp;gt;\scripts\&amp;lt;python3.</description>
     </item>
     
     <item>

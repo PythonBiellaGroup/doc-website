@@ -1,11 +1,11 @@
----
-title: "Virtualenv"
-date: 2021-03-28T23:54:10+02:00
-summary : ''
-weight: 15
-draft: false
-
----
++++
+title = "Virtualenv"
+date = 2021-03-28T20:10:53+02:00
+weight = 2
+chapter = false
+pre = "<b>2.1 </b>"
+tags = ["versions","venv","dipendenze"]
++++
 ## Packaging (and Enviroments)
 
 **Virtualenv**
@@ -51,7 +51,7 @@ Prevent conda to activate default base environment by default `conda config --se
 
 **Inside the cheeseshop: How Python Packaging Works (Dustin Ingram)** https://www.youtube.com/watch?v=AQsZsgJ30AE
 
-![./images/package-version-2018.png](./images/package-version-2018.png)
+![package-version-2018](./images/package-version-2018.png)
 
 PEP 518: introduce il pyproject.toml che rimpiazza quasi tutto.
 

@@ -42,6 +42,13 @@
 	"content": "Test "
 },
 {
+	"uri": "https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/virtualenv/",
+	"title": "Virtualenv",
+	"tags": ["versions", "venv", "dipendenze"],
+	"description": "",
+	"content": "Packaging (and Enviroments) Virtualenv\nPipenv vs virtualenv: https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853\nVenv: https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-environments-a53d1e191490\n# install virtualenv pip install virtualenv #Prima di lanciare il successivo comando controllare di essere su conda e fare: conda activate development #la versione di conda che usate deve essere \u0026gt;= versione desiderata # generate a new virtualenv in a specific path virtualenv --python=3.6 \u0026lt;path_nome_env\u0026gt; #### UNIX (mac and linux) source \u0026lt;path_nome_env\u0026gt;/bin/activate #### WINDOWS \u0026lt;path_nome_env\u0026gt;\\scripts\\activate #### Visual Studio Code  #(install Microsoft Python Extension and then click on python in the bottom tab) #Windows navigate to -\u0026gt; \u0026lt;path_nome_env\u0026gt;\\scripts\\\u0026lt;python3.6\u0026gt; #UNIX navigate to -\u0026gt; \u0026lt;path_nome_env\u0026gt;/bin/\u0026lt;python3.6\u0026gt; #Warning: if you are using another python version, change python3.6 to your current version #Then install requirements.txt pip install -r requirements.txt Prevent conda to activate default base environment by default conda config --set auto_activate_base false\nhttps://www.youtube.com/watch?v=asL0dbN6pAY\nhttps://www.youtube.com/watch?v=1GIIaGbL9qQ\nInside the cheeseshop: How Python Packaging Works (Dustin Ingram) https://www.youtube.com/watch?v=AQsZsgJ30AE\nPEP 518: introduce il pyproject.toml che rimpiazza quasi tutto.\nPublish package to Pypi (old school)\nhttps://www.youtube.com/watch?v=GIF3LaRqgXo\u0026amp;ab_channel=CodingTech\nUse uf PipEnv\nhttps://hackersandslackers.com/pipenv-python-environment-management/\nDifferenze tra PipEnv, Pip e Conda (DevOps Concepts)\nhttps://towardsdatascience.com/devops-for-data-science-making-your-python-project-reproducible-f55646e110fa\n"
+},
+{
 	"uri": "https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/code-terminal/",
 	"title": "Aggiungere code al terminale",
 	"tags": [],
@@ -117,13 +124,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Pyenv mette a disposizione uno strumento ancora più efficace per costruire ambienti virtuali attraverso un plugin pyenv-virtualenv\n#Creare un virtualenv pyenv virtualenv 3.7.4 my-project #lista di tutti i virtual environments pyenv virtualenvs #attivare un virtualenv pyenv activate my-project #disattivare un virtualenv pyenv deactivate Oltre a virtualenv e pyenv-virtualenv ci sono altri strumenti molto utili e interessanti come:\n conda (che introduce anche il conda package manager) che è molto invasivo virtualfish virtualenvwrapper pipenv: molto citato in tantissimi tutorial, ma è veramente poco mantenuto (l\u0026rsquo;ultima versione risale al 2018 con 300+ issue aperte) e può causare diversi problemi in un progetto (oltre ad esserci diverse controversie legate al progetto: https://github.com/pypa/pipenv/issues/4058) pipx: per centralizzare alcune dipendenze  "
-},
-{
-	"uri": "https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/virtualenv/",
-	"title": "Virtualenv",
-	"tags": [],
-	"description": "",
-	"content": "Packaging (and Enviroments) Virtualenv\nPipenv vs virtualenv: https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853\nVenv: https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-environments-a53d1e191490\n# install virtualenv pip install virtualenv #Prima di lanciare il successivo comando controllare di essere su conda e fare: conda activate development #la versione di conda che usate deve essere \u0026gt;= versione desiderata # generate a new virtualenv in a specific path virtualenv --python=3.6 \u0026lt;path_nome_env\u0026gt; #### UNIX (mac and linux) source \u0026lt;path_nome_env\u0026gt;/bin/activate #### WINDOWS \u0026lt;path_nome_env\u0026gt;\\scripts\\activate #### Visual Studio Code  #(install Microsoft Python Extension and then click on python in the bottom tab) #Windows navigate to -\u0026gt; \u0026lt;path_nome_env\u0026gt;\\scripts\\\u0026lt;python3.6\u0026gt; #UNIX navigate to -\u0026gt; \u0026lt;path_nome_env\u0026gt;/bin/\u0026lt;python3.6\u0026gt; #Warning: if you are using another python version, change python3.6 to your current version #Then install requirements.txt pip install -r requirements.txt Prevent conda to activate default base environment by default conda config --set auto_activate_base false\nhttps://www.youtube.com/watch?v=asL0dbN6pAY\nhttps://www.youtube.com/watch?v=1GIIaGbL9qQ\nInside the cheeseshop: How Python Packaging Works (Dustin Ingram) https://www.youtube.com/watch?v=AQsZsgJ30AE\nPEP 518: introduce il pyproject.toml che rimpiazza quasi tutto.\nPublish package to Pypi (old school)\nhttps://www.youtube.com/watch?v=GIF3LaRqgXo\u0026amp;ab_channel=CodingTech\nUse uf PipEnv\nhttps://hackersandslackers.com/pipenv-python-environment-management/\nDifferenze tra PipEnv, Pip e Conda (DevOps Concepts)\nhttps://towardsdatascience.com/devops-for-data-science-making-your-python-project-reproducible-f55646e110fa\n"
 },
 {
 	"uri": "https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/flake8/",

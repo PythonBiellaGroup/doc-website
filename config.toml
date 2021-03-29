@@ -8,6 +8,7 @@ defaultContentLanguageInSubdir= true
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 enableRobotsTXT = true
+staticDir = ["static"]
 
 # For search functionality
 [outputs]
