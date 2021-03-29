@@ -1,11 +1,12 @@
----
-title: "Black"
-date: 2021-03-28T23:54:10+02:00
-summary: ''
-weight: 10
-draft: false
-
----
++++
+title = "Black"
+date = 2021-03-28T23:54:10+02:00
+summary = ''
+weight = 10
+draft = false
+chapter = false
+pre = "<b>4.1 </b>"
++++
 [https://black.now.sh/](https://black.now.sh/)
 
 Black è un code formatter, prende i propri files e li formatta in accordo con PEP8 e PEP257 con alcune altre regole addizionali (ad esempio converte apostrofo singolo in apostrofo doppio).

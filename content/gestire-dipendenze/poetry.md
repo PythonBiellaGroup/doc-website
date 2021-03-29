@@ -135,3 +135,19 @@ run = "wsgi:main"
 [tool.poetry.urls]
 issues = "https://github.com/jeydi/"
 ```
+
+##### Attenzione:
+Per alcune librerie (ad esempio pandas), potrebbero esserci dei problemi di versionamento rispetto alle librerie dipendenti.
+A tal proposito si consiglia di installare anche pip come dipendenza e aggiornarlo all'ultima versione.
+```
+#Installare pip
+poetry add pip
+
+#Oppure aggiornare pip una volta creato il .venv con poetry
+#Importante avere prima il .venv
+pip install --upgrade pip
+
+```
+Questo è un workaround per superare problemi di installazione molto lunga.
+
+Poetry è sicuramente più lento di virtualenv, ma è molto più sicuro e più severo in quanto prima controlla tutte le dipendenze verificando che siano sicure.

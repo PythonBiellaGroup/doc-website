@@ -21,10 +21,10 @@ Black è uno strumento molto discusso e a volte molto aggressivo, ma usandolo in
     
     <item>
       <title>Flake8</title>
-      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/flake8/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/flake8/flake8/</link>
       <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
       
-      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/flake8/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/flake8/flake8/</guid>
       <description>Oltre agli strumenti che consentono di formattare il codice in Python esistono diversi linter e analizzatori statici di codice.
 Uno dei più popolari Linter su Python è Flake8 .
 Flake8 non cambia il codice in un progetto, ma fornisce uno strumento di warnings in real time

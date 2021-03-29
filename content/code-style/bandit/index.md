@@ -1,11 +1,12 @@
----
-title: "Bandit"
-date: 2021-03-28T23:54:10+02:00
-summary: ''
-weight: 30
-draft: false
-
----
++++
+title = "Bandit"
+date = 2021-03-28T23:54:10+02:00
+summary = ''
+weight = 30
+draft = false
+chapter = false
+pre = "<b>4.3 </b>"
++++
 Bandit è uno strumento per trovare problemi di sicurezza più comuni all'interno del codice Python.
 
 Utilizzandolo così com'è però, senza un'adeguata configurazione, fornisce anche un po' di falsi positivi.

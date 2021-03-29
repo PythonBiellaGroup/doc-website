@@ -1,11 +1,12 @@
----
-title: "Flake8"
-date: 2021-03-28T23:54:10+02:00
-summary: ''
-weight: 20
-draft: false
-
----
++++
+title = "Flake8"
+date = 2021-03-28T23:54:10+02:00
+summary = ''
+weight = 20
+draft = false
+chapter = false
+pre = "<b>4.2 </b>"
++++
 Oltre agli strumenti che consentono di formattare il codice in Python esistono diversi linter e analizzatori statici di codice.
 
 Uno dei più popolari Linter su Python è `Flake8` .
