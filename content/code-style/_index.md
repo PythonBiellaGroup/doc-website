@@ -29,3 +29,7 @@ Alcuni esempi di PEP8:
 Tuttavia nonostante le linee guida di PEP8 ci sono molte cose su cui di può discutere e che non sono chiare, lasciando spesso anche troppa libertà.
 
 Ecco che entrano in gioco alcune librerie che aiutano nella gestione della qualità del codice.
+
+### Documentazione
+- https://pep8.org
+- https://www.python.org/dev/peps/
