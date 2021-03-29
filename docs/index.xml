@@ -93,6 +93,17 @@ Value Error: attempted relative import beyond top-level package</description>
     </item>
     
     <item>
+      <title>Pyenv</title>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-python/pyenv/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-python/pyenv/</guid>
+      <description>Pyenv consente di gestire diverse versioni di python installate nella vostra macchina, consentendo di gestirle in modo molto semplice e veloce.
+È semplice e non troppo intrusivo, inoltre potete utilizzarlo su qualsiasi sistema operativo
+ Consente di cambiare la versione globale di python oppure locale per ogni progetto o utente Consente di gestire una versione locale di ogni progetto con la propria specifica versione di python Permette di fare override della versione di Python come variabili d&amp;rsquo;ambiente (non dovete più gestirle a mano Consente di ricercare diverse versioni di python e gestirle (con tox)  Alcuni aspetti molto importanti</description>
+    </item>
+    
+    <item>
       <title>Pyenv-virtualenv</title>
       <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/</link>
       <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
@@ -101,6 +112,18 @@ Value Error: attempted relative import beyond top-level package</description>
       <description>Pyenv mette a disposizione uno strumento ancora più efficace per costruire ambienti virtuali attraverso un plugin pyenv-virtualenv
 #Creare un virtualenv pyenv virtualenv 3.7.4 my-project #lista di tutti i virtual environments pyenv virtualenvs #attivare un virtualenv pyenv activate my-project #disattivare un virtualenv pyenv deactivate Oltre a virtualenv e pyenv-virtualenv ci sono altri strumenti molto utili e interessanti come:
  conda (che introduce anche il conda package manager) che è molto invasivo virtualfish virtualenvwrapper pipenv: molto citato in tantissimi tutorial, ma è veramente poco mantenuto (l&amp;rsquo;ultima versione risale al 2018 con 300+ issue aperte) e può causare diversi problemi in un progetto (oltre ad esserci diverse controversie legate al progetto: https://github.</description>
+    </item>
+    
+    <item>
+      <title>Virtualenv</title>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/virtualenv/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/virtualenv/</guid>
+      <description>Packaging (and Enviroments) Virtualenv
+Pipenv vs virtualenv: https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853
+Venv: https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-environments-a53d1e191490
+# install virtualenv pip install virtualenv #Prima di lanciare il successivo comando controllare di essere su conda e fare: conda activate development #la versione di conda che usate deve essere &amp;gt;= versione desiderata # generate a new virtualenv in a specific path virtualenv --python=3.6 &amp;lt;path_nome_env&amp;gt; #### UNIX (mac and linux) source &amp;lt;path_nome_env&amp;gt;/bin/activate #### WINDOWS &amp;lt;path_nome_env&amp;gt;\scripts\activate #### Visual Studio Code  #(install Microsoft Python Extension and then click on python in the bottom tab) #Windows navigate to -&amp;gt; &amp;lt;path_nome_env&amp;gt;\scripts\&amp;lt;python3.</description>
     </item>
     
     <item>
@@ -135,6 +158,34 @@ Flake8 combina tre progetti differenti
       <description>https://python-poetry.org/
 Poetry è un nuovo modo di gestire progetti con Python che si adatta ai linguaggi e ai framework moderni più famosi (come ad esempio node con npm o nuget per .NET)
 È a tutti gli effetti un package and dependency management tool che consente quindi di gestire pacchetti, dipendenze, versioni unendo sia la gestione della versione di python in un determinato progetto con le rispettive dipendenze oltre ad introdurre concetti molto più avanzati.</description>
+    </item>
+    
+    <item>
+      <title>Pyenv avanzato</title>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-python/pyenv-advance/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-python/pyenv-advance/</guid>
+      <description>In questa sezione avanzata sono presenti appunti, best practice e guide per approfondire tutto ciò che riguarda Pyenv
+Documentazione utile https://realpython.com/intro-to-pyenv/
+Pyenv with Poetry
+https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/
+Guida per configurare pyenv on Mac
+https://opensource.com/article/20/4/pyenv
+Notes on a Github Gist
+https://gist.github.com/Geoyi/f55ed54d24cc9ff1c14bd95fac21c042
+Pyenv is a python installation manager. It allows you to install and run multiple python installations, on the same machine.
+Pyenv manages the different versions for you, so that you will avoid the chaos illustrated in the above picture.</description>
+    </item>
+    
+    <item>
+      <title>Poetry Advance</title>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/poetry-advance/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/poetry-advance/</guid>
+      <description>Poetry is most sophisticated dependency management option available today (2020). Goes far beyond dependencies, with features like generating .lock files, generating project scaffolding, and a ton of configuration options, all of which are handled via a simple CLI. If you&amp;rsquo;re unsure how to cleanly and effectively structure and manage your Python projects, do yourself a favor and use Poetry.
+Install poetry and include the installation curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 #add poetry to env variables to your current shell source $HOME/.</description>
     </item>
     
     <item>

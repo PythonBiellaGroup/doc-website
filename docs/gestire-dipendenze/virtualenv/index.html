@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="description" content="Python Biella Group Reference Website and Guides">
+<meta name="author" content="Andrea Guzzo">
+
+    <link rel="shortcut icon" href="/static/images/PythonGroupBiella-iconOnly.png" type="image/x-icon" />
+    <title>Virtualenv :: Python Biella Group Learning Page</title>
+
+    
+    <link href="/ModernPythonDevelopment/css/nucleus.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/fontawesome-all.min.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hybrid.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/featherlight.min.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/perfect-scrollbar.min.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/auto-complete.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/atom-one-dark-reasonable.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/theme.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/tabs.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hugo-theme.css?1617012277" rel="stylesheet">
+    
+    <link href="/ModernPythonDevelopment/css/theme-blue.css?1617012277" rel="stylesheet">
+    
+    
+
+    <script src="/ModernPythonDevelopment/js/jquery-3.3.1.min.js?1617012277"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/ModernPythonDevelopment/gestire-dipendenze/virtualenv/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="../../images/pbg-logo.png" alt="PBGLogo">
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/ModernPythonDevelopment/js/lunr.min.js?1617012277"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/auto-complete.js?1617012277"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/pythonbiellagroup.github.io\/ModernPythonDevelopment\/";
+    
+</script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/search.js?1617012277"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Redirect to Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/gestire-python/" title="Gestire Versioni di Python" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/gestire-python/">
+          <b>1. </b>Gestire Versioni di Python
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-python/pyenv/" title="Pyenv" class="dd-item ">
+        <a href="/ModernPythonDevelopment/gestire-python/pyenv/">
+        Pyenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-python/pyenv-advance/" title="Pyenv avanzato" class="dd-item ">
+        <a href="/ModernPythonDevelopment/gestire-python/pyenv-advance/">
+        Pyenv avanzato
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/gestire-dipendenze/" title="Gestire Dipendenze" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/gestire-dipendenze/">
+          <b>2. </b>Gestire Dipendenze
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/" title="Pyenv-virtualenv" class="dd-item ">
+        <a href="/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/">
+        Pyenv-virtualenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-dipendenze/virtualenv/" title="Virtualenv" class="dd-item active">
+        <a href="/ModernPythonDevelopment/gestire-dipendenze/virtualenv/">
+        Virtualenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-dipendenze/poetry/" title="Poetry" class="dd-item ">
+        <a href="/ModernPythonDevelopment/gestire-dipendenze/poetry/">
+        Poetry
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-dipendenze/poetry-advance/" title="Poetry Advance" class="dd-item ">
+        <a href="/ModernPythonDevelopment/gestire-dipendenze/poetry-advance/">
+        Poetry Advance
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-dipendenze/pipx/" title="Pipx" class="dd-item ">
+        <a href="/ModernPythonDevelopment/gestire-dipendenze/pipx/">
+        Pipx
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/struttura-progetto/" title="Struttura di progetto" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/struttura-progetto/">
+          <b>3. </b>Struttura di progetto
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/struttura-progetto/import-relativi/" title="Import relativi" class="dd-item ">
+        <a href="/ModernPythonDevelopment/struttura-progetto/import-relativi/">
+        Import relativi
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/struttura-progetto/import-circolari/" title="Import circolari" class="dd-item ">
+        <a href="/ModernPythonDevelopment/struttura-progetto/import-circolari/">
+        Import circolari
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/struttura-progetto/cookiecutter/" title="cookiecutter" class="dd-item ">
+        <a href="/ModernPythonDevelopment/struttura-progetto/cookiecutter/">
+        cookiecutter
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/code-style/" title="Code Style" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/code-style/">
+          <b>4. </b>Code Style
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/code-style/black/" title="Black" class="dd-item ">
+        <a href="/ModernPythonDevelopment/code-style/black/">
+        Black
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/code-style/flake8/" title="Flake8" class="dd-item ">
+        <a href="/ModernPythonDevelopment/code-style/flake8/">
+        Flake8
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/code-style/bandit/" title="Bandit" class="dd-item ">
+        <a href="/ModernPythonDevelopment/code-style/bandit/">
+        Bandit
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/visual-studio-code/" title="Visual Studio Code" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/visual-studio-code/">
+          <b>5. </b>Visual Studio Code
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/visual-studio-code/linter/" title="Installare un linter" class="dd-item ">
+        <a href="/ModernPythonDevelopment/visual-studio-code/linter/">
+        Installare un linter
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/visual-studio-code/python-version/" title="Utilizzare una versione di Python" class="dd-item ">
+        <a href="/ModernPythonDevelopment/visual-studio-code/python-version/">
+        Utilizzare una versione di Python
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/visual-studio-code/code-terminal/" title="Aggiungere code al terminale" class="dd-item ">
+        <a href="/ModernPythonDevelopment/visual-studio-code/code-terminal/">
+        Aggiungere code al terminale
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/visual-studio-code/debugger/" title="Usare il debugger" class="dd-item ">
+        <a href="/ModernPythonDevelopment/visual-studio-code/debugger/">
+        Usare il debugger
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/visual-studio-code/testing/" title="Testing" class="dd-item ">
+        <a href="/ModernPythonDevelopment/visual-studio-code/testing/">
+        Testing
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/repl/" title="REPL" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/repl/">
+          <b>6. </b>REPL
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/materiale-utile/" title="Materiale utile" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/materiale-utile/">
+          <b>X. </b>Materiale utile
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/PythonBiellaGroup" data-icon="octicon-star" data-show-count="true" aria-label="Star pocc/tshark.dev on GitHub">Github</a>
+
+    <p>Built with <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/matcornic/hugo-theme-learn">Learn</a></p>
+    <p>Copyright 2020, <a href="https://swit.sh">PythonBiellaGroup</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/PythonBiellaGroup/ModernPythonDevelopment/tree/master/contentgestire-dipendenze/virtualenv.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/ModernPythonDevelopment/'>ModernPythonDevelopment</a> > <a href='/ModernPythonDevelopment/gestire-dipendenze/'>Gestire Dipendenze</a> > Virtualenv
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#packaging-and-enviroments">Packaging (and Enviroments)</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Virtualenv
+            </h1>
+          
+
+        
+
+
+<h2 id="packaging-and-enviroments">Packaging (and Enviroments)</h2>
+<p><strong>Virtualenv</strong></p>
+<p>Pipenv vs virtualenv: <a href="https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853">https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853</a></p>
+<p>Venv: <a href="https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-environments-a53d1e191490">https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-environments-a53d1e191490</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># install virtualenv</span>
+pip install virtualenv
+
+<span class="c1">#Prima di lanciare il successivo comando controllare di essere su conda e fare:</span>
+conda activate development <span class="c1">#la versione di conda che usate deve essere &gt;= versione desiderata</span>
+
+<span class="c1"># generate a new virtualenv in a specific path</span>
+virtualenv --python<span class="o">=</span>3.6 &lt;path_nome_env&gt;
+
+<span class="c1">#### UNIX (mac and linux)</span>
+<span class="nb">source</span> &lt;path_nome_env&gt;/bin/activate
+
+<span class="c1">#### WINDOWS</span>
+&lt;path_nome_env&gt;<span class="se">\s</span>cripts<span class="se">\a</span>ctivate
+
+<span class="c1">#### Visual Studio Code </span>
+<span class="c1">#(install Microsoft Python Extension and then click on python in the bottom tab)</span>
+<span class="c1">#Windows</span>
+navigate to -&gt; &lt;path_nome_env&gt;<span class="se">\s</span>cripts<span class="se">\&lt;</span>python3.6&gt;
+<span class="c1">#UNIX</span>
+navigate to -&gt; &lt;path_nome_env&gt;/bin/&lt;python3.6&gt;
+
+<span class="c1">#Warning: if you are using another python version, change python3.6 to your current version</span>
+
+<span class="c1">#Then install requirements.txt</span>
+pip install -r requirements.txt
+</code></pre></div><p>Prevent conda to activate default base environment by default <code>conda config --set auto_activate_base false</code></p>
+<p><a href="https://www.youtube.com/watch?v=asL0dbN6pAY">https://www.youtube.com/watch?v=asL0dbN6pAY</a></p>
+<p><a href="https://www.youtube.com/watch?v=1GIIaGbL9qQ">https://www.youtube.com/watch?v=1GIIaGbL9qQ</a></p>
+<p><strong>Inside the cheeseshop: How Python Packaging Works (Dustin Ingram)</strong> <a href="https://www.youtube.com/watch?v=AQsZsgJ30AE">https://www.youtube.com/watch?v=AQsZsgJ30AE</a></p>
+<p><img src="./images/package-version-2018.png" alt="./images/package-version-2018.png"></p>
+<p>PEP 518: introduce il pyproject.toml che rimpiazza quasi tutto.</p>
+<p><strong>Publish package to Pypi (old school)</strong></p>
+<p><a href="https://www.youtube.com/watch?v=GIF3LaRqgXo&amp;ab_channel=CodingTech">https://www.youtube.com/watch?v=GIF3LaRqgXo&amp;ab_channel=CodingTech</a></p>
+<p><strong>Use uf PipEnv</strong></p>
+<p><a href="https://hackersandslackers.com/pipenv-python-environment-management/">https://hackersandslackers.com/pipenv-python-environment-management/</a></p>
+<p><strong>Differenze tra PipEnv, Pip e Conda (DevOps Concepts)</strong></p>
+<p><a href="https://towardsdatascience.com/devops-for-data-science-making-your-python-project-reproducible-f55646e110fa">https://towardsdatascience.com/devops-for-data-science-making-your-python-project-reproducible-f55646e110fa</a></p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/" title="Pyenv-virtualenv"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/ModernPythonDevelopment/gestire-dipendenze/poetry/" title="Poetry" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/ModernPythonDevelopment/js/clipboard.min.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.min.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.jquery.min.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/jquery.sticky.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/featherlight.min.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/highlight.pack.js?1617012277"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/ModernPythonDevelopment/js/modernizr.custom-3.6.0.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/learn.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/hugo-learn.js?1617012277"></script>
+    
+        
+            <script src="/ModernPythonDevelopment/mermaid/mermaid.js?1617012277"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="description" content="Python Biella Group Reference Website and Guides">
+<meta name="author" content="Andrea Guzzo">
+
+    <link rel="shortcut icon" href="/static/images/PythonGroupBiella-iconOnly.png" type="image/x-icon" />
+    <title>Pyenv avanzato :: Python Biella Group Learning Page</title>
+
+    
+    <link href="/ModernPythonDevelopment/css/nucleus.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/fontawesome-all.min.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hybrid.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/featherlight.min.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/perfect-scrollbar.min.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/auto-complete.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/atom-one-dark-reasonable.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/theme.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/tabs.css?1617012277" rel="stylesheet">
+    <link href="/ModernPythonDevelopment/css/hugo-theme.css?1617012277" rel="stylesheet">
+    
+    <link href="/ModernPythonDevelopment/css/theme-blue.css?1617012277" rel="stylesheet">
+    
+    
+
+    <script src="/ModernPythonDevelopment/js/jquery-3.3.1.min.js?1617012277"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/ModernPythonDevelopment/gestire-python/pyenv-advance/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="../../images/pbg-logo.png" alt="PBGLogo">
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/ModernPythonDevelopment/js/lunr.min.js?1617012277"></script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/auto-complete.js?1617012277"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/pythonbiellagroup.github.io\/ModernPythonDevelopment\/";
+    
+</script>
+<script type="text/javascript" src="/ModernPythonDevelopment/js/search.js?1617012277"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Redirect to Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/gestire-python/" title="Gestire Versioni di Python" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/gestire-python/">
+          <b>1. </b>Gestire Versioni di Python
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-python/pyenv/" title="Pyenv" class="dd-item ">
+        <a href="/ModernPythonDevelopment/gestire-python/pyenv/">
+        Pyenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-python/pyenv-advance/" title="Pyenv avanzato" class="dd-item active">
+        <a href="/ModernPythonDevelopment/gestire-python/pyenv-advance/">
+        Pyenv avanzato
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/gestire-dipendenze/" title="Gestire Dipendenze" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/gestire-dipendenze/">
+          <b>2. </b>Gestire Dipendenze
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/" title="Pyenv-virtualenv" class="dd-item ">
+        <a href="/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/">
+        Pyenv-virtualenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-dipendenze/virtualenv/" title="Virtualenv" class="dd-item ">
+        <a href="/ModernPythonDevelopment/gestire-dipendenze/virtualenv/">
+        Virtualenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-dipendenze/poetry/" title="Poetry" class="dd-item ">
+        <a href="/ModernPythonDevelopment/gestire-dipendenze/poetry/">
+        Poetry
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-dipendenze/poetry-advance/" title="Poetry Advance" class="dd-item ">
+        <a href="/ModernPythonDevelopment/gestire-dipendenze/poetry-advance/">
+        Poetry Advance
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/gestire-dipendenze/pipx/" title="Pipx" class="dd-item ">
+        <a href="/ModernPythonDevelopment/gestire-dipendenze/pipx/">
+        Pipx
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/struttura-progetto/" title="Struttura di progetto" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/struttura-progetto/">
+          <b>3. </b>Struttura di progetto
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/struttura-progetto/import-relativi/" title="Import relativi" class="dd-item ">
+        <a href="/ModernPythonDevelopment/struttura-progetto/import-relativi/">
+        Import relativi
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/struttura-progetto/import-circolari/" title="Import circolari" class="dd-item ">
+        <a href="/ModernPythonDevelopment/struttura-progetto/import-circolari/">
+        Import circolari
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/struttura-progetto/cookiecutter/" title="cookiecutter" class="dd-item ">
+        <a href="/ModernPythonDevelopment/struttura-progetto/cookiecutter/">
+        cookiecutter
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/code-style/" title="Code Style" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/code-style/">
+          <b>4. </b>Code Style
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/code-style/black/" title="Black" class="dd-item ">
+        <a href="/ModernPythonDevelopment/code-style/black/">
+        Black
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/code-style/flake8/" title="Flake8" class="dd-item ">
+        <a href="/ModernPythonDevelopment/code-style/flake8/">
+        Flake8
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/code-style/bandit/" title="Bandit" class="dd-item ">
+        <a href="/ModernPythonDevelopment/code-style/bandit/">
+        Bandit
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/visual-studio-code/" title="Visual Studio Code" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/visual-studio-code/">
+          <b>5. </b>Visual Studio Code
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/visual-studio-code/linter/" title="Installare un linter" class="dd-item ">
+        <a href="/ModernPythonDevelopment/visual-studio-code/linter/">
+        Installare un linter
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/visual-studio-code/python-version/" title="Utilizzare una versione di Python" class="dd-item ">
+        <a href="/ModernPythonDevelopment/visual-studio-code/python-version/">
+        Utilizzare una versione di Python
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/visual-studio-code/code-terminal/" title="Aggiungere code al terminale" class="dd-item ">
+        <a href="/ModernPythonDevelopment/visual-studio-code/code-terminal/">
+        Aggiungere code al terminale
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/visual-studio-code/debugger/" title="Usare il debugger" class="dd-item ">
+        <a href="/ModernPythonDevelopment/visual-studio-code/debugger/">
+        Usare il debugger
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ModernPythonDevelopment/visual-studio-code/testing/" title="Testing" class="dd-item ">
+        <a href="/ModernPythonDevelopment/visual-studio-code/testing/">
+        Testing
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/repl/" title="REPL" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/repl/">
+          <b>6. </b>REPL
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ModernPythonDevelopment/materiale-utile/" title="Materiale utile" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ModernPythonDevelopment/materiale-utile/">
+          <b>X. </b>Materiale utile
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/PythonBiellaGroup" data-icon="octicon-star" data-show-count="true" aria-label="Star pocc/tshark.dev on GitHub">Github</a>
+
+    <p>Built with <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/matcornic/hugo-theme-learn">Learn</a></p>
+    <p>Copyright 2020, <a href="https://swit.sh">PythonBiellaGroup</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/PythonBiellaGroup/ModernPythonDevelopment/tree/master/contentgestire-python/pyenv-advance.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/ModernPythonDevelopment/'>ModernPythonDevelopment</a> > <a href='/ModernPythonDevelopment/gestire-python/'>Gestire Versioni di Python</a> > Pyenv avanzato
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#documentazione-utile">Documentazione utile</a></li>
+    <li><a href="#installare-pyenv">Installare Pyenv</a>
+      <ul>
+        <li><a href="#install-python">Install Python</a></li>
+      </ul>
+    </li>
+    <li><a href="#usare-una-versione-di-pyenv">Usare una versione di Pyenv</a></li>
+    <li><a href="#virtualenvs-with-pyenv">Virtualenvs with pyenv</a></li>
+    <li><a href="#pyenv-with-poetry">Pyenv with Poetry</a>
+      <ul>
+        <li><a href="#bonus-utilizzare-oh-my-zsh">Bonus: utilizzare oh-my-zsh</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Pyenv avanzato
+            </h1>
+          
+
+        
+
+
+<p>In questa sezione avanzata sono presenti appunti, best practice e guide per approfondire tutto ciò che riguarda Pyenv</p>
+<h2 id="documentazione-utile">Documentazione utile</h2>
+<p><a href="https://realpython.com/intro-to-pyenv/">https://realpython.com/intro-to-pyenv/</a></p>
+<p>Pyenv with Poetry</p>
+<p><a href="https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/">https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/</a></p>
+<p>Guida per configurare pyenv on Mac</p>
+<p><a href="https://opensource.com/article/20/4/pyenv">https://opensource.com/article/20/4/pyenv</a></p>
+<p>Notes on a Github Gist</p>
+<p><a href="https://gist.github.com/Geoyi/f55ed54d24cc9ff1c14bd95fac21c042">https://gist.github.com/Geoyi/f55ed54d24cc9ff1c14bd95fac21c042</a></p>
+<p>Pyenv is a python installation manager. It allows you to install and run multiple python installations, on the same machine.</p>
+<p>Pyenv manages the different versions for you, so that you will avoid the chaos illustrated in the above picture. Don&rsquo;t ever again install a python version any other way!</p>
+<p>Perchè non utilizzare python installato di default nel proprio sistema operativo?</p>
+<p>Perchè possono creare problemi nei progetti, ognuno ha la propria versione e ci possono essere problemi di migrazione e riproducibilità quando si usano in contesti di produzione.</p>
+<p>Cosa ci consente di fare pyenv? (flusso operativo)</p>
+<ol>
+<li>installare Python nel proprio user space</li>
+<li>installare versioni multiple di python</li>
+<li>specificare quale esatta versione di python utilizzare per un progetto e/o attività</li>
+<li>cambiare tra le diverse versioni installate facilmente</li>
+</ol>
+<p><img src="./images/python-pyramid.png" alt="PythonPyramid"></p>
+<h2 id="installare-pyenv">Installare Pyenv</h2>
+<p>Pyenv builds Python from source, which means you’ll need build dependencies to actually use pyenv. The build dependencies vary by platform</p>
+<p>Il modo migliore per installare pyenv è quello di clonare direttamente il progetto dalla repository ufficiale e inserire all&rsquo;interno delle variabili di ambiente il path dove avete clonato il progetto.</p>
+<p>Questa modalità di installazione si può applicare su tutti i sistemi operativi.</p>
+<p>Su windows si può comunque utilizzare choco oppure si può utilizzare brew per installarlo su mac.</p>
+<p>Su Linux il modo migliore è sempre quello di passare tramite git.</p>
+<p><strong>Ubuntu/Debian</strong></p>
+<p><a href="https://www.liquidweb.com/kb/how-to-install-pyenv-on-ubuntu-18-04/">https://www.liquidweb.com/kb/how-to-install-pyenv-on-ubuntu-18-04/</a></p>
+<p>Installare pyenv su WSL: <a href="https://www.techtronic.us/install-python-pyenv-on-wsl-ubuntu/">https://www.techtronic.us/install-python-pyenv-on-wsl-ubuntu/</a></p>
+<p>Installare i requisiti (se non già stato fatto)</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#before it&#39;s important to update</span>
+sudo apt install update -y
+
+<span class="c1">#then install packages and other infos</span>
+sudo apt-get install -y git gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev zlib1g-dev libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl libffi-dev
+</code></pre></div><p>Clonare la repository Git e inserire all&rsquo;interno delle variabili di ambiente della shell i path relativi a pyenv.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#Clone the repository</span>
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
+<span class="c1">#or use the pyenv official installer (it&#39;s ok, simpler, but you can have problems)</span>
+curl https://pyenv.run <span class="p">|</span> bash
+
+<span class="c1">##--BASH--</span>
+<span class="c1">#Launch the following commands to add into env variables the installation</span>
+<span class="nb">echo</span> <span class="s1">&#39;export PYENV_ROOT=&#34;$HOME/.pyenv&#34;&#39;</span> &gt;&gt; ~/.bashrc
+<span class="nb">echo</span> <span class="s1">&#39;export PATH=&#34;$PYENV_ROOT/bin:$PATH&#34;&#39;</span> &gt;&gt; ~/.bashrc
+<span class="nb">echo</span> -e <span class="s1">&#39;if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n eval &#34;$(pyenv init -)&#34;\nfi&#39;</span> &gt;&gt; ~/.bashrc
+
+<span class="c1">##---ZSH----</span>
+<span class="c1">#If you are using zsh</span>
+<span class="c1">#You can use the bash commands also with zsh</span>
+<span class="nb">echo</span> <span class="s1">&#39;PATH=$(pyenv root)/shims:$PATH&#39;</span> &gt;&gt; ~/.zshrc
+
+<span class="c1">#Reactivate the shell</span>
+<span class="c1">#For bash</span>
+<span class="nb">source</span> ~/.bashrc
+<span class="c1">#For zsh</span>
+<span class="nb">source</span> ~/.zshrc
+
+<span class="c1">##Verify the installation</span>
+pyenv install --list
+
+</code></pre></div><p>This will install <code>pyenv</code> along with a few plugins that are useful:</p>
+<ol>
+<li><strong><code>pyenv</code></strong>: The actual <code>pyenv</code> application</li>
+<li><strong><code>pyenv-virtualenv</code></strong>: Plugin for <code>pyenv</code> and virtual environments</li>
+<li><strong><code>pyenv-update</code></strong>: Plugin for updating <code>pyenv</code></li>
+<li><strong><code>pyenv-doctor</code></strong>: Plugin to verify that <code>pyenv</code> and build dependencies are installed</li>
+<li><strong><code>pyenv-which-ext</code></strong>: Plugin to automatically lookup system commands</li>
+</ol>
+<p><strong>Mac</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#Required Homebrew</span>
+<span class="c1"># Install pyenv.</span>
+brew install pyenv
+
+<span class="c1">#Now it&#39;s important to set the pyenv with the bash o zsh</span>
+
+<span class="c1">##---BASH---</span>
+<span class="c1"># Add pyenv initializer to shell startup script.</span>
+<span class="nb">echo</span> -e <span class="s1">&#39;\nif command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then
+</span><span class="s1">  eval &#34;$(pyenv init -)&#34;
+</span><span class="s1">fi&#39;</span> &gt;&gt; ~/.bash_profile
+
+<span class="c1"># Reload your profile.</span>
+<span class="nb">source</span> ~/.bash_profile
+
+<span class="c1">##---ZSH----</span>
+<span class="c1">#If you are using zsh</span>
+<span class="nb">echo</span> <span class="s1">&#39;PATH=$(pyenv root)/shims:$PATH&#39;</span> &gt;&gt; ~/.zshrc
+
+</code></pre></div><p><strong>Windows</strong> (consigliato utilizzare una WSL - windows subsystem linux)</p>
+<p>Attenzione: utilizzare Powershell in modalità amministratore per non avere problemi di compatibilità</p>
+<p>Pur troppo bisogna utilizzare una versione diversa, non quella originale. È stato realizzata una distribuzione apposta sempre dai creatori di pyenv.</p>
+<p><a href="http://evaholmes.com/how-to-set-up-pyenv-and-poetry-on-windows-10-for-python-project-management/">http://evaholmes.com/how-to-set-up-pyenv-and-poetry-on-windows-10-for-python-project-management/</a></p>
+<p><a href="https://github.com/pyenv-win/pyenv-win">https://github.com/pyenv-win/pyenv-win</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Step 1: choose one of the two types of installations</span>
+
+<span class="c1"># 1 - With chocolatey</span>
+choco install pyenv-win
+
+<span class="c1"># 2 - Install using Git (need to install git first)</span>
+
+<span class="c1">#with powershell</span>
+git clone https://github.com/pyenv-win/pyenv-win.git <span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/.pyenv&#34;</span>
+
+<span class="c1">#with cmd</span>
+git clone https://github.com/pyenv-win/pyenv-win.git <span class="s2">&#34;%USERPROFILE%\.pyenv&#34;</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Step 2</span>
+
+<span class="c1">#Add this to Path System Environment Variables</span>
+C:<span class="se">\U</span>sers<span class="se">\A</span>nguz<span class="se">\.</span>pyenv<span class="se">\p</span>yenv-win<span class="se">\b</span>in
+C:<span class="se">\U</span>sers<span class="se">\A</span>nguz<span class="se">\.</span>pyenv<span class="se">\p</span>yenv-win<span class="se">\s</span>hims
+
+<span class="c1">####OLD STUFF NOT WORKING#####</span>
+<span class="c1">#Add path to environment variables</span>
+<span class="o">[</span>System.Environment<span class="o">]</span>::SetEnvironmentVariable<span class="o">(</span><span class="s1">&#39;PYENV&#39;</span>,<span class="nv">$env</span>:USERPROFILE + <span class="s2">&#34;\.pyenv\pyenv-win\&#34;,&#34;</span>User<span class="s2">&#34;)
+</span><span class="s2">[System.Environment]::SetEnvironmentVariable(&#39;PYENV_HOME&#39;,</span><span class="nv">$env</span><span class="s2">:USERPROFILE + &#34;</span><span class="se">\.</span>pyenv<span class="se">\p</span>yenv-win<span class="se">\&#34;</span>,<span class="s2">&#34;User&#34;</span><span class="o">)</span>
+
+<span class="c1">#Add the possibility to launch the commands with the terminal</span>
+<span class="o">[</span>System.Environment<span class="o">]</span>::SetEnvironmentVariable<span class="o">(</span><span class="s1">&#39;PYENV_HOME&#39;</span>,<span class="nv">$env</span>:USERPROFILE + <span class="s2">&#34;\.pyenv\pyenv-win\&#34;,&#34;</span>User<span class="s2">&#34;)
+</span><span class="s2">
+</span><span class="s2">#Remember to relaunch the terminal after this commands
+</span></code></pre></div><p><strong>Verificare installazione di Pyenv</strong></p>
+<p>Da terminale fare</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv --version
+</code></pre></div><h3 id="install-python">Install Python</h3>
+<p>Visualize python versions</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv install --list <span class="p">|</span> grep <span class="s2">&#34; 3\.[678]&#34;</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv install -v 3.7.2
+</code></pre></div><p>Visualizzare dove vengono installate le varie versioni su Python</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">ls ~/.pyenv/versions/
+</code></pre></div><p>Disinstallare una versione di Python</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv uninstall &lt;version&gt;
+</code></pre></div><p>Ogni volta che su windows (e altri sistemi operativi) si installa una nuova versione di Python con pyenv è importante anche fare rehash</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#rehash to update shims</span>
+pyenv rehash
+</code></pre></div><p>Disinstallare una versione di python</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#visualizzare le versioni di pyenv installate</span>
+pyenv versions
+
+<span class="c1">#disinstallare una determinata versione</span>
+pyenv uninstall &lt;versione&gt;
+</code></pre></div><h2 id="usare-una-versione-di-pyenv">Usare una versione di Pyenv</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#Visualize the installed (available) versions</span>
+pyenv versions
+
+<span class="c1">#Visualize the active version of python with pyenv</span>
+pyenv which python
+
+<span class="c1">#Set a global pyenv version</span>
+pyenv global &lt;version&gt;
+
+<span class="c1">#If you want to come back to the system default</span>
+pyenv global system
+</code></pre></div><p>È anche possibile impostare una versione di pyenv python locale per ogni progetto facendo all&rsquo;interno della cartella di progetto:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv <span class="nb">local</span> &lt;version&gt;
+</code></pre></div><p>Oppure impostare la versione di una determinata shell</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv shell &lt;version&gt;
+</code></pre></div><h2 id="virtualenvs-with-pyenv">Virtualenvs with pyenv</h2>
+<p>Pyenv ha un bellissimo plugin chiamato: <code>pyenv-virtualenv</code> che consente di gestire appunto i vari virtualenv in modo semplice.</p>
+<p>Ci sono diversi modi per gestire un virtualenv (pyenv consente di gestirli tutti e 3 in modo molto semplice e comodo)</p>
+<ul>
+<li><strong>pyenv</strong> manages multiple versions of Python itself.</li>
+<li><strong>virtualenv/venv</strong> manages virtual environments for a specific Python version.</li>
+<li><strong>pyenv-virtualenv</strong> manages virtual environments for across varying versions of Python.</li>
+</ul>
+<p>Creare un virtualenv</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv virtualenv &lt;python_version&gt; &lt;environment_name&gt;
+
+<span class="c1">#&lt;pythonversion&gt; is optional</span>
+</code></pre></div><p>Attivare un virtualenv</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv <span class="nb">local</span> myproject
+
+<span class="c1">#verify python version</span>
+pyenv which python
+
+<span class="c1">#verify pip version</span>
+pyenv which pip
+</code></pre></div><p>È quindi possibile attivare o disattivare un particolare ambiente (virtualenv) (un po' come succede con anaconda)</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv activate &lt;environment_name&gt;
+
+pyenv deactivate
+</code></pre></div><p>Con pyenv è anche possibile utilizzare più versioni di python contemporaneamente&hellip;</p>
+<h2 id="pyenv-with-poetry">Pyenv with Poetry</h2>
+<p><a href="https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/">https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/</a></p>
+<h3 id="bonus-utilizzare-oh-my-zsh">Bonus: utilizzare oh-my-zsh</h3>
+<p>È possibile utilizzare pyenv come plugin su oh-my-zsh in modo molto comodo inserendo <code>pyenv</code> all&rsquo;interno dei plugin nel file di configurazione.</p>
+<p><strong>Informazione:</strong> Impedire a conda di partire di default</p>
+<p><code>conda config --set auto_activate_base false</code></p>
+<h1 id="librerie-base-da-installare">Librerie base da installare</h1>
+<p>Elenco delle librerie base da installare (necessario creare progetto base per configurare queste librerie)</p>
+<ul>
+<li>Bandit</li>
+<li>Black</li>
+<li>Poetry</li>
+<li>Flake8</li>
+<li>Mypy</li>
+<li>Isort</li>
+<li>Pylint</li>
+<li>Pytest</li>
+</ul>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/ModernPythonDevelopment/gestire-python/pyenv/" title="Pyenv"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/ModernPythonDevelopment/gestire-dipendenze/" title="Gestire Dipendenze" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/ModernPythonDevelopment/js/clipboard.min.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.min.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/perfect-scrollbar.jquery.min.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/jquery.sticky.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/featherlight.min.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/highlight.pack.js?1617012277"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/ModernPythonDevelopment/js/modernizr.custom-3.6.0.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/learn.js?1617012277"></script>
+    <script src="/ModernPythonDevelopment/js/hugo-learn.js?1617012277"></script>
+    
+        
+            <script src="/ModernPythonDevelopment/mermaid/mermaid.js?1617012277"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

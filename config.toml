@@ -14,13 +14,14 @@ enableRobotsTXT = true
 home = [ "HTML", "RSS", "JSON"]
 
 [params]
-disableBreadcrumb = false
-editURL = "https://pythonbiellagroup.github.io/ModernPythonDevelopment/blob/master/content/"
+editURL = "https://github.com/PythonBiellaGroup/ModernPythonDevelopment/tree/master/content"
 author = "Andrea Guzzo"
 description = "Python Biella Group Reference Website and Guides"
+disableBreadcrumb = false
 showVisitedLinks = true
 disableLandingPage = false
-disableNextPrev = true
+disableNextPrev = false
+disableAssetsBusting = false
 themeVariant = "blue"
 version = "v0.1"
 landingPageURL = "/ModernPythonDevelopment/"
@@ -30,3 +31,8 @@ landingPageName = "<i class='fas fa-home'></i> Home"
 name = "<i class='fas fa-tags'></i> Tags"
 url = "/tags"
 weight = 30
+
+[Languages]
+[Languages.en]
+landingPageURL = "/ModernPythonDevelopment/"
+landingPageName = "<i class='fas fa-home'></i> Redirect to Home"
