@@ -6,9 +6,11 @@ weight: 25
 draft: false
 
 ---
-Poetry is most sophisticated dependency management option available today (2020). Goes far beyond dependencies, with features like generating .lock files, generating project scaffolding, and a ton of configuration options, all of which are handled via a simple CLI. If you're unsure how to cleanly and effectively structure and manage your Python projects, do yourself a favor and use Poetry.
+Poetry è l'opzione di gestione delle dipendenze più sofisticata disponibile oggi (2020).
 
-## **Install poetry and include the installation**
+Va ben oltre le dipendenze, con funzionalità come la generazione di file .lock, la generazione di scaffolding del progetto e un sacco di opzioni di configurazione, tutte gestite tramite una semplice CLI. Se non sei sicuro di come strutturare e gestire in modo pulito ed efficace i tuoi progetti Python, fatti un favore e usa Poetry.
+
+## **Installa poetry e includi l'installazione**
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3
