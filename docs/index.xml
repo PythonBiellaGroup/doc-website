@@ -184,8 +184,9 @@ Pyenv manages the different versions for you, so that you will avoid the chaos i
       <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
       
       <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/poetry-advance/</guid>
-      <description>Poetry is most sophisticated dependency management option available today (2020). Goes far beyond dependencies, with features like generating .lock files, generating project scaffolding, and a ton of configuration options, all of which are handled via a simple CLI. If you&amp;rsquo;re unsure how to cleanly and effectively structure and manage your Python projects, do yourself a favor and use Poetry.
-Install poetry and include the installation curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 #add poetry to env variables to your current shell source $HOME/.</description>
+      <description>Poetry è il più sofisticato sistema di gestione delle dipendenze su Python disponibile (nel 2020).
+Consente di andare al di là della semplice gestione delle dipendenze, con funzioni come: generare .lock files, consentire di fare scaffolding dei progetti con molte possibilità di personalizzazione, il tutto disponibile via CLI.
+Installare poetry e includere l&amp;rsquo;installazione curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 #aggiungere poetry alle variabili di ambiente della sessione shell corrente source $HOME/.poetry/env #controllare se poetry è installato correttamente poetry --version Per installare poetry usando windows è possibile lanciare lo stesso comando usando la git bash in modo da poter usare il comando curl (attenzione: conviene utilizzare git bash come amministratore)</description>
     </item>
     
     <item>
