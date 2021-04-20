@@ -6,49 +6,53 @@ weight: 25
 draft: false
 
 ---
-Poetry is most sophisticated dependency management option available today (2020). Goes far beyond dependencies, with features like generating .lock files, generating project scaffolding, and a ton of configuration options, all of which are handled via a simple CLI. If you're unsure how to cleanly and effectively structure and manage your Python projects, do yourself a favor and use Poetry.
+Poetry è il più sofisticato sistema di gestione delle dipendenze su Python disponibile (nel 2020). 
 
-## **Install poetry and include the installation**
+Consente di andare al di là della semplice gestione delle dipendenze, con funzioni come: generare .lock files, consentire di fare scaffolding dei progetti con molte possibilità di personalizzazione, il tutto disponibile via CLI.
+
+## **Installare poetry e includere l'installazione**
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3
 
-#add poetry to env variables to your current shell
+#aggiungere poetry alle variabili di ambiente della sessione shell corrente
 source $HOME/.poetry/env
 
-#check if poetry is installed correctly
+#controllare se poetry è installato correttamente
 poetry --version
 ```
 
-To install poetry using windows it's possible to launch the same command using the `git bash` so you can use the `curl` command (Be careful: use git bash as admin on your system)
+Per installare poetry usando windows è possibile lanciare lo stesso comando usando la `git bash` in modo da poter usare il comando `curl` (attenzione: conviene utilizzare git bash come amministratore)
 
 [http://evaholmes.com/how-to-set-up-pyenv-and-poetry-on-windows-10-for-python-project-management/](http://evaholmes.com/how-to-set-up-pyenv-and-poetry-on-windows-10-for-python-project-management/)
 
-After the installation add the following environment variable into the `path` variables inside the system variables
+Dopo l'installazione aggiungete la seguente variabile d'ambiente nelle variabili di percorso all'interno delle variabili di sistema
 
 ```bash
-C:\Users\Anguz\.poetry\bin
+#sostituite <nomeutente> con il vostro utente
+C:\Users\<nomeutente>\.poetry\bin
+
 ```
 
-On windows you can also use the powershell install script
+Su windows è possibile anche usare lo script di installazione di powershell
 
 ```bash
 (Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python -
 ```
 
-Check the poetry version by doing:
+Per controllare la versione corrente di poetry installata nel sistema è possibile fare:
 
 ```bash
 poetry --version
 ```
 
-By default poetry is installed into the user's platform-specific home directory. If you wish to change this, you may define the `POETRY-HOME` environment variable 
+Di default poetry è installato nella home directory specifica del vostro utente. Se si desidera cambiare l'impostazione è possibile definire la seguente variabile d'ambiente `POETRY-HOME`
 
 ```bash
 POETRY_HOME=/etc/poetry python [get-poetry.py](http://get-poetry.py/)
 ```
 
-It's also possible to install Poetry with `pip` or with `pipx`
+È anche possibile installare Poetry con `pip` o con `pipx`
 
 ```bash
 # Install poetry with pip
@@ -65,167 +69,220 @@ pipx uninstall poetry
 
 ```
 
-## **Create a python project via Poetry CLI**
+## Creare un progetto python utilizzando Poetry
 
 ```bash
 poetry new poetry-tutorial-project
 ```
 
-The secret sauce of every Poetry project is contained in a file called **pyproject.toml**. This is where we define everything from our project's metadata, dependencies, scripts, and more. If you're familiar with Node, think of pyproject.toml as the Python equivalent of package.json.
+La ricetta segreta di ogni progetto costruito con poetry è la creazione di un file chiamato `pyproject.toml` . All'interno di questo file è possibile definire tutto quello che esiste all'interno del progetto: metadati, dipendenze, librerie, scripts e molto altro...
 
-**Composition of poetry (toml file)**
+Se siete a vostro agio con node.js possiamo considerare il file pyproject.toml come un package.json del progetto.
 
-Documentation: [https://python-poetry.org/docs/pyproject/](https://python-poetry.org/docs/pyproject/)
+**Composizione di poetry (file toml)**
 
-- *[tool.poetry]* = simply informational metadata about our package, such as the package name, description, author details, etc. Most of the config values here are optional unless you're planning on publishing this project as an official PyPi package
-- *[tool.poetry.dependencies]* = This is where we define dependencies our application absolutely must download to run. You may specify specific version numbers for required packages (such as Flask = "1.0.0"), or if you simply want to grab the latest version, setting the version to "*" will do just that. You can also specify the project python version required to use and launch the app
-- *[tool.poetry.dev-dependencies]* = Dev dependencies are packages that contributing developers should download to iterate on this project. Dev dependencies are not required to run the app, and won't be downloaded when the app is built by default.
-- *[build-system]* = This is rarely a section you'll need to touch unless you upgrade your version of Poetry.
-- *[tool.poetry.scripts]* = This is where we specify where our app entry point(s) is by assigning function within modules to the name of a script to be run. The example run = "wsgi:main" is specifying that we want to create a command called "run," which will look in [wsgi.py](http://wsgi.py/) for a function called main(). With this set, we can then launch our app via the Poetry CLI by typing *`poetry run`*
-- *[tool.poetry.urls]*: This is a completely optional section where you can add any number of helpful links or resources that somebody downloading this package might find useful.
+Documentazione: [https://python-poetry.org/docs/pyproject/](https://python-poetry.org/docs/pyproject/)
 
-## **Installing and managing dependencies**
+- *[tool.poetry]* = semplice metadato informativo riguardo al package che state sviluppando (come il package name, descrizione, autore, dettagli, ...). Alcune impostazioni sono utili solamente se pensate di pubblicare il vostro pacchetto su Pypi.
+- *[tool.poetry.dependencies]* = Consente di definire le dipendenze dell'applicazione che sono assolutamente necessarie per lanciare il vostro programma. È anche possibile impostare una versione particolare del pacchetto che volete installare (such as Flask = "1.0.0"), Se invece si vuole semplicemente definire l'ultima versione è possibile inserire solamente "*". È anche possibile specificare la versione di Python richiesta per lanciare il progetto e la vostra applicazione.
+- *[tool.poetry.dev-dependencies]* = Le Dev dependencies sono tutte le librerie che servono agli sviluppatori per costruire e programmare il progetto, ma che non devono essere portare in produzione. Queste dipendenze non servono per lanciare l'applicazione e non verranno scaricate se l'applicazione viene "buildata" di default.
+- *[build-system]* = Questa sezione è raramente utilizzata, modificatela solamente se avete intenzione di aggiornare Poetry.
+- *[tool.poetry.scripts]* = Qui è dove si specificano gli entry point dell'applicazione, assegnando una funzione all'interno dei moduli necessaria a lanciare l'applicazione. L'esempio utilizza: run = "wsgi:main" che specifica che vogliamo creare un comando "run" che cercherà all'interno del file: "[wsgi.py](http://wsgi.py/)" una funzione chiamata: main(). Con questa impostazione è possibile lanciare l'applicazione utilizzando la CLI scrivendo: *`poetry run`*
+- *[tool.poetry.urls]*: Questa impostazione è opzionale e può essere utilizzata per inserire link utili di risorse, documentazione o altro legato al progetto e importanti se volete rilasciare il vostro pacchetto.
 
-**`poetry shell`** The first time this command is run in your project directory, Poetry **creates** a Python **virtual environment** which will forever be associated with this project. Instead of creating a folder containing your dependency libraries (as virtualenv does), **Poetry creates an environment on a global system path**, therefore separating dependency source code from your project. Once this virtual environment is created, it **can be activated again at any time** by simply *running poetry* shell in your project directory in the future. Try comparing the output which python before and after activating your project shell to see how Poetry handles virtual environments.
+## **Installare e gestire le dipendenze**
 
-`**poetry install**` Installs the dependencies specified in pyproject.toml. The first time a project's dependencies are installed, a **.lock file is created**, which **contains the actual version numbers of each package that was installed** (i.e.: if Flask = "*" resulted in downloading Flask version 1.0.0, the actual version number would be stored in .lock). If a .lock file is present, the version numbers in .lock will always be prioritized over what is in pyproject.toml.
+**`poetry shell`** 
 
-`**poetry update**` Mimics the functionality of install, with the exception that **version numbers in .lock will NOT be respected**. If newer versions exist for packages in pyproject.toml, newer versions will be installed, and .lock will be updated accordingly.
+La prima volta che questo comando viene eseguito nella directory del tuo progetto, Poetry crea un ambiente virtuale Python che sarà per sempre associato a questo progetto. Invece di creare una cartella contenente le tue librerie di dipendenza (come fa virtualenv), Poetry crea un ambiente su un percorso di sistema globale, separando così il codice sorgente di dipendenza dal tuo progetto. Una volta che questo ambiente virtuale è creato, può essere attivato di nuovo in qualsiasi momento semplicemente eseguendo poetry shell nella directory del tuo progetto in futuro. Prova a confrontare l'output di python prima e dopo aver attivato la shell del tuo progetto per vedere come Poetry gestisce gli ambienti virtuali.
 
-`**poetry add [package-name]**` A shortcut for adding a dependency to pyproject.toml. The package is installed immediately upon being added.
+`**poetry install**` 
+
+Installa le dipendenze specificate in pyproject.toml. La prima volta che le dipendenze di un progetto vengono installate, viene creato un file .lock, che contiene i numeri di versione effettivi di ogni pacchetto che è stato installato (ad esempio: se Flask = "*" ha portato a scaricare Flask versione 1.0.0, il numero di versione effettivo verrebbe memorizzato in .lock). Se è presente un file .lock, i numeri di versione in .lock avranno sempre la priorità su quelli presenti in pyproject.toml.
+
+`**poetry update**` 
+
+Imita la funzionalità di install, con l'eccezione che i numeri di versione in .lock NON saranno rispettati. Se esistono versioni più recenti per i pacchetti in pyproject.toml, saranno installate le versioni più recenti e .lock sarà aggiornato di conseguenza.
+
+`**poetry add [package-name]**` 
+
+Una scorciatoia per aggiungere una dipendenza a pyproject.toml. Il pacchetto viene installato immediatamente dopo essere stato aggiunto.
 
 `**poetry remove [package-name]`** 
 
-`**poetry export -f requirements.txt > requirements.txt`** Exports the contents of your project's .lock file to requirements.txt. It comes in handy when handing work off to developers who still use requirements.txt for some reason.
+Comando per rimuovere una determinata dipendenza dalla lista delle dipendenze del progetto definite nel pyproject.toml
 
-`**poetry env list --full-path`** Visualize poetry environment path and list
+`**poetry export -f requirements.txt > requirements.txt`** 
 
-## **Configurations**
+Esporta il contenuto del file .lock del tuo progetto in requirements.txt. È utile quando si passa il lavoro a sviluppatori che usano ancora requirements.txt per qualche motivo.
 
-`**poetry config**` "Config" refers to environment-level configuration, such as the paths of the current virtual environment, or environment variables. Passing the --list option will return your environment's current config values.
+È anche possibile eseguire il seguente comando: `poetry export -f requirements.txt --output reqtest.txt --without-hashes` che consente di esportare le dipendenze in un file con un nome diverso (reqtest.txt) e senza gli hash che codificano i pacchetti. Questo comando può essere utile se con il comando normale ci sono dei problemi nell'installazione dei requirements.txt
 
-`**poetry check**` Checks pyproject.toml for errors.
+`**poetry env list --full-path`** 
 
-`**poetry show**` Returns a breakdown of all packages currently installed to the project, including dependencies of dependencies.
+Visualizzare il percorso e l'elenco dell'ambiente.
 
-## **Exec applications**
+## **Configurazioni**
 
-`**poetry run [script-name]**` Executes a script defined in the [tool.poetry.scripts] section of pyproject.toml.
+`**poetry config**` 
 
-## **Building and publishing**
+"Config" si riferisce alla configurazione a livello di ambiente, come i percorsi dell'ambiente virtuale corrente o le variabili di ambiente. Passando l'opzione --list restituirà gli attuali valori di configurazione del tuo ambiente.
 
-`**poetry build**` Builds the source and wheels archives.
+`**poetry check**` 
 
-`**poetry publish**` Publishes the output of the previous build to the project's external repository (likely PyPi).
+Consente di controllare il file pyproject.toml per eventuali errori
+
+`**poetry show**` 
+
+Restituisce una ripartizione di tutti i pacchetti attualmente installati nel progetto, comprese le dipendenze delle dipendenze.
+
+## **Esecuzione dell'applicazione**
+
+`**poetry run [script-name]**` 
+
+Esegue lo script definito all'interno della sezione: [tool.poetry.scripts] del pyproject.toml
+
+## **Buildare e pubblicare il pacchetto (progetto)**
+
+`**poetry build**` 
+
+Consente di creare una build del codice sorgente e dell'archivio wheels
+
+`**poetry publish**` 
+
+Pubblica l'output della build all'interno di una repository esterna (come ad esempio Pypi)
 
 ## Poetry Getting Started
 
+Vediamo adesso come fare per inizializzare poetry all'interno di un nuovo progetto
+
 ```bash
-##Initialize poetry inside a folder
+##Inizializziamo poetry all'interno di una cartella
 poetry init
 
-#Or Create a new project
+#Oppure creiamo un nuovo progetto (crea anche una sotto cartella)
 poetry new <app_name>
 
-##Modify the pyproject.toml as u wish
+## Ora potete modificare il file: pyproject.toml come volete
 
-#if you want poetry venv inside the project folder do:
+#Se volete creare la cartella .venv all'interno del progetto fate:
 poetry config virtualenvs.in-project true
 
-#compile poetry and create the venv
+#Ora occore compilare poetry per creare il venv
+#E lanciare la shell con il venv che avete definito
 poetry shell
 
-#Add dependencies
+#Se necessario aggiornare pip
+pip install --upgrade pip 
+# Questo può essere necessario se compaiono degli errori nell'installazione delle dipendenze
+
+#Aggiungere una dipendenza e installarla
 poetry add pandas
 
-#Install dependencies
+#Aggiungere una dipendenza di sviluppo e installarla
+poetry add -D flake8
+
+#Se avete definito le librerie all'interno del pyproject.toml
+#È possibile installarle lanciando questo comando
 poetry install
 
-#launch a file
+#Per lanciare un file definito nel pyproject.toml
 poetry run <script>
 
-#Visualize where the env is inside a project (and also the list of libraries)
+#Visualizzare il path del virtual env all'interno del progetto (o fuori)
+#Con anche la lista delle librerie installate
 poetry show -v
 
-# You can also use the default python check command to see your currently python version
+# È sempre possibile visualizzare la versione di default di python in uso correntemente
 which python
 
-#Exit from poetry shell and environment
+#Per uscire dalla shell di poetry e dall'ambiente creato
 exit
 
-#To remove a Poetry venv
+#Rimuovere un ambiente virtuale (venv) utilizzanto poetry
 poetry env remove <python>
 ```
 
-## **Add poetry to existing project (with existing requirements.txt)**
+## Aggiungere poetry ad un progetto esistente (con dei requirements.txt)
 
 ```bash
-#initialize poetry inside directory
-#move to directory and
+
+#inizializzare poetry all'interno di una directory
 poetry init
 
-#compile the informations
+#compilare le informazioni all'interno del pyproject.toml
 
-## Import requirements.txt libraries to poetry
-cat requirements.txt|xargs poetry add
-
-#if you want poetry venv inside the project folder do:
+#Se si vuole utilizzare un virtual env all'interno del progetto fare:
 poetry config virtualenvs.in-project true
+
+## Importare i requirements.txt (librerie) all'interno di poetry
+cat requirements.txt|xargs poetry add
+# Non è "bellissimo" e potrebbe non funzionare
 ```
 
-**Generate poetry requirements.txt**
+**Generare da poetry un file: requirements.txt** 
 
 ```bash
 poetry export -f requirements.txt > requirements.txt
+
+#Un esempio più completo
+poetry export -f requirements.txt --output reqtest.txt --without-hashes
+#crea un file: reqtest.txt differente
+#senza gli hash (ovvero senza la firma delle librerie) 
+#è meno safe perchè con gli hash pip potrebbe avere problemi nell'installazione
 ```
 
 ## **Poetry in VSCode**
 
-Poetry is not yet integrated inside the vscode official python extension, so you have to manual tricky the configs.
+Poetry non è ancora integrato all'interno di vscode e nell'estensione ufficiale di Python, quindi per utilizzarlo con vscode è necessario configurarlo manualmente.
 
-- run in terminal: `**poetry env list --full-path`** and copy the path of the poetry venv path
-- In the project folder create a new folder called: .vscode
-- Inside the folder create a file called: settings.json
-- Inside the file add this config:
+Per consentire al progetto di utilizzare l'ambiente virtuale del progetto è necessario definire un file inserendo il path di riferimento dell'ambiente virtuale creato con poetry
+
+- lanciare nel terminale: `**poetry env list --full-path`** e copiare il path che si riferisce all'ambiente virtuale (venv) di poetry
+- All'interno del progetto creare una nuova cartella chiamata: .vscode
+- All'interno della cartella creare un file chiamato: `settings.json`
+- Inserire nel file la seguente configurazione
 
 ```bash
 {
-    "python.pythonPath": "<path to your venv copied>"
+    "python.pythonPath": "<path dell'ambiente venv copiato>"
 }
 ```
 
-- Restart vscode and by default python will use that config
+- Rilanciare vscode e in automatico quando aprirete un file .py verrà utilizzata la versione di Python che avete creato con Poetry
 
-Remember also to launch in terminal: poetry shell to activate the environment.
+Ricordarsi sempre di lanciare nel terminale: `poetry shell` per lanciare l'ambiente
 
-Remember not to push into your git config your vscode configurations!
+Ricordarsi di non pushare sulla vostra repository git remota le configurazioni di vscode appena create per non sovrascrivere quelle dei colleghi (inserite la cartella .vscode nel file `gitignore`)
 
-Another method
+Un altro metodo
 
-Launch in your project terminal
+Lanciare il progetto da terminale
 
 ```bash
-#tell poetry to generate the .venv
+#dire a poetry di generare in locale il virtualenv
 poetry config virtualenvs.in-project true --local
 poetry config virtualenvs.create true --local
 poetry config settings.virtualenvs.in-project true
 
-#then launch
+#quindi lanciare
 poetry install
 ```
 
-To generate a virtualenv folder inside the project folder, so VSCode can understand that this is the default virtualenv to use instead the global one.
+In questo modo generete un cartella chiamata: virtualenv all'interno del progetto, in questo modo vscode capirà che questo è il default virtualenv da utilizzare invece di quello globale
 
-If you want to stop using the .venv inside the project folder is possibile to do:
+Se si vuole fermare l'utilizzo del .venv all'interno del progetto è possibile fare:
 
 ```bash
 #tell poetry not to use venv inside the proj folder
-poetry config virtualenvs.in-project true --local
-poetry config virtualenvs.create true --local
-poetry config settings.virtualenvs.in-project true
+poetry config virtualenvs.in-project false --local
+poetry config virtualenvs.create false --local
+poetry config settings.virtualenvs.in-project false
 ```
 
-## Toml Example
+## Un esempio di Pyproject.toml
+
+Ecco un esempio di file pyproject.toml che potete utilizzare sui vostri progetti (ovviamente con gli opportuni cambiamenti e personalizzazioni)
 
 ```bash
 [tool.poetry]
@@ -270,21 +327,21 @@ run = "wsgi:main"
 issues = "https://github.com/jeydi/"
 ```
 
-# Update poetry
+# Aggiornare poetry
 
-Updating poetry to the latest stable version is simple
+Aggiornare poetry all'ultima versione stabile è semplice
 
 ```bash
-#update poetry to the last stable version
+#Aggiornare poetry all'ultima versione stabile
 poetry self update
 
-#if you want to install pre-release versions
+#Lanciare questo comando se invece volete installare la preview di poetry
 poetry self update --preview
 ```
 
-# Delete Poetry
+# Cancella poetry
 
-To uninstall poetry you can use this commands
+Per cancellare e rimuovere poetry è possibile eseguire questi comandi
 
 ```bash
 #Uninstall poetry
@@ -295,11 +352,11 @@ python get-poetry.py --uninstall
 POETRY_UNINSTALL=1 python get-poetry.py
 ```
 
-# Enable tab completion for bash or zsh
+# Abilitare il completamento per bash o zsh
 
-Poetry supports generating completion scripts for bash, zsh or fish.
+Poetry supporta il completamento automatico da terminale per diverse CLI come: bash, zsh o fish.
 
-If you want some help about this functionality please check: `poetry help completions`
+Se volete avere ulteriori dettagli su queste funzionalità potete lanciare: `poetry help completions`
 
 ```bash
 poetry completions bash > /etc/bash_completion.d/poetry.bash-completion
@@ -315,9 +372,9 @@ mkdir $ZSH_CUSTOM/plugins/poetry
 poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 ```
 
-You may need to restart your shell to see the changes.
+Dovrete riavviare la shell per poter vedere le modifiche
 
-Caution:
+Attenzione (alcuni dettagli):
 
 For `zsh` you must add the following line into `~/.zshrc` profile before `compinit`
 
@@ -336,15 +393,17 @@ plugins(
 
 # Deploy
 
-Using Poetry with Docker for Deploy
+Come utilizzare poetry con Docker in fase di deploy? 
+
+Ecco alcuni link interessanti
 
 - [https://medium.com/@harpalsahota/dockerizing-python-poetry-applications-1aa3acb76287](https://medium.com/@harpalsahota/dockerizing-python-poetry-applications-1aa3acb76287)
 - docker caching: [https://pythonspeed.com/articles/poetry-vs-docker-caching/](https://pythonspeed.com/articles/poetry-vs-docker-caching/)
 - Production Ready Docker packaging for python developers: [https://pythonspeed.com/docker/#articles-the-basics-of-docker-packaging](https://pythonspeed.com/docker/#articles-the-basics-of-docker-packaging)
 
-# Documentation and useful links
+# Documentazione e link utili
 
-Official Documentation (very very useful) **:** [https://python-poetry.org/docs/basic-usage/](https://python-poetry.org/docs/basic-usage/)
+Documentazione ufficiale (fatta molto bene) **:** [https://python-poetry.org/docs/basic-usage/](https://python-poetry.org/docs/basic-usage/)
 
 [https://hackersandslackers.com/python-poetry-package-manager/](https://hackersandslackers.com/python-poetry-package-manager/)
 
