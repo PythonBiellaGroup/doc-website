@@ -173,7 +173,7 @@ poetry config virtualenvs.in-project true
 poetry shell
 
 #Se necessario aggiornare pip
-pip install --upgrade pip 
+python -m pip install --upgrade pip
 # Questo può essere necessario se compaiono degli errori nell'installazione delle dipendenze
 
 #Aggiungere una dipendenza e installarla
@@ -230,6 +230,13 @@ poetry export -f requirements.txt --output reqtest.txt --without-hashes
 #crea un file: reqtest.txt differente
 #senza gli hash (ovvero senza la firma delle librerie) 
 #è meno safe perchè con gli hash pip potrebbe avere problemi nell'installazione
+```
+
+Attenzione può accadere in alcune situazioni di dover aggiornare pip per installare alcune librerie, per farlo una volta creato e attivato il vostro virtualenvironment con python fare:
+
+```bash
+#Aggiornare pip
+python -m pip install --upgrade pip
 ```
 
 ## **Poetry in VSCode**
