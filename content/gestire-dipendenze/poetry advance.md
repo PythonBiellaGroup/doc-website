@@ -246,6 +246,8 @@ Oltre ad essere un cattiva pratica in un progetto manderà in confusione poetry 
 
 [https://github.com/python-poetry/poetry/issues/236](https://github.com/python-poetry/poetry/issues/236)
 
+Se vi trovaste nella situazione di aver creato un modulo, una cartella o un file con lo stesso nome di una libreria il consiglio è quello di rinominare il file o cartella incriminata, eliminare il vostro virtualenvironment e lanciare nuovamente: poetry install per installare una versione pulita del virtualenv.
+
 ## **Poetry in VSCode**
 
 Poetry non è ancora integrato all'interno di vscode e nell'estensione ufficiale di Python, quindi per utilizzarlo con vscode è necessario configurarlo manualmente.
