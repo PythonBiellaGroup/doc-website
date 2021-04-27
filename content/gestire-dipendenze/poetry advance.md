@@ -238,6 +238,13 @@ Attenzione può accadere in alcune situazioni di dover aggiornare pip per instal
 #Aggiornare pip
 python -m pip install --upgrade pip
 ```
+Questo problema può verificarsi appena lanciate un'installazione di una libreria oppure fate `poetry install` o `poetry update`.
+
+**ATTENZIONE**: non chiamate nessun file o modulo, oppure il vostro progetto come un nome di una libreria che installerete utilizzando poetry.
+
+Oltre ad essere un cattiva pratica in un progetto manderà in confusione poetry dandovi un `AssertionError.` 
+
+[https://github.com/python-poetry/poetry/issues/236](https://github.com/python-poetry/poetry/issues/236)
 
 ## **Poetry in VSCode**
 
