@@ -1,5 +1,6 @@
 baseURL = "https://pythonbiellagroup.github.io/ModernPythonDevelopment/"
-languageCode = "en-us"
+languageCode = "en-US"
+defaultContentLanguage = "en"
 title = "Python Biella Group Learning Page"
 theme = "hugo-theme-learn"
 publishDir = "docs"
@@ -21,6 +22,7 @@ description = "Python Biella Group Reference Website and Guides"
 disableBreadcrumb = false
 showVisitedLinks = true
 disableLandingPage = false
+disableLandingPageButton = true
 disableNextPrev = false
 disableAssetsBusting = false
 themeVariant = "blue"
