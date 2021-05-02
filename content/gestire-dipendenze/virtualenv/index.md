@@ -3,7 +3,6 @@ title = "Virtualenv"
 date = 2021-03-28T20:10:53+02:00
 weight = 2
 chapter = false
-pre = "<b>2.1 </b>"
 tags = ["versions","venv","dipendenze"]
 +++
 ## Packaging (and Enviroments)
