@@ -253,6 +253,9 @@ Oppure impostare la versione di una determinata shell
 pyenv shell <version>
 ```
 
+### IMPORTANTE IN WINDOWS 10   
+Dopo aver installato la versione di Python global di pyenv è necessario eliminare dalla variabile di ambiente **PATH** i riferimenti al Python base installato inizialmente.  
+
 ## Virtualenvs with pyenv
 
 Pyenv ha un bellissimo plugin chiamato: `pyenv-virtualenv` che consente di gestire appunto i vari virtualenv in modo semplice.
