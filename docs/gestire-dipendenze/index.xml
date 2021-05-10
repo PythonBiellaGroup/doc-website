@@ -21,10 +21,10 @@ Venv: https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-e
     
     <item>
       <title>Pyenv-virtualenv</title>
-      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pyenv/</link>
       <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
       
-      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pyenv/</guid>
       <description>Pyenv mette a disposizione uno strumento ancora più efficace per costruire ambienti virtuali attraverso un plugin pyenv-virtualenv
 #Creare un virtualenv pyenv virtualenv 3.7.4 my-project #lista di tutti i virtual environments pyenv virtualenvs #attivare un virtualenv pyenv activate my-project #disattivare un virtualenv pyenv deactivate Oltre a virtualenv e pyenv-virtualenv ci sono altri strumenti molto utili e interessanti come:
  conda (che introduce anche il conda package manager) che è molto invasivo virtualfish virtualenvwrapper pipenv: molto citato in tantissimi tutorial, ma è veramente poco mantenuto (l&amp;rsquo;ultima versione risale al 2018 con 300+ issue aperte) e può causare diversi problemi in un progetto (oltre ad esserci diverse controversie legate al progetto: https://github.</description>

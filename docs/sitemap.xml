@@ -23,7 +23,7 @@
     <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/virtualenv/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/code-terminal/</loc>
+    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/terminal/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
     <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/struttura-progetto/</loc>
@@ -33,6 +33,9 @@
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
     <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/documentazione/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
   </url><url>
     <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/testing/</loc>
@@ -53,7 +56,7 @@
     <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-python/pyenv/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/</loc>
+    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pyenv/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
     <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/flake8/flake8/</loc>
@@ -89,6 +92,12 @@
     <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/dipendenze/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
   </url><url>
+    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/docs/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/documentazione/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
     <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/extra/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
   </url><url>
@@ -96,6 +105,9 @@
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
   </url><url>
     <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/ipython/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/mkdocs/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
   </url><url>
     <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/pyenv/</loc>

@@ -29,10 +29,10 @@ Aprendo sempre la Command Palette (premendo il tasto F1 oppure CTRL + SHIFT + P 
     
     <item>
       <title>Aggiungere code al terminale</title>
-      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/code-terminal/</link>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/terminal/</link>
       <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
       
-      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/code-terminal/</guid>
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/terminal/</guid>
       <description>Una feature molto interessante di visual studio code è l&amp;rsquo;aggiunta del comando code &amp;lt;file_or_folder&amp;gt; all&amp;rsquo;interno del terminale che vi aprirà una finestra di vscode in base al file o alla cartella su cui volete lavorare (ad esempio facendo code . potrete aprire la cartella corrente all&amp;rsquo;interno di vscode).
 Per farlo aprite la Command Palette e lanciate (cercando) il seguente comando: Shell command: Install ‘code’ command in the PATH
 Su windows è possibile installare la funzionalità anche flaggando Add to PATH durante la fase di installazione di vscode.</description>
