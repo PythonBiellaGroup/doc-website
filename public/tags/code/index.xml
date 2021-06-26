@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>code on Python Biella Group Learning Page</title>
-    <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/code/</link>
-    <description>Recent content in code on Python Biella Group Learning Page</description>
+    <title>code on Python Biella Group</title>
+    <link>/tags/code/</link>
+    <description>Recent content in code on Python Biella Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="/tags/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Code Style</title>
-      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/</link>
+      <link>/code-style/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/</guid>
+      <guid>/code-style/</guid>
       <description>Sezione 4 Code Style Quando si lavora su progetti e si conivide il codice con un team di lavoro è importante cercare di mantenere uno stesso stile di scrittura del codice in modo da uniformarsi ed evitare di fraintendersi.
 In Python esistono
  PEP8 = Default python style guide PEP257 = Docstring style guide  Alcuni esempi di PEP8:

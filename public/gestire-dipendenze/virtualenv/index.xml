@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualenv on Python Biella Group</title>
+    <link>/gestire-dipendenze/virtualenv/</link>
+    <description>Recent content in Virtualenv on Python Biella Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="/gestire-dipendenze/virtualenv/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

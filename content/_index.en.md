@@ -1,14 +1,13 @@
 +++
-title = "ModernPythonDevelopment"
-description = "Risorse per lo sviluppo moderno con Python"
+title = "Python Biella Group"
 date = 2021-03-28T20:10:53+02:00
-weight = 1
-chapter = true
-draft = false
+weight = 0
+chapter = false
 +++
 
-### Python Biella Group
+# Welcome
 
-# Modern Python Development
+Pages under construction.
+Please, change language.
 
-Guide e risorse per la serata
+Thank you!

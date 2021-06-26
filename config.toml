@@ -1,41 +1,66 @@
-baseURL = "https://pythonbiellagroup.github.io/ModernPythonDevelopment/"
-languageCode = "en-US"
-defaultContentLanguage = "en"
-title = "Python Biella Group Learning Page"
-theme = "hugo-theme-learn"
-publishDir = "docs"
+baseURL = "/"
+languageCode = "en-us"
+title = "Python Biella Group"
+theme = "pythonBG"
+defaultContentLanguage = "it"
 defaultContentLanguageInSubdir= true
 
-pygmentsUseClasses = true
-pygmentsCodeFences = true
 enableRobotsTXT = true
-staticDir = ["static"]
 
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
 [params]
-editURL = "https://github.com/PythonBiellaGroup/ModernPythonDevelopment/tree/master/content"
-author = "Andrea Guzzo"
-description = "Python Biella Group Reference Website and Guides"
-disableBreadcrumb = false
-showVisitedLinks = true
-disableLandingPage = false
-disableLandingPageButton = true
-disableNextPrev = false
-disableAssetsBusting = false
-themeVariant = "blue"
-version = "v0.1"
-landingPageURL = "/ModernPythonDevelopment/"
-landingPageName = "<i class='fas fa-home'></i> Home"
+  themeVariant = "blue"
+  showVisitedLinks = true
+  author = "Andrea Guzzo"
+  description = "Python Biella Group Reference Website and Guides"
+  version = "v0.2"
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-tags'></i> Tags"
-url = "/tags"
-weight = 30
+[languages]
+  [languages.it]
+    languageName = "Italiano"
+    title = "Benvenuto"
+    weight = 1
 
-[Languages]
-[Languages.en]
-landingPageURL = "/ModernPythonDevelopment/"
-landingPageName = "<i class='fas fa-home'></i> Redirect to Home"
+    [[languages.it.menu.shortcuts]] 
+      name = "<i class='fas fa-tags'></i> Tag"
+      identifier = "tag"
+      url = "/tags"
+      weight = 1
+    
+    [[languages.it.menu.shortcuts]] 
+      name = "<i class='fas fa-bullhorn'></i> Blog"
+      identifier = "blog"
+      url = "https://pythonbiella.herokuapp.com/main/"
+      weight = 2
+    
+    [[languages.it.menu.shortcuts]] 
+      name = "<i class='fab fa-github'></i> Github"
+      identifier = "repo"
+      url = "https://github.com/PythonBiellaGroup/"
+      weight = 3
+    
+    [[languages.it.menu.shortcuts]] 
+      name = "<i class='fab fa-telegram'></i> Telegram"
+      identifier = "telegram"
+      url = "https://t.me/joinchat/AAAAAFGSWcxhSln_SRhseQ"
+      weight = 4
+
+    [[languages.it.menu.shortcuts]] 
+      name = "<i class='fab fa-youtube'></i> Youtube"
+      identifier = "youtube"
+      url = "https://www.youtube.com/channel/UCkvQcNjmC_duLhvDxeUPJAg"
+      weight = 5
+  
+  [languages.en]
+    languageName = "English"
+    title = "Python Biella Group"
+    weight = 2
+  
+  [[languages.en.menu.shortcuts]] 
+    name = "<i class='fas fa-tags'></i> Tags"
+    identifier = "tag"
+    url = "/tags"
+    weight = 2

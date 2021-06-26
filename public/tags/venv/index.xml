@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>venv on Python Biella Group Learning Page</title>
-    <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/venv/</link>
-    <description>Recent content in venv on Python Biella Group Learning Page</description>
+    <title>venv on Python Biella Group</title>
+    <link>/tags/venv/</link>
+    <description>Recent content in venv on Python Biella Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/venv/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="/tags/venv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gestire Dipendenze</title>
-      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/</link>
+      <link>/gestire-dipendenze/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/</guid>
+      <guid>/gestire-dipendenze/</guid>
       <description>Sezione 2 Gestione delle dipendenze Per gestire le dipendenze da Python 3.3 esiste un built-in module chiamato venv che consente di creare dei virtualenv all&amp;rsquo;interno del vostro progetto.
 Questa ovviamente è la &amp;ldquo;vecchia maniera&amp;rdquo; però è sempre funzionante
 python -m venv my-virtualenv Il comando consente di creare una directory my-virtualenv che contiene:
@@ -21,10 +21,10 @@ python -m venv my-virtualenv Il comando consente di creare una directory my-virt
     
     <item>
       <title>Struttura di progetto</title>
-      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/struttura-progetto/</link>
+      <link>/struttura-di-progetto/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
-      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/struttura-progetto/</guid>
+      <guid>/struttura-di-progetto/</guid>
       <description>Sezione 3 Struttura di progetto Come strutturare un progetto in Python?
 Questa ovviamente è una domanda molto comune, ma allo stesso tempo molto difficile, non esiste una risposta corretta.
 Python non forza l&amp;rsquo;utilizzo di una determinata struttura, tuttavia ci sono alcune best practice che è possibile tenere a mente e alcune considerazioni che si possono (e spesso devono) fare.
