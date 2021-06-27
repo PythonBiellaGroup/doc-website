@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>venv on Benvenuto</title>
+    <link>/it/tags/venv/</link>
+    <description>Recent content in venv on Benvenuto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="/it/tags/venv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gestire Dipendenze</title>
+      <link>/it/gestire-dipendenze/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>/it/gestire-dipendenze/</guid>
+      <description>Sezione 2 Gestione delle dipendenze Per gestire le dipendenze da Python 3.3 esiste un built-in module chiamato venv che consente di creare dei virtualenv all&amp;rsquo;interno del vostro progetto.
+Questa ovviamente è la &amp;ldquo;vecchia maniera&amp;rdquo; però è sempre funzionante
+python -m venv my-virtualenv Il comando consente di creare una directory my-virtualenv che contiene:
+ python binary pip/easy_install/wheel binary activation script binary files utilizzate da Python  Per attivare un virtualenv si può fare:</description>
+    </item>
+    
+    <item>
+      <title>Struttura di progetto</title>
+      <link>/it/struttura-di-progetto/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>/it/struttura-di-progetto/</guid>
+      <description>Sezione 3 Struttura di progetto Come strutturare un progetto in Python?
+Questa ovviamente è una domanda molto comune, ma allo stesso tempo molto difficile, non esiste una risposta corretta.
+Python non forza l&amp;rsquo;utilizzo di una determinata struttura, tuttavia ci sono alcune best practice che è possibile tenere a mente e alcune considerazioni che si possono (e spesso devono) fare.
+Un Modulo in Python è un contenitore che racchiude tutte le vostre funzioni o classe che vi serve importare da un&amp;rsquo;altra parte in modo da riciclare quello che avete scritto.</description>
+    </item>
+    
+  </channel>
+</rss>

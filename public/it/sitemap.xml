@@ -2,138 +2,195 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/linter/</loc>
-    <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-python/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/python-version/</loc>
-    <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/code-terminal/</loc>
-    <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/struttura-progetto/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/debugger/</loc>
-    <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/testing/</loc>
-    <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+    <loc>/it/gestire-versioni-di-python/</loc>
+    <lastmod>2021-06-24T19:19:56+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/en/"
+                href="/en/gestire-versioni-di-python/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/"
+                href="/it/gestire-versioni-di-python/"
                 />
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/visual-studio-code/</loc>
+    <loc>/it/gestire-dipendenze/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/repl/</loc>
+    <loc>/it/struttura-di-progetto/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/black/</loc>
+    <loc>/it/code-style/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/documentare-il-codice/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/visual-studio-code/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/repl/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/code-style/black/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/struttura-progetto/import-relativi/</loc>
+    <loc>/it/struttura-di-progetto/import-relativi/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pyenv-virtualenv/</loc>
+    <loc>/it/visual-studio-code/installare-un-linter/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/flake8/</loc>
+    <loc>/it/gestire-versioni-di-python/pyenv/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/struttura-progetto/import-circolari/</loc>
+    <loc>/it/materiale-utile/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/gestire-dipendenze/virtualenv/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/gestire-dipendenze/pyenv-virtualenv/</loc>
+    <lastmod>2021-06-24T19:48:12+02:00</lastmod>
+  </url><url>
+    <loc>/it/code-style/flake8/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/poetry/</loc>
+    <loc>/it/struttura-di-progetto/import-circolari/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/code-style/bandit/</loc>
+    <loc>/it/gestire-versioni-di-python/pyenv-avanzato/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/struttura-progetto/cookiecutter/</loc>
+    <loc>/it/visual-studio-code/utilizzare-una-versione-di-python/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/gestire-dipendenze/pipx/</loc>
+    <loc>/it/code-style/bandit/</loc>
+    <lastmod>2021-06-25T19:55:25+02:00</lastmod>
+  </url><url>
+    <loc>/it/gestire-dipendenze/poetry/</loc>
+    <lastmod>2021-06-24T19:48:20+02:00</lastmod>
+  </url><url>
+    <loc>/it/visual-studio-code/aggiungere-code-al-terminale/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/materiale-utile/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+    <loc>/it/struttura-di-progetto/cookiecutter/</loc>
+    <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/code/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+    <loc>/it/gestire-dipendenze/poetry-advance/</loc>
+    <lastmod>2021-06-24T19:48:30+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/dipendenze/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+    <loc>/it/struttura-di-progetto/costruire-un-progetto/</loc>
+    <lastmod>2021-05-10T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/extra/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+    <loc>/it/visual-studio-code/usare-il-debbuger/</loc>
+    <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/ide/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+    <loc>/it/gestire-dipendenze/pipx/</loc>
+    <lastmod>2021-06-24T19:48:38+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/ipython/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+    <loc>/it/visual-studio-code/testing/</loc>
+    <lastmod>2021-03-28T23:54:10+02:00</lastmod>
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/pyenv/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/repl/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/style/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+    <loc>/it/tags/pyenv/</loc>
+    <lastmod>2021-06-24T19:19:56+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/en/tags/"
+                href="/en/tags/pyenv/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/"
+                href="/it/tags/pyenv/"
                 />
   </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/venv/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/versions/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/tags/vscode/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url><url>
-    <loc>https://pythonbiellagroup.github.io/ModernPythonDevelopment/categories/</loc>
+    <loc>/it/tags/</loc>
+    <lastmod>2021-06-24T19:19:56+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/en/categories/"
+                href="/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/categories/"
+                href="/it/tags/"
+                />
+  </url><url>
+    <loc>/it/tags/versions/</loc>
+    <lastmod>2021-06-24T19:19:56+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/versions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="/it/tags/versions/"
+                />
+  </url><url>
+    <loc>/it/tags/code/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/tags/dipendenze/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/tags/docs/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/tags/documentazione/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/tags/extra/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/tags/ide/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/tags/ipython/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/tags/mkdocs/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="/it/"
+                />
+  </url><url>
+    <loc>/it/tags/repl/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/tags/style/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/tags/venv/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/tags/vscode/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+  </url><url>
+    <loc>/it/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="/it/categories/"
                 />
   </url>
 </urlset>

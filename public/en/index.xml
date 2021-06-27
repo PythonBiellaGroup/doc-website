@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python Biella Group Learning Page</title>
-    <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/en/</link>
-    <description>Recent content on Python Biella Group Learning Page</description>
+    <title>Python Biella Group</title>
+    <link>/en/</link>
+    <description>Recent content on Python Biella Group</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/en/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
