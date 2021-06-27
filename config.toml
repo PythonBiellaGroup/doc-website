@@ -1,4 +1,4 @@
-baseURL = "http://pythonbiellagroup.it/"
+baseURL = "https://pythonbiellagroup.it/"
 languageCode = "en-us"
 title = "Python Biella Group"
 theme = "pythonBG"
