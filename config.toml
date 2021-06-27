@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://pythonbiellagroup.github.io/ModernPythonDevelopment/"
 languageCode = "en-us"
 title = "Python Biella Group"
 theme = "pythonBG"

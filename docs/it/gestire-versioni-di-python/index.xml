@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gestire Versioni Di Python on Benvenuto</title>
+    <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/gestire-versioni-di-python/</link>
+    <description>Recent content in Gestire Versioni Di Python on Benvenuto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Jun 2021 19:19:56 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/gestire-versioni-di-python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pyenv</title>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/gestire-versioni-di-python/pyenv/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/gestire-versioni-di-python/pyenv/</guid>
+      <description>Pyenv consente di gestire diverse versioni di python installate nella vostra macchina, consentendo di gestirle in modo molto semplice e veloce.
+È semplice e non troppo intrusivo, inoltre potete utilizzarlo su qualsiasi sistema operativo
+ Consente di cambiare la versione globale di python oppure locale per ogni progetto o utente Consente di gestire una versione locale di ogni progetto con la propria specifica versione di python Permette di fare override della versione di Python come variabili d&amp;rsquo;ambiente (non dovete più gestirle a mano Consente di ricercare diverse versioni di python e gestirle (con tox)  Alcuni aspetti molto importanti</description>
+    </item>
+    
+    <item>
+      <title>Pyenv avanzato</title>
+      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/gestire-versioni-di-python/pyenv-avanzato/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/gestire-versioni-di-python/pyenv-avanzato/</guid>
+      <description>In questa sezione avanzata sono presenti appunti, best practice e guide per approfondire tutto ciò che riguarda Pyenv
+Documentazione utile https://realpython.com/intro-to-pyenv/
+Pyenv with Poetry
+https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/
+Guida per configurare pyenv on Mac
+https://opensource.com/article/20/4/pyenv
+Notes on a Github Gist
+https://gist.github.com/Geoyi/f55ed54d24cc9ff1c14bd95fac21c042
+Pyenv is a python installation manager. It allows you to install and run multiple python installations, on the same machine.
+Pyenv manages the different versions for you, so that you will avoid the chaos illustrated in the above picture.</description>
+    </item>
+    
+  </channel>
+</rss>
