@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gestire Dipendenze on Benvenuto</title>
+    <link>/it/gestire-dipendenze/</link>
+    <description>Recent content in Gestire Dipendenze on Benvenuto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="/it/gestire-dipendenze/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Virtualenv</title>
+      <link>/it/gestire-dipendenze/virtualenv/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>/it/gestire-dipendenze/virtualenv/</guid>
+      <description>Packaging (and Enviroments) Virtualenv
+Pipenv vs virtualenv: https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853
+Venv: https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-environments-a53d1e191490
+# install virtualenv pip install virtualenv #Prima di lanciare il successivo comando controllare di essere su conda e fare: conda activate development #la versione di conda che usate deve essere &amp;gt;= versione desiderata # generate a new virtualenv in a specific path virtualenv --python=3.6 &amp;lt;path_nome_env&amp;gt; #### UNIX (mac and linux) source &amp;lt;path_nome_env&amp;gt;/bin/activate #### WINDOWS &amp;lt;path_nome_env&amp;gt;\scripts\activate #### Visual Studio Code  #(install Microsoft Python Extension and then click on python in the bottom tab) #Windows navigate to -&amp;gt; &amp;lt;path_nome_env&amp;gt;\scripts\&amp;lt;python3.</description>
+    </item>
+    
+    <item>
+      <title>Pyenv-virtualenv</title>
+      <link>/it/gestire-dipendenze/pyenv-virtualenv/</link>
+      <pubDate>Thu, 24 Jun 2021 19:48:12 +0200</pubDate>
+      
+      <guid>/it/gestire-dipendenze/pyenv-virtualenv/</guid>
+      <description>Pyenv mette a disposizione uno strumento ancora più efficace per costruire ambienti virtuali attraverso un plugin pyenv-virtualenv
+#Creare un virtualenv pyenv virtualenv 3.7.4 my-project #lista di tutti i virtual environments pyenv virtualenvs #attivare un virtualenv pyenv activate my-project #disattivare un virtualenv pyenv deactivate Oltre a virtualenv e pyenv-virtualenv ci sono altri strumenti molto utili e interessanti come:
+ conda (che introduce anche il conda package manager) che è molto invasivo virtualfish virtualenvwrapper pipenv: molto citato in tantissimi tutorial, ma è veramente poco mantenuto (l&amp;rsquo;ultima versione risale al 2018 con 300+ issue aperte) e può causare diversi problemi in un progetto (oltre ad esserci diverse controversie legate al progetto: https://github.</description>
+    </item>
+    
+    <item>
+      <title>Poetry</title>
+      <link>/it/gestire-dipendenze/poetry/</link>
+      <pubDate>Thu, 24 Jun 2021 19:48:20 +0200</pubDate>
+      
+      <guid>/it/gestire-dipendenze/poetry/</guid>
+      <description>https://python-poetry.org/
+Poetry è un nuovo modo di gestire progetti con Python che si adatta ai linguaggi e ai framework moderni più famosi (come ad esempio node con npm o nuget per .NET)
+È a tutti gli effetti un package and dependency management tool che consente quindi di gestire pacchetti, dipendenze, versioni unendo sia la gestione della versione di python in un determinato progetto con le rispettive dipendenze oltre ad introdurre concetti molto più avanzati.</description>
+    </item>
+    
+    <item>
+      <title>Poetry Advance</title>
+      <link>/it/gestire-dipendenze/poetry-advance/</link>
+      <pubDate>Thu, 24 Jun 2021 19:48:30 +0200</pubDate>
+      
+      <guid>/it/gestire-dipendenze/poetry-advance/</guid>
+      <description>Poetry è il più sofisticato sistema di gestione delle dipendenze su Python disponibile (nel 2020).
+Consente di andare al di là della semplice gestione delle dipendenze, con funzioni come: generare .lock files, consentire di fare scaffolding dei progetti con molte possibilità di personalizzazione, il tutto disponibile via CLI.
+Installare poetry e includere l&amp;rsquo;installazione curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 #aggiungere poetry alle variabili di ambiente della sessione shell corrente source $HOME/.poetry/env #controllare se poetry è installato correttamente poetry --version Per installare poetry usando windows è possibile lanciare lo stesso comando usando la git bash in modo da poter usare il comando curl (attenzione: conviene utilizzare git bash come amministratore)</description>
+    </item>
+    
+    <item>
+      <title>Pipx</title>
+      <link>/it/gestire-dipendenze/pipx/</link>
+      <pubDate>Thu, 24 Jun 2021 19:48:38 +0200</pubDate>
+      
+      <guid>/it/gestire-dipendenze/pipx/</guid>
+      <description>È vero che ogni progetto dovrebbe sempre avere le proprie dipendenze e vivere in maniera atomica e indipendente rispetto agli altri progetti.
+Tuttavia ci sono alcune librerie che possono essere globali su tutta la macchina e su tutto il sistema.
+Alcune di queste librerie sono quelle che servono per gestire la qualità del codice o lo stile, come ad esempio black o flake8
+Ecco quindi che viene in soccorso pipx che consente di installare queste librerie globali e usarle globalmente su tutta la macchina.</description>
+    </item>
+    
+  </channel>
+</rss>
