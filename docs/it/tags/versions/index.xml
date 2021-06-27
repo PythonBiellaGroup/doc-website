@@ -1,56 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>versions on Benvenuto</title>
-    <link>http://pythonbiellagroup.it/it/tags/versions/</link>
-    <description>Recent content in versions on Benvenuto</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 24 Jun 2021 19:19:56 +0200</lastBuildDate><atom:link href="http://pythonbiellagroup.it/it/tags/versions/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Gestire Versioni Di Python</title>
-      <link>http://pythonbiellagroup.it/it/gestire-versioni-di-python/</link>
-      <pubDate>Thu, 24 Jun 2021 19:19:56 +0200</pubDate>
-      
-      <guid>http://pythonbiellagroup.it/it/gestire-versioni-di-python/</guid>
-      <description>Sezione 1 Gestire le versioni di Python In questa prima sezione vediamo come gestire le proprie installazioni di python all&amp;rsquo;interno della macchina sfruttando: pyenv</description>
-    </item>
-    
-    <item>
-      <title>Gestire Dipendenze</title>
-      <link>http://pythonbiellagroup.it/it/gestire-dipendenze/</link>
-      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
-      
-      <guid>http://pythonbiellagroup.it/it/gestire-dipendenze/</guid>
-      <description>Sezione 2 Gestione delle dipendenze Per gestire le dipendenze da Python 3.3 esiste un built-in module chiamato venv che consente di creare dei virtualenv all&amp;rsquo;interno del vostro progetto.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>versions on Benvenuto</title><link>https://pythonbiellagroup.it/it/tags/versions/</link><description>Recent content in versions on Benvenuto</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 24 Jun 2021 19:19:56 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/it/tags/versions/index.xml" rel="self" type="application/rss+xml"/><item><title>Gestire Versioni Di Python</title><link>https://pythonbiellagroup.it/it/gestire-versioni-di-python/</link><pubDate>Thu, 24 Jun 2021 19:19:56 +0200</pubDate><guid>https://pythonbiellagroup.it/it/gestire-versioni-di-python/</guid><description>Sezione 1 Gestire le versioni di Python In questa prima sezione vediamo come gestire le proprie installazioni di python all&amp;rsquo;interno della macchina sfruttando: pyenv</description></item><item><title>Gestire Dipendenze</title><link>https://pythonbiellagroup.it/it/gestire-dipendenze/</link><pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate><guid>https://pythonbiellagroup.it/it/gestire-dipendenze/</guid><description>Sezione 2 Gestione delle dipendenze Per gestire le dipendenze da Python 3.3 esiste un built-in module chiamato venv che consente di creare dei virtualenv all&amp;rsquo;interno del vostro progetto.
 Questa ovviamente è la &amp;ldquo;vecchia maniera&amp;rdquo; però è sempre funzionante
 python -m venv my-virtualenv Il comando consente di creare una directory my-virtualenv che contiene:
- python binary pip/easy_install/wheel binary activation script binary files utilizzate da Python  Per attivare un virtualenv si può fare:</description>
-    </item>
-    
-    <item>
-      <title>Struttura di progetto</title>
-      <link>http://pythonbiellagroup.it/it/struttura-di-progetto/</link>
-      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
-      
-      <guid>http://pythonbiellagroup.it/it/struttura-di-progetto/</guid>
-      <description>Sezione 3 Struttura di progetto Come strutturare un progetto in Python?
+python binary pip/easy_install/wheel binary activation script binary files utilizzate da Python Per attivare un virtualenv si può fare:</description></item><item><title>Struttura di progetto</title><link>https://pythonbiellagroup.it/it/struttura-di-progetto/</link><pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate><guid>https://pythonbiellagroup.it/it/struttura-di-progetto/</guid><description>Sezione 3 Struttura di progetto Come strutturare un progetto in Python?
 Questa ovviamente è una domanda molto comune, ma allo stesso tempo molto difficile, non esiste una risposta corretta.
 Python non forza l&amp;rsquo;utilizzo di una determinata struttura, tuttavia ci sono alcune best practice che è possibile tenere a mente e alcune considerazioni che si possono (e spesso devono) fare.
-Un Modulo in Python è un contenitore che racchiude tutte le vostre funzioni o classe che vi serve importare da un&amp;rsquo;altra parte in modo da riciclare quello che avete scritto.</description>
-    </item>
-    
-    <item>
-      <title>Code Style</title>
-      <link>http://pythonbiellagroup.it/it/code-style/</link>
-      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
-      
-      <guid>http://pythonbiellagroup.it/it/code-style/</guid>
-      <description>Sezione 4 Code Style Quando si lavora su progetti e si conivide il codice con un team di lavoro è importante cercare di mantenere uno stesso stile di scrittura del codice in modo da uniformarsi ed evitare di fraintendersi.
+Un Modulo in Python è un contenitore che racchiude tutte le vostre funzioni o classe che vi serve importare da un&amp;rsquo;altra parte in modo da riciclare quello che avete scritto.</description></item><item><title>Code Style</title><link>https://pythonbiellagroup.it/it/code-style/</link><pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate><guid>https://pythonbiellagroup.it/it/code-style/</guid><description>Sezione 4 Code Style Quando si lavora su progetti e si conivide il codice con un team di lavoro è importante cercare di mantenere uno stesso stile di scrittura del codice in modo da uniformarsi ed evitare di fraintendersi.
 In Python esistono
- PEP8 = Default python style guide PEP257 = Docstring style guide  Alcuni esempi di PEP8:
- Quando spazi si usano per l&amp;rsquo;indentazione = 4 spazi Come indentare le parentesi Lunghezza della linea di codice predefinita (79 caratteri per il codice e 72 caratteri per i commenti e docstrings) Come configurare gli import &amp;hellip;  Tuttavia nonostante le linee guida di PEP8 ci sono molte cose su cui di può discutere e che non sono chiare, lasciando spesso anche troppa libertà.</description>
-    </item>
-    
-  </channel>
-</rss>
+PEP8 = Default python style guide PEP257 = Docstring style guide Alcuni esempi di PEP8:
+Quando spazi si usano per l&amp;rsquo;indentazione = 4 spazi Come indentare le parentesi Lunghezza della linea di codice predefinita (79 caratteri per il codice e 72 caratteri per i commenti e docstrings) Come configurare gli import &amp;hellip; Tuttavia nonostante le linee guida di PEP8 ci sono molte cose su cui di può discutere e che non sono chiare, lasciando spesso anche troppa libertà.</description></item></channel></rss>

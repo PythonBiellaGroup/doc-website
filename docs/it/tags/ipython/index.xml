@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ipython on Benvenuto</title>
-    <link>http://pythonbiellagroup.it/it/tags/ipython/</link>
-    <description>Recent content in ipython on Benvenuto</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="http://pythonbiellagroup.it/it/tags/ipython/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>REPL</title>
-      <link>http://pythonbiellagroup.it/it/repl/</link>
-      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
-      
-      <guid>http://pythonbiellagroup.it/it/repl/</guid>
-      <description>Sezione 6 REPL REPL vuol dire: READ - EVAL - PRINT - LOOP.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ipython on Benvenuto</title><link>https://pythonbiellagroup.it/it/tags/ipython/</link><description>Recent content in ipython on Benvenuto</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/it/tags/ipython/index.xml" rel="self" type="application/rss+xml"/><item><title>REPL</title><link>https://pythonbiellagroup.it/it/repl/</link><pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate><guid>https://pythonbiellagroup.it/it/repl/</guid><description>Sezione 6 REPL REPL vuol dire: READ - EVAL - PRINT - LOOP.
 Si riferisce a tutti gli strumenti che consentono di aprire una versione di Python daterminale e in modo dinamico provare codice e vederne subito il risultato in modo interattivo.
 Python REPL che viene installato di default insieme alla versione di python è carino, ma spesso molto basico e non conveniente da utilizzare per cose complicate.
-Ci sono alcune alternative, la più comune e popolare è certamente: iPython che è lo stesso REPL che gira dietro a Jupyter Notebooks e consente di utilizzare appunto la scrittura a Notebook.</description>
-    </item>
-    
-  </channel>
-</rss>
+Ci sono alcune alternative, la più comune e popolare è certamente: iPython che è lo stesso REPL che gira dietro a Jupyter Notebooks e consente di utilizzare appunto la scrittura a Notebook.</description></item></channel></rss>
