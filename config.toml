@@ -4,6 +4,7 @@ title = "Python Biella Group"
 theme = "pythonBG"
 defaultContentLanguage = "it"
 defaultContentLanguageInSubdir= true
+publishDir = "docs"
 
 enableRobotsTXT = true
 
