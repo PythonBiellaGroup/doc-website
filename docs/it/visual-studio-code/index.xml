@@ -1,63 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Visual Studio Code on Benvenuto</title>
-    <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/</link>
-    <description>Recent content in Visual Studio Code on Benvenuto</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installare un linter</title>
-      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/installare-un-linter/</link>
-      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
-      
-      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/installare-un-linter/</guid>
-      <description>Come abbiamo visto i linter sono i vostri migliori amici per controllare, durante la scrittura del codice, che tutto sia ok.
-Per selezionare un linter andate nei comandi (premendo il tasto F1 oppure CTRL + SHIFT + P o facendo View &amp;gt; Command Palette) e scrivete: &amp;gt; python: Select Linter . Selezionate quindi il linter che più vi piace (vi consiglio flake 8 ).</description>
-    </item>
-    
-    <item>
-      <title>Utilizzare una versione di Python</title>
-      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/utilizzare-una-versione-di-python/</link>
-      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
-      
-      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/utilizzare-una-versione-di-python/</guid>
-      <description>Quando siete all&amp;rsquo;interno di un progetto e aprite un file .py vi verrà chiesto di utilizzare una particolare versione di python che potete anche visualizzarla in basso a destra su vscode (ovviamente dovete installare almeno l&amp;rsquo;estensione Python prima). Premendo sulla scritta potrete selezionare una determinata versione di Python.
-Aprendo sempre la Command Palette (premendo il tasto F1 oppure CTRL + SHIFT + P o facendo View &amp;gt; Command Palette ) potete scrivere : &amp;gt; python: Select Interpreter per selezionare l&amp;rsquo;interprete python che più vi aggrada (ad esempio il vostro .</description>
-    </item>
-    
-    <item>
-      <title>Aggiungere code al terminale</title>
-      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/aggiungere-code-al-terminale/</link>
-      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
-      
-      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/aggiungere-code-al-terminale/</guid>
-      <description>Una feature molto interessante di visual studio code è l&amp;rsquo;aggiunta del comando code &amp;lt;file_or_folder&amp;gt; all&amp;rsquo;interno del terminale che vi aprirà una finestra di vscode in base al file o alla cartella su cui volete lavorare (ad esempio facendo code . potrete aprire la cartella corrente all&amp;rsquo;interno di vscode).
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Visual Studio Code on Benvenuto</title><link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/</link><description>Recent content in Visual Studio Code on Benvenuto</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Installare un linter</title><link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/installare-un-linter/</link><pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate><guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/installare-un-linter/</guid><description>Come abbiamo visto i linter sono i vostri migliori amici per controllare, durante la scrittura del codice, che tutto sia ok.
+Per selezionare un linter andate nei comandi (premendo il tasto F1 oppure CTRL + SHIFT + P o facendo View &amp;gt; Command Palette) e scrivete: &amp;gt; python: Select Linter . Selezionate quindi il linter che più vi piace (vi consiglio flake 8 ).</description></item><item><title>Utilizzare una versione di Python</title><link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/utilizzare-una-versione-di-python/</link><pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate><guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/utilizzare-una-versione-di-python/</guid><description>Quando siete all&amp;rsquo;interno di un progetto e aprite un file .py vi verrà chiesto di utilizzare una particolare versione di python che potete anche visualizzarla in basso a destra su vscode (ovviamente dovete installare almeno l&amp;rsquo;estensione Python prima). Premendo sulla scritta potrete selezionare una determinata versione di Python.
+Aprendo sempre la Command Palette (premendo il tasto F1 oppure CTRL + SHIFT + P o facendo View &amp;gt; Command Palette ) potete scrivere : &amp;gt; python: Select Interpreter per selezionare l&amp;rsquo;interprete python che più vi aggrada (ad esempio il vostro .</description></item><item><title>Aggiungere code al terminale</title><link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/aggiungere-code-al-terminale/</link><pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate><guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/aggiungere-code-al-terminale/</guid><description>Una feature molto interessante di visual studio code è l&amp;rsquo;aggiunta del comando code &amp;lt;file_or_folder&amp;gt; all&amp;rsquo;interno del terminale che vi aprirà una finestra di vscode in base al file o alla cartella su cui volete lavorare (ad esempio facendo code . potrete aprire la cartella corrente all&amp;rsquo;interno di vscode).
 Per farlo aprite la Command Palette e lanciate (cercando) il seguente comando: Shell command: Install ‘code’ command in the PATH
-Su windows è possibile installare la funzionalità anche flaggando Add to PATH durante la fase di installazione di vscode.</description>
-    </item>
-    
-    <item>
-      <title>Usare il debugger</title>
-      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/usare-il-debbuger/</link>
-      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
-      
-      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/usare-il-debbuger/</guid>
-      <description>Per usare il debugger su vscode e quindi lanciare diversi file è possibile creare per ogni progetto una particolare configurazione di impostazioni che verranno utilizzate dal debugger.
+Su windows è possibile installare la funzionalità anche flaggando Add to PATH durante la fase di installazione di vscode.</description></item><item><title>Usare il debugger</title><link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/usare-il-debbuger/</link><pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate><guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/usare-il-debbuger/</guid><description>Per usare il debugger su vscode e quindi lanciare diversi file è possibile creare per ogni progetto una particolare configurazione di impostazioni che verranno utilizzate dal debugger.
 Inoltre VSCode quando andate sulla sezione di debug mette a disposizione uno strumento che consente di generare una particolare configurazione in base al framework o funzionalità che state cercando di usare tramite un template
-Con questa procedura verrà costruito un file: launch.json all&amp;rsquo;interno della directory di progetto: .</description>
-    </item>
-    
-    <item>
-      <title>Testing</title>
-      <link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/testing/</link>
-      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
-      
-      <guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/testing/</guid>
-      <description>Una feature nascosta all&amp;rsquo;interno di VSCode una volta installata l&amp;rsquo;estensione di Python è la possibilità di eseguire test tramite interfaccia con Python.
-Per usufruire di questa funzionalità: Aprire la Command Palette e fare: Python: Configure Tests e dall&amp;rsquo;elenco dei framework di test che vi compariranno selezionare il vostro framework preferito (ad esempio pytest).</description>
-    </item>
-    
-  </channel>
-</rss>
+Con questa procedura verrà costruito un file: launch.json all&amp;rsquo;interno della directory di progetto: .</description></item><item><title>Testing</title><link>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/testing/</link><pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate><guid>https://pythonbiellagroup.github.io/ModernPythonDevelopment/it/visual-studio-code/testing/</guid><description>Una feature nascosta all&amp;rsquo;interno di VSCode una volta installata l&amp;rsquo;estensione di Python è la possibilità di eseguire test tramite interfaccia con Python.
+Per usufruire di questa funzionalità: Aprire la Command Palette e fare: Python: Configure Tests e dall&amp;rsquo;elenco dei framework di test che vi compariranno selezionare il vostro framework preferito (ad esempio pytest).</description></item></channel></rss>
