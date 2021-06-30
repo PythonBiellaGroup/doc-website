@@ -1,1 +1,94 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://pythonbiellagroup.it/en/gestire-versioni-di-python/</loc><lastmod>2021-06-24T19:19:56+02:00</lastmod><xhtml:link rel="alternate" hreflang="it" href="https://pythonbiellagroup.it/it/gestire-versioni-di-python/"/><xhtml:link rel="alternate" hreflang="en" href="https://pythonbiellagroup.it/en/gestire-versioni-di-python/"/></url><url><loc>https://pythonbiellagroup.it/en/tags/pyenv/</loc><lastmod>2021-06-24T19:19:56+02:00</lastmod><xhtml:link rel="alternate" hreflang="it" href="https://pythonbiellagroup.it/it/tags/pyenv/"/><xhtml:link rel="alternate" hreflang="en" href="https://pythonbiellagroup.it/en/tags/pyenv/"/></url><url><loc>https://pythonbiellagroup.it/en/tags/</loc><lastmod>2021-06-24T19:19:56+02:00</lastmod><xhtml:link rel="alternate" hreflang="it" href="https://pythonbiellagroup.it/it/tags/"/><xhtml:link rel="alternate" hreflang="en" href="https://pythonbiellagroup.it/en/tags/"/></url><url><loc>https://pythonbiellagroup.it/en/tags/versions/</loc><lastmod>2021-06-24T19:19:56+02:00</lastmod><xhtml:link rel="alternate" hreflang="it" href="https://pythonbiellagroup.it/it/tags/versions/"/><xhtml:link rel="alternate" hreflang="en" href="https://pythonbiellagroup.it/en/tags/versions/"/></url><url><loc>https://pythonbiellagroup.it/en/</loc><lastmod>2021-03-28T20:10:53+02:00</lastmod><xhtml:link rel="alternate" hreflang="it" href="https://pythonbiellagroup.it/it/"/><xhtml:link rel="alternate" hreflang="en" href="https://pythonbiellagroup.it/en/"/></url><url><loc>https://pythonbiellagroup.it/en/categories/</loc><xhtml:link rel="alternate" hreflang="it" href="https://pythonbiellagroup.it/it/categories/"/><xhtml:link rel="alternate" hreflang="en" href="https://pythonbiellagroup.it/en/categories/"/></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://pythonbiellagroup.it/en/gestire-versioni-di-python/</loc>
+    <lastmod>2021-06-24T19:19:56+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://pythonbiellagroup.it/it/gestire-versioni-di-python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pythonbiellagroup.it/en/gestire-versioni-di-python/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://pythonbiellagroup.it/en/tags/pyenv/</loc>
+    <lastmod>2021-06-24T19:19:56+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://pythonbiellagroup.it/it/tags/pyenv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pythonbiellagroup.it/en/tags/pyenv/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://pythonbiellagroup.it/en/tags/</loc>
+    <lastmod>2021-06-24T19:19:56+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://pythonbiellagroup.it/it/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pythonbiellagroup.it/en/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://pythonbiellagroup.it/en/tags/versions/</loc>
+    <lastmod>2021-06-24T19:19:56+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://pythonbiellagroup.it/it/tags/versions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pythonbiellagroup.it/en/tags/versions/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://pythonbiellagroup.it/en/</loc>
+    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://pythonbiellagroup.it/it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pythonbiellagroup.it/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://pythonbiellagroup.it/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://pythonbiellagroup.it/it/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pythonbiellagroup.it/en/categories/"
+                />
+  </url>
+  
+</urlset>

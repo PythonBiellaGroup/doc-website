@@ -10,8 +10,10 @@ Consente di andare al di là della semplice gestione delle dipendenze, con funzi
 
 ## **Installare poetry e includere l'installazione**
 
+Prima di installare poetry fare riferimento anche alla !(guida ufficiale)[https://python-poetry.org/docs/#installation] che spesso è più aggiornata, soprattutto al cambio delle varie versioni
+
 ```bash
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 
 #aggiungere poetry alle variabili di ambiente della sessione shell corrente
 source $HOME/.poetry/env

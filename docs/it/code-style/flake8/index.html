@@ -1,50 +1,1512 @@
-<!doctype html><html lang=it class="js csstransforms3d"><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.84.1"><meta name=description content="Python Biella Group Reference Website and Guides"><meta name=author content="Andrea Guzzo"><link rel="shortcut icon" href=/images/favicon.png type=image/x-icon><title>Flake8 :: Benvenuto</title><link href=/css/nucleus.css?1624789314 rel=stylesheet><link href=/css/fontawesome-all.min.css?1624789314 rel=stylesheet><link href=/css/hybrid.css?1624789314 rel=stylesheet><link href=/css/featherlight.min.css?1624789314 rel=stylesheet><link href=/css/perfect-scrollbar.min.css?1624789314 rel=stylesheet><link href=/css/auto-complete.css?1624789314 rel=stylesheet><link href=/css/atom-one-dark-reasonable.css?1624789314 rel=stylesheet><link href=/css/theme.css?1624789314 rel=stylesheet><link href=/css/tabs.css?1624789314 rel=stylesheet><link href=/css/hugo-theme.css?1624789314 rel=stylesheet><link href=/css/theme-blue.css?1624789314 rel=stylesheet><script src=/js/jquery-3.3.1.min.js?1624789314></script><style>:root #header+#content>#left>#rlblock_left{display:none!important}</style></head><body data-url=/it/code-style/flake8/><nav id=sidebar class=showVisitedLinks><div id=header-wrapper><div id=header><img src=https://pythonbiellagroup.github.io/ModernPythonDevelopment/images/logo.png width=130px></div><div class=searchbox><label for=search-by><i class="fas fa-search"></i></label>
-<input data-search-input id=search-by type=search placeholder=Cerca...>
-<span data-search-clear><i class="fas fa-times"></i></span></div><script type=text/javascript src=/js/lunr.min.js?1624789314></script><script type=text/javascript src=/js/auto-complete.js?1624789314></script><script type=text/javascript>var baseurl="https://pythonbiellagroup.it//it"</script><script type=text/javascript src=/js/search.js?1624789314></script></div><section id=homelinks><ul><li><a class=padding href=/><i class="fas fa-home"></i> Home</a></li></ul></section><div class=highlightable><ul class=topics><li data-nav-id=/it/gestire-versioni-di-python/ title="Gestire Versioni Di Python" class=dd-item><a href=/it/gestire-versioni-di-python/><b>1. </b>Gestire Versioni Di Python
-<i class="fas fa-check read-icon"></i></a><ul><li data-nav-id=/it/gestire-versioni-di-python/pyenv/ title=Pyenv class=dd-item><a href=/it/gestire-versioni-di-python/pyenv/>Pyenv
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/gestire-versioni-di-python/pyenv-avanzato/ title="Pyenv avanzato" class=dd-item><a href=/it/gestire-versioni-di-python/pyenv-avanzato/>Pyenv avanzato
-<i class="fas fa-check read-icon"></i></a></li></ul></li><li data-nav-id=/it/gestire-dipendenze/ title="Gestire Dipendenze" class=dd-item><a href=/it/gestire-dipendenze/><b>2. </b>Gestire Dipendenze
-<i class="fas fa-check read-icon"></i></a><ul><li data-nav-id=/it/gestire-dipendenze/virtualenv/ title=Virtualenv class=dd-item><a href=/it/gestire-dipendenze/virtualenv/>Virtualenv
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/gestire-dipendenze/pyenv-virtualenv/ title=Pyenv-virtualenv class=dd-item><a href=/it/gestire-dipendenze/pyenv-virtualenv/>Pyenv-virtualenv
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/gestire-dipendenze/poetry/ title=Poetry class=dd-item><a href=/it/gestire-dipendenze/poetry/>Poetry
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/gestire-dipendenze/poetry-advance/ title="Poetry Advance" class=dd-item><a href=/it/gestire-dipendenze/poetry-advance/>Poetry Advance
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/gestire-dipendenze/pipx/ title=Pipx class=dd-item><a href=/it/gestire-dipendenze/pipx/>Pipx
-<i class="fas fa-check read-icon"></i></a></li></ul></li><li data-nav-id=/it/struttura-di-progetto/ title="Struttura di progetto" class=dd-item><a href=/it/struttura-di-progetto/><b>3. </b>Struttura di progetto
-<i class="fas fa-check read-icon"></i></a><ul><li data-nav-id=/it/struttura-di-progetto/import-relativi/ title="Import relativi" class=dd-item><a href=/it/struttura-di-progetto/import-relativi/>Import relativi
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/struttura-di-progetto/import-circolari/ title="Import circolari" class=dd-item><a href=/it/struttura-di-progetto/import-circolari/>Import circolari
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/struttura-di-progetto/cookiecutter/ title=cookiecutter class=dd-item><a href=/it/struttura-di-progetto/cookiecutter/>cookiecutter
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/struttura-di-progetto/costruire-un-progetto/ title="Costruire un progetto" class=dd-item><a href=/it/struttura-di-progetto/costruire-un-progetto/>Costruire un progetto
-<i class="fas fa-check read-icon"></i></a></li></ul></li><li data-nav-id=/it/code-style/ title="Code Style" class="dd-item
-parent"><a href=/it/code-style/><b>4. </b>Code Style
-<i class="fas fa-check read-icon"></i></a><ul><li data-nav-id=/it/code-style/black/ title=Black class=dd-item><a href=/it/code-style/black/>Black
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/code-style/flake8/ title=Flake8 class="dd-item
-parent
-active"><a href=/it/code-style/flake8/>Flake8
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/code-style/bandit/ title=Bandit class=dd-item><a href=/it/code-style/bandit/>Bandit
-<i class="fas fa-check read-icon"></i></a></li></ul></li><li data-nav-id=/it/documentare-il-codice/ title="Documentare il codice" class=dd-item><a href=/it/documentare-il-codice/><b>4. </b>Documentare il codice
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/visual-studio-code/ title="Visual Studio Code" class=dd-item><a href=/it/visual-studio-code/><b>5. </b>Visual Studio Code
-<i class="fas fa-check read-icon"></i></a><ul><li data-nav-id=/it/visual-studio-code/installare-un-linter/ title="Installare un linter" class=dd-item><a href=/it/visual-studio-code/installare-un-linter/>Installare un linter
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/visual-studio-code/utilizzare-una-versione-di-python/ title="Utilizzare una versione di Python" class=dd-item><a href=/it/visual-studio-code/utilizzare-una-versione-di-python/>Utilizzare una versione di Python
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/visual-studio-code/aggiungere-code-al-terminale/ title="Aggiungere code al terminale" class=dd-item><a href=/it/visual-studio-code/aggiungere-code-al-terminale/>Aggiungere code al terminale
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/visual-studio-code/usare-il-debbuger/ title="Usare il debugger" class=dd-item><a href=/it/visual-studio-code/usare-il-debbuger/>Usare il debugger
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/visual-studio-code/testing/ title=Testing class=dd-item><a href=/it/visual-studio-code/testing/>Testing
-<i class="fas fa-check read-icon"></i></a></li></ul></li><li data-nav-id=/it/repl/ title=REPL class=dd-item><a href=/it/repl/><b>6. </b>REPL
-<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/it/materiale-utile/ title="Materiale utile" class=dd-item><a href=/it/materiale-utile/><b>X. </b>Materiale utile
-<i class="fas fa-check read-icon"></i></a></li></ul><section id=shortcuts><h3>Altro</h3><ul><li><a class=padding href=https://pythonbiellagroup.it/it/tags><i class="fas fa-tags"></i> Tag</a></li><li><a class=padding href=https://pythonbiella.herokuapp.com/main/><i class="fas fa-bullhorn"></i> Blog</a></li><li><a class=padding href=https://github.com/PythonBiellaGroup/><i class="fab fa-github"></i> Github</a></li><li><a class=padding href=https://t.me/joinchat/AAAAAFGSWcxhSln_SRhseQ><i class="fab fa-telegram"></i> Telegram</a></li><li><a class=padding href=https://www.youtube.com/channel/UCkvQcNjmC_duLhvDxeUPJAg><i class="fab fa-youtube"></i> Youtube</a></li></ul></section><section id=prefooter><hr><ul><li><a class=padding><i class="fas fa-language fa-fw"></i><div class=select-style><select id=select-language onchange="location=this.value"><option id=it value=https://pythonbiellagroup.it/it/code-style/flake8/ selected>Italiano</option></select><svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="255" height="255" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255"><g><g id="arrow-drop-down"><polygon points="0,63.75 127.5,191.25 255,63.75"/></g></g></svg></div></a></li><li><a class=padding href=# data-clear-history-toggle><i class="fas fa-history fa-fw"></i> Cancella Cronologia</a></li></ul></section><section id=footer><center><a class=github-button href=https://github.com/PythonBiellaGroup data-icon=octicon-star data-show-count=true aria-label="Star pocc/tshark.dev on GitHub">Github</a><p>Copyright 2021 - <a href=https://github.com/PythonBiellaGroup>PythonBiellaGroup</a></p></center><script async defer src=https://buttons.github.io/buttons.js></script></section></div></nav><section id=body><div id=overlay></div><div class="padding highlightable"><div><div id=top-bar><div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb><span id=sidebar-toggle-span><a href=# id=sidebar-toggle data-sidebar-toggle><i class="fas fa-bars"></i></a></span>
-<span id=toc-menu><i class="fas fa-list-alt"></i></span>
-<span class=links><a href=/it/>Python Biella Group</a> > <a href=/it/code-style/>Code Style</a> > Flake8</span></div><div class=progress><div class=wrapper><nav id=TableOfContents></nav></div></div></div></div><div id=head-tags></div><div id=body-inner><h1>Flake8</h1><p>Oltre agli strumenti che consentono di formattare il codice in Python esistono diversi linter e analizzatori statici di codice.</p><p>Uno dei più popolari Linter su Python è <code>Flake8</code> .</p><p>Flake8 non cambia il codice in un progetto, ma fornisce uno strumento di <strong>warnings in real time</strong></p><p>Flake8 combina tre progetti differenti</p><ul><li>pyflakes <a href=https://github.com/pycqa/pyflakes>https://github.com/pycqa/pyflakes</a> = da warnings su moduli non usati, variabili non definite, &mldr;</li><li>pycodestyle <a href=https://pycodestyle.pycqa.org/en/latest/>https://pycodestyle.pycqa.org/en/latest/</a> = da errori riguardo alle violazioni di PEP8</li><li>McCabe <a href=https://github.com/pycqa/mccabe>https://github.com/pycqa/mccabe</a> (disabilitato di default) = fornisce warnings se le funzioni sono troppo complesse o complicate</li></ul><p>Un altro vantaggio di Flake8 che lo ha reso così popolare è il massivo catalogo di plugins ed estensioni che si possono installare ed usare per estendere le funzionalità base della libreria.</p><p>Per un elenco completo delle estensioni: <a href=https://github.com/DmytroLitvinov/awesome-flake8-extensions>https://github.com/DmytroLitvinov/awesome-flake8-extensions</a></p><p>Alcune estensioni utili:</p><ul><li><a href=https://github.com/gforcada/flake8-builtins>flake8-builtins</a> - makes sure you don’t use Python builtins as variables or parameters</li><li><a href=https://github.com/PyCQA/flake8-bugbear>flake8-bugbear</a> - an additional set of checks (some are opinionated) that will complain when you, for example:<ul><li>Use <code>except:</code> instead of <code>except Exception:</code></li><li>Use <code>++n</code></li><li>Use <code>.strip()</code> on a multiline string</li><li>Use a length-one tuple</li></ul></li><li><a href=https://github.com/adamchainz/flake8-comprehensions>flake8-comprehensions</a> - helps you write better list/set/dictionary comprehensions</li><li><a href=https://pypi.org/project/flake8-docstrings/>flake8-docstrings</a> - enforces PEP257</li><li><a href=https://github.com/sobolevn/flake8-eradicate>flake8-eradicate</a> - reports commented out code (“dead code”)</li><li><a href=https://pypi.org/project/flake8-isort/>flake8-isort</a> - check if your import statements are sorted according to the <a href=https://pypi.org/project/isort/>isort</a> recommendations</li><li><a href=https://github.com/sobolevn/flake8-broken-line>flake8-broken-line</a> - complains you use backslash for line breaks (try using parenthesis or tripple quotes instead)</li><li><a href=https://github.com/zheller/flake8-quotes>flake8-quotes</a> - if you prefer single quotes over double quotes (or the other way around), this plugin can help you enforce them</li><li><a href=https://github.com/peterjc/flake8-rst-docstrings>flake8-rst-docstrings</a> - looks for problems in your documentation (usefull if you are using Sphinx that we will talk about later)</li><li><a href=https://github.com/terrencepreilly/darglint>darglint</a> - checks if your docstrings are matching functions definitions (for example, if you remembered to describe all the parameters and the return value)</li><li><a href=https://github.com/ebeweber/flake8-mutable>flake8-mutable</a> - checks that you don’t use mutable default arguments</li><li>flake8-bandit - introduce the capabilities of bandit inside flake8</li></ul><p>Installare Flake 8</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>pip install flake8
+<!DOCTYPE html>
+<html lang="it" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="description" content="Python Biella Group Reference Website and Guides">
+<meta name="author" content="Andrea Guzzo">
 
-<span style=color:#75715e>#anche qui è meglio utilizzare pipx</span>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Flake8 :: Benvenuto</title>
+
+    
+    <link href="/css/nucleus.css?1625063218" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1625063218" rel="stylesheet">
+    <link href="/css/hybrid.css?1625063218" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1625063218" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1625063218" rel="stylesheet">
+    <link href="/css/auto-complete.css?1625063218" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1625063218" rel="stylesheet">
+    <link href="/css/theme.css?1625063218" rel="stylesheet">
+    <link href="/css/tabs.css?1625063218" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1625063218" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1625063218" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1625063218"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/it/code-style/flake8/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="https://pythonbiellagroup.github.io/ModernPythonDevelopment/images/logo.png" width="130px"/>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Cerca...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1625063218"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1625063218"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/pythonbiellagroup.it\/\/it";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1625063218"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/it/gestire-versioni-di-python/" title="Gestire Versioni Di Python" class="dd-item
+        
+        
+        
+        ">
+      <a href="/it/gestire-versioni-di-python/">
+          <b>1. </b>Gestire Versioni Di Python
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/gestire-versioni-di-python/pyenv/" title="Pyenv" class="dd-item ">
+        <a href="/it/gestire-versioni-di-python/pyenv/">
+        Pyenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/gestire-versioni-di-python/pyenv-avanzato/" title="Pyenv avanzato" class="dd-item ">
+        <a href="/it/gestire-versioni-di-python/pyenv-avanzato/">
+        Pyenv avanzato
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/it/gestire-dipendenze/" title="Gestire Dipendenze" class="dd-item
+        
+        
+        
+        ">
+      <a href="/it/gestire-dipendenze/">
+          <b>2. </b>Gestire Dipendenze
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/gestire-dipendenze/virtualenv/" title="Virtualenv" class="dd-item ">
+        <a href="/it/gestire-dipendenze/virtualenv/">
+        Virtualenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/gestire-dipendenze/pyenv-virtualenv/" title="Pyenv-virtualenv" class="dd-item ">
+        <a href="/it/gestire-dipendenze/pyenv-virtualenv/">
+        Pyenv-virtualenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/gestire-dipendenze/poetry/" title="Poetry" class="dd-item ">
+        <a href="/it/gestire-dipendenze/poetry/">
+        Poetry
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/gestire-dipendenze/poetry-advance/" title="Poetry Advance" class="dd-item ">
+        <a href="/it/gestire-dipendenze/poetry-advance/">
+        Poetry Advance
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/gestire-dipendenze/pipx/" title="Pipx" class="dd-item ">
+        <a href="/it/gestire-dipendenze/pipx/">
+        Pipx
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/it/struttura-di-progetto/" title="Struttura di progetto" class="dd-item
+        
+        
+        
+        ">
+      <a href="/it/struttura-di-progetto/">
+          <b>3. </b>Struttura di progetto
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/struttura-di-progetto/import-relativi/" title="Import relativi" class="dd-item ">
+        <a href="/it/struttura-di-progetto/import-relativi/">
+        Import relativi
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/struttura-di-progetto/import-circolari/" title="Import circolari" class="dd-item ">
+        <a href="/it/struttura-di-progetto/import-circolari/">
+        Import circolari
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/struttura-di-progetto/cookiecutter/" title="cookiecutter" class="dd-item ">
+        <a href="/it/struttura-di-progetto/cookiecutter/">
+        cookiecutter
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/struttura-di-progetto/costruire-un-progetto/" title="Costruire un progetto" class="dd-item ">
+        <a href="/it/struttura-di-progetto/costruire-un-progetto/">
+        Costruire un progetto
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/it/code-style/" title="Code Style" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/it/code-style/">
+          <b>4. </b>Code Style
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/it/code-style/black/" title="Black" class="dd-item
+        
+        
+        
+        ">
+      <a href="/it/code-style/black/">
+          Black
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/it/code-style/flake8/" title="Flake8" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/it/code-style/flake8/">
+          Flake8
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/it/code-style/bandit/" title="Bandit" class="dd-item
+        
+        
+        
+        ">
+      <a href="/it/code-style/bandit/">
+          Bandit
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/it/documentare-il-codice/" title="Documentare il codice" class="dd-item
+        
+        
+        
+        ">
+      <a href="/it/documentare-il-codice/">
+          <b>4. </b>Documentare il codice
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/it/visual-studio-code/" title="Visual Studio Code" class="dd-item
+        
+        
+        
+        ">
+      <a href="/it/visual-studio-code/">
+          <b>5. </b>Visual Studio Code
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/visual-studio-code/installare-un-linter/" title="Installare un linter" class="dd-item ">
+        <a href="/it/visual-studio-code/installare-un-linter/">
+        Installare un linter
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/visual-studio-code/utilizzare-una-versione-di-python/" title="Utilizzare una versione di Python" class="dd-item ">
+        <a href="/it/visual-studio-code/utilizzare-una-versione-di-python/">
+        Utilizzare una versione di Python
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/visual-studio-code/aggiungere-code-al-terminale/" title="Aggiungere code al terminale" class="dd-item ">
+        <a href="/it/visual-studio-code/aggiungere-code-al-terminale/">
+        Aggiungere code al terminale
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/visual-studio-code/usare-il-debbuger/" title="Usare il debugger" class="dd-item ">
+        <a href="/it/visual-studio-code/usare-il-debbuger/">
+        Usare il debugger
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/visual-studio-code/testing/" title="Testing" class="dd-item ">
+        <a href="/it/visual-studio-code/testing/">
+        Testing
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/it/repl/" title="REPL" class="dd-item
+        
+        
+        
+        ">
+      <a href="/it/repl/">
+          <b>6. </b>REPL
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/it/materiale-utile/" title="Materiale utile" class="dd-item
+        
+        
+        
+        ">
+      <a href="/it/materiale-utile/">
+          <b>X. </b>Materiale utile
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>Altro</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://pythonbiellagroup.it/it/tags"><i class='fas fa-tags'></i> Tag</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://pythonbiella.herokuapp.com/main/"><i class='fas fa-bullhorn'></i> Blog</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://github.com/PythonBiellaGroup/"><i class='fab fa-github'></i> Github</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://t.me/joinchat/AAAAAFGSWcxhSln_SRhseQ"><i class='fab fa-telegram'></i> Telegram</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.youtube.com/channel/UCkvQcNjmC_duLhvDxeUPJAg"><i class='fab fa-youtube'></i> Youtube</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="it" value="https://pythonbiellagroup.it/it/code-style/flake8/" selected>Italiano</option>
+                    
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Cancella Cronologia</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/PythonBiellaGroup" data-icon="octicon-star" data-show-count="true" aria-label="Star pocc/tshark.dev on GitHub">Github</a>
+
+    <p>Copyright 2021 - <a href="https://github.com/PythonBiellaGroup">PythonBiellaGroup</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/it/'>Python Biella Group</a> > <a href='/it/code-style/'>Code Style</a> > Flake8
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Flake8
+            </h1>
+          
+
+        
+
+
+
+	<p>Oltre agli strumenti che consentono di formattare il codice in Python esistono diversi linter e analizzatori statici di codice.</p>
+<p>Uno dei più popolari Linter su Python è <code>Flake8</code> .</p>
+<p>Flake8 non cambia il codice in un progetto, ma fornisce uno strumento di <strong>warnings in real time</strong></p>
+<p>Flake8 combina tre progetti differenti</p>
+<ul>
+<li>pyflakes <a href="https://github.com/pycqa/pyflakes">https://github.com/pycqa/pyflakes</a> = da warnings su moduli non usati, variabili non definite, &hellip;</li>
+<li>pycodestyle <a href="https://pycodestyle.pycqa.org/en/latest/">https://pycodestyle.pycqa.org/en/latest/</a> = da errori riguardo alle violazioni di PEP8</li>
+<li>McCabe <a href="https://github.com/pycqa/mccabe">https://github.com/pycqa/mccabe</a> (disabilitato di default) = fornisce warnings se le funzioni sono troppo complesse o complicate</li>
+</ul>
+<p>Un altro vantaggio di Flake8 che lo ha reso così popolare è il massivo catalogo di plugins ed estensioni che si possono installare ed usare per estendere le funzionalità base della libreria.</p>
+<p>Per un elenco completo delle estensioni: <a href="https://github.com/DmytroLitvinov/awesome-flake8-extensions">https://github.com/DmytroLitvinov/awesome-flake8-extensions</a></p>
+<p>Alcune estensioni utili:</p>
+<ul>
+<li><a href="https://github.com/gforcada/flake8-builtins">flake8-builtins</a> - makes sure you don’t use Python builtins as variables or parameters</li>
+<li><a href="https://github.com/PyCQA/flake8-bugbear">flake8-bugbear</a> - an additional set of checks (some are opinionated) that will complain when you, for example:
+<ul>
+<li>Use <code>except:</code> instead of <code>except Exception:</code></li>
+<li>Use <code>++n</code></li>
+<li>Use <code>.strip()</code> on a multiline string</li>
+<li>Use a length-one tuple</li>
+</ul>
+</li>
+<li><a href="https://github.com/adamchainz/flake8-comprehensions">flake8-comprehensions</a> - helps you write better list/set/dictionary comprehensions</li>
+<li><a href="https://pypi.org/project/flake8-docstrings/">flake8-docstrings</a> - enforces PEP257</li>
+<li><a href="https://github.com/sobolevn/flake8-eradicate">flake8-eradicate</a> - reports commented out code (“dead code”)</li>
+<li><a href="https://pypi.org/project/flake8-isort/">flake8-isort</a> - check if your import statements are sorted according to the <a href="https://pypi.org/project/isort/">isort</a> recommendations</li>
+<li><a href="https://github.com/sobolevn/flake8-broken-line">flake8-broken-line</a> - complains you use backslash for line breaks (try using parenthesis or tripple quotes instead)</li>
+<li><a href="https://github.com/zheller/flake8-quotes">flake8-quotes</a> - if you prefer single quotes over double quotes (or the other way around), this plugin can help you enforce them</li>
+<li><a href="https://github.com/peterjc/flake8-rst-docstrings">flake8-rst-docstrings</a> - looks for problems in your documentation (usefull if you are using Sphinx that we will talk about later)</li>
+<li><a href="https://github.com/terrencepreilly/darglint">darglint</a> - checks if your docstrings are matching functions definitions (for example, if you remembered to describe all the parameters and the return value)</li>
+<li><a href="https://github.com/ebeweber/flake8-mutable">flake8-mutable</a> - checks that you don’t use mutable default arguments</li>
+<li>flake8-bandit - introduce the capabilities of bandit inside flake8</li>
+</ul>
+<p>Installare Flake 8</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install flake8
+
+<span style="color:#75715e">#anche qui è meglio utilizzare pipx</span>
 pipx install flake8
 
-<span style=color:#75715e>#Installare estensioni</span>
+<span style="color:#75715e">#Installare estensioni</span>
 pip install flake8-docstrings flake8-isort
-<span style=color:#75715e>#Ancora meglio sempre con pipx</span>
+<span style="color:#75715e">#Ancora meglio sempre con pipx</span>
 pipx inject flake8 flake8-docstrings flake8-isort flake8-bandit
 
-<span style=color:#75715e># Se esce un errore di path fare</span>
+<span style="color:#75715e"># Se esce un errore di path fare</span>
 pipx ensurepath
-<span style=color:#75715e># Riavviare il terminale</span>
-</code></pre></div><p>Lanciare Flake8</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>flake8 my_project <span style=color:#75715e>#my_project = cartella di progetto</span>
-</code></pre></div><p>Per usare al meglio Flake8 il consiglio è sempre quello di integrarlo all&rsquo;interno di Visual Studio Code lanciando il comando: <code>Python: Select Linter</code></p><p>Per progetti grandi e per configurare al meglio Flake8 con tutti i suoi plugin è possibile utilizzare anche l&rsquo;ottima libreria: <code>FlakeHell</code> che è un wrapper che consente di definire un <code>pyproject.toml</code> file (lo stesso di Poetry) e di personalizzare le impostazioni al suo interno.</p><p>Attenzione: la libreria di FlakeHell non è piu aggiornata dal 2019 (è archiviata su github) tuttavia è stabile e perfettamente utilizzabile</p><ul><li>FlakeHell: <a href=https://github.com/life4/flakehell>https://github.com/life4/flakehell</a></li><li>Esempio: <a href=https://dev.to/bowmanjd/using-flake8-and-pyproject-toml-with-flakehell-1cn1>https://dev.to/bowmanjd/using-flake8-and-pyproject-toml-with-flakehell-1cn1</a></li></ul><p>Ci sono tantissimi altri strumenti che consentono di controllare il codice e di segnalare eventuali errori man mano che lo state scrivendo.</p><ul><li>pylint</li><li>pydocstyle</li><li>bandit</li><li>vulture</li><li>wemake-python-style guide</li><li>prospector</li></ul><p>Tuttavia vi consiglio di utilizzare Flake8 e Blake nei vostri progetti e di inserire anche <code>Bandit</code></p><footer class=footline></footer></div></div><div id=navigation><a class="nav nav-prev" href=/it/code-style/black/ title=Black><i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/it/code-style/bandit/ title=Bandit style=margin-right:0><i class="fa fa-chevron-right"></i></a></div></section><div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px><div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div></div><script src=/js/clipboard.min.js?1624789314></script><script src=/js/perfect-scrollbar.min.js?1624789314></script><script src=/js/perfect-scrollbar.jquery.min.js?1624789314></script><script src=/js/jquery.sticky.js?1624789314></script><script src=/js/featherlight.min.js?1624789314></script><script src=/js/highlight.pack.js?1624789314></script><script>hljs.initHighlightingOnLoad()</script><script src=/js/modernizr.custom-3.6.0.js?1624789314></script><script src=/js/learn.js?1624789314></script><script src=/js/hugo-learn.js?1624789314></script><script src=/mermaid/mermaid.js?1624789314></script><script>mermaid.initialize({startOnLoad:!0})</script></body></html>
+<span style="color:#75715e"># Riavviare il terminale</span>
+</code></pre></div><p>Lanciare Flake8</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">flake8 my_project <span style="color:#75715e">#my_project = cartella di progetto</span>
+</code></pre></div><p>Per usare al meglio Flake8 il consiglio è sempre quello di integrarlo all&rsquo;interno di Visual Studio Code lanciando il comando: <code>Python: Select Linter</code></p>
+<p>Per progetti grandi e per configurare al meglio Flake8 con tutti i suoi plugin è possibile utilizzare anche l&rsquo;ottima libreria: <code>FlakeHell</code> che è un wrapper che consente di definire un <code>pyproject.toml</code> file (lo stesso di Poetry) e di personalizzare le impostazioni al suo interno.</p>
+<p>Attenzione: la libreria di FlakeHell non è piu aggiornata dal 2019 (è archiviata su github) tuttavia è stabile e perfettamente utilizzabile</p>
+<ul>
+<li>FlakeHell: <a href="https://github.com/life4/flakehell">https://github.com/life4/flakehell</a></li>
+<li>Esempio: <a href="https://dev.to/bowmanjd/using-flake8-and-pyproject-toml-with-flakehell-1cn1">https://dev.to/bowmanjd/using-flake8-and-pyproject-toml-with-flakehell-1cn1</a></li>
+</ul>
+<p>Ci sono tantissimi altri strumenti che consentono di controllare il codice e di segnalare eventuali errori man mano che lo state scrivendo.</p>
+<ul>
+<li>pylint</li>
+<li>pydocstyle</li>
+<li>bandit</li>
+<li>vulture</li>
+<li>wemake-python-style guide</li>
+<li>prospector</li>
+</ul>
+<p>Tuttavia vi consiglio di utilizzare Flake8 e Blake nei vostri progetti e di inserire anche <code>Bandit</code></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/it/code-style/black/" title="Black"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/it/code-style/bandit/" title="Bandit" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1625063218"></script>
+    <script src="/js/perfect-scrollbar.min.js?1625063218"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1625063218"></script>
+    <script src="/js/jquery.sticky.js?1625063218"></script>
+    <script src="/js/featherlight.min.js?1625063218"></script>
+    <script src="/js/highlight.pack.js?1625063218"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1625063218"></script>
+    <script src="/js/learn.js?1625063218"></script>
+    <script src="/js/hugo-learn.js?1625063218"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1625063218"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>

@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Python Biella Group</title><link>https://pythonbiellagroup.it/en/tags/</link><description>Recent content in Tags on Python Biella Group</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 24 Jun 2021 19:19:56 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/en/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>pyenv</title><link>https://pythonbiellagroup.it/en/tags/pyenv/</link><pubDate>Thu, 24 Jun 2021 19:19:56 +0200</pubDate><guid>https://pythonbiellagroup.it/en/tags/pyenv/</guid><description/></item><item><title>versions</title><link>https://pythonbiellagroup.it/en/tags/versions/</link><pubDate>Thu, 24 Jun 2021 19:19:56 +0200</pubDate><guid>https://pythonbiellagroup.it/en/tags/versions/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Python Biella Group</title>
+    <link>https://pythonbiellagroup.it/en/tags/</link>
+    <description>Recent content in Tags on Python Biella Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Jun 2021 19:19:56 +0200</lastBuildDate>
+    
+	<atom:link href="https://pythonbiellagroup.it/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>pyenv</title>
+      <link>https://pythonbiellagroup.it/en/tags/pyenv/</link>
+      <pubDate>Thu, 24 Jun 2021 19:19:56 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/tags/pyenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>versions</title>
+      <link>https://pythonbiellagroup.it/en/tags/versions/</link>
+      <pubDate>Thu, 24 Jun 2021 19:19:56 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/tags/versions/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

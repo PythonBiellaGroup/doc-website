@@ -1,3 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>vscode on Benvenuto</title><link>https://pythonbiellagroup.it/it/tags/vscode/</link><description>Recent content in vscode on Benvenuto</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/it/tags/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>Visual Studio Code</title><link>https://pythonbiellagroup.it/it/visual-studio-code/</link><pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate><guid>https://pythonbiellagroup.it/it/visual-studio-code/</guid><description>Sezione 5 Visual Studio Code Un code editor è lo strumento essenziale per ogni programmatore e lo strumento con cui spendiamo la maggior parte del tempo.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vscode on Benvenuto</title>
+    <link>https://pythonbiellagroup.it/it/tags/vscode/</link>
+    <description>Recent content in vscode on Benvenuto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate>
+    
+	<atom:link href="https://pythonbiellagroup.it/it/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visual Studio Code</title>
+      <link>https://pythonbiellagroup.it/it/visual-studio-code/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/it/visual-studio-code/</guid>
+      <description>Sezione 5 Visual Studio Code Un code editor è lo strumento essenziale per ogni programmatore e lo strumento con cui spendiamo la maggior parte del tempo.
 La scelta di un editor con il quale scrivere codice è spesso un tema molto sensibile che suscita spesso molte diatribe tra i programmatori.
-Come sapete ci sono moltissimi editor e siete liberi di utilizzare quello che più vi piace, ma dopo diversi anni passati ad utilizzare Sublime Text e Pycharm vi suggerisco vivamente di utilizzare Visual Studio Code.</description></item></channel></rss>
+Come sapete ci sono moltissimi editor e siete liberi di utilizzare quello che più vi piace, ma dopo diversi anni passati ad utilizzare Sublime Text e Pycharm vi suggerisco vivamente di utilizzare Visual Studio Code.</description>
+    </item>
+    
+  </channel>
+</rss>
