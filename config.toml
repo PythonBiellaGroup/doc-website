@@ -5,7 +5,7 @@ theme = "pythonBG"
 defaultContentLanguage = "it"
 defaultContentLanguageInSubdir= true
 publishDir = "docs"
-
+googleAnalytics = "G-56E78Z4RKM"
 enableRobotsTXT = true
 
 # For search functionality
