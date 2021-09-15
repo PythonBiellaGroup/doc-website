@@ -3,13 +3,13 @@
 Sito web della community PythonBiellaGroup che ha l'obiettivo di raccogliere la conoscenza e tutto quello che viene raccolto dalla community legato a librerie, metodi e tecnologie sempre legate a Python all'interno di uno strumento fruibile online da tutti e tradotto in Italiano.
 
 Il Sito web è disponibile online a questo indirizzo:
-- https://pythonbiellagroup.github.io/ModernPythonDevelopment
+- https://pythonbiellagroup.it
 
 Il sito è stato costruito utilizzando **Hugo** che è uno static site generator dove gli articoli presenti sul sito vengono creati utilizzando dei file markdown.
 
-Per modificare il contenuto è consigliato aggiornare i file markdown presenti nella repository.
+Per segnalare modifiche, problematiche o qualsiasi altra informazione consigliamo di interagire con le **Github Issue** di questa repository.
 
-Per qualsiasi altra modifica legata al tema e al funzionamento generale del sito è consigliato leggere la documentazione di riferimento dello strumento:
+Per qualsiasi altra modifica legata al tema e al funzionamento generale di Hugo (framework su cui si basa il sito web) è consigliato leggere la documentazione di riferimento dello strumento:
 - https://gohugo.io/documentation/
 
 ## Come collaborare?
