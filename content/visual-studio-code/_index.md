@@ -6,9 +6,8 @@ chapter = true
 pre = "<b>5. </b>"
 tags = ["vscode","ide"]
 +++
-# Sezione 5
+# Visual Studio Code
 
-## Visual Studio Code
 Un code editor è lo strumento essenziale per ogni programmatore e lo strumento con cui spendiamo la maggior parte del tempo.
 
 La scelta di un editor con il quale scrivere codice è spesso un tema molto sensibile che suscita spesso molte diatribe tra i programmatori.
