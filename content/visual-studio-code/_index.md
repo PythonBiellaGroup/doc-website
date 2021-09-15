@@ -4,7 +4,7 @@ date = 2021-03-28T20:10:53+02:00
 weight = 5
 chapter = true
 pre = "<b>5. </b>"
-tags = ["vscode","ide"]
+tags = ["vscode","ide", "settings", "estensioni"]
 +++
 # Visual Studio Code
 
