@@ -6,9 +6,9 @@ chapter = true
 pre = "<b>5. </b>"
 tags = ["vscode","ide"]
 +++
-### Sezione 5
+# Sezione 5
 
-# Visual Studio Code
+## Visual Studio Code
 Un code editor è lo strumento essenziale per ogni programmatore e lo strumento con cui spendiamo la maggior parte del tempo.
 
 La scelta di un editor con il quale scrivere codice è spesso un tema molto sensibile che suscita spesso molte diatribe tra i programmatori.
@@ -41,29 +41,48 @@ Rispetto a Pycharm c'è però una feature che mi manca moltissimo durante lo svi
 
 La cosa che mi piace di più di VSCode è il giusto bilanciamento tra produttività e facilità, anche per chi inizia a scrivere codice.
 
-Estensioni suggerite da installare
+Estensioni suggerite da installare con il loro ID di Visual Studio Store
+- bookmarks: (alefragnani.bookmarks)
+- code spell checkers (streetsidesoftware.code-spell-checker)
+- docker (ms-azuretools.vscode-docker)
+- docs-markdown (docsmsft.docs-markdown)
+- docs-preview (docsmsft.docs-preview)
+- docs-yaml (docsmsft.docs-yaml)
+- git graph (mhutchie.git-graph)
+- git history (donjayamanne.githistory)
+- git lens (eamodio.gitlens)
+- indent-rainbow (oderwat.indent-rainbow)
+- italian-code spell checker (streetsidesoftware.code-spell-checker-italian)
+- jupyter (ms-toolsai.jupyter)
+- jupyter keymap (ms-toolsai.jupyter-keymap)
+- live-share (ms-vsliveshare.vsliveshare)
+- markdown all in one (yzhang.markdown-all-in-one)
+- material icon theme (pkief.material-icon-theme)
+- postgreSQL (ms-ossdata.vscode-postgresql)
+- pylance (ms-python.vscode-pylance)
+- python (ms-python.python)
+- python docstring generator (njpwerner.autodocstring)
+- python indent (kevinrose.vsc-python-indent)
+- rainbow brackets (2gua.rainbow-brackets)
+- rainbow csv (mechatroner.rainbow-csv)
+- remote development (bundle) (ms-vscode-remote.vscode-remote-extensionpack)
+- render line endings (medo64.render-crlf)
+- sqltools (mtxr.sqltools)
+- swagger viewer (arjun.swagger-viewer)
+- todo highlight (wayou.vscode-todo-highlight)
+- todo tree (gruntfuggly.todo-tree)
+- visual studio intellicode (visualstudioexptteam.vscodeintellicode)
+- webhint (webhint.vscode-webhint)
+- yaml (redhat.vscode-yaml)
 
-- Python
-- Pylance
-- Jupyter
-- Visual Studio Intellicode
-- Autodocstring
-- Bookmarks
-- Todo Tree
-- TODO Highlight
-- File Utils
-- Git Lens
-- Git History
-- indent-rainbow
-- Spell Right (Italian and English)
-- Docker
-- Live Share
-- Remote Development (suite di estensioni)
-- docs-markdown
-- docs-preview
-- docs-yaml
-- Prettier (code formatter)
-- Python Docstring generator
-- YAML
-- Rainbow Brackets
+
+Su VSCode segnaliamo anche altre configurazioni utili (che verranno discusse nelle sezioni precedenti) come: 
+- autosalvataggio automatico dei file
+- uso flake8 come linter
+- black come strumento per formattare automaticamente il codice al salvataggio
+- bandit per controlli sulla sicurezza.
+- devcontainers
+- configurazioni del debugger
+- configurazione dei virtual environments
+- configurazioni per lo sviluppo remoto
 
