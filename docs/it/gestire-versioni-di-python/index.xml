@@ -6,11 +6,7 @@
     <description>Recent content in Gestire Versioni Di Python on Benvenuto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Jun 2021 19:19:56 +0200</lastBuildDate>
-    
-	<atom:link href="https://pythonbiellagroup.it/it/gestire-versioni-di-python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 24 Jun 2021 19:19:56 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/it/gestire-versioni-di-python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pyenv</title>
       <link>https://pythonbiellagroup.it/it/gestire-versioni-di-python/pyenv/</link>
@@ -30,14 +26,14 @@
       <guid>https://pythonbiellagroup.it/it/gestire-versioni-di-python/pyenv-avanzato/</guid>
       <description>In questa sezione avanzata sono presenti appunti, best practice e guide per approfondire tutto ciò che riguarda Pyenv
 Documentazione utile https://realpython.com/intro-to-pyenv/
-Pyenv with Poetry
+Pyenv con poetry
 https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/
-Guida per configurare pyenv on Mac
+Guida per configurare pyenv su Mac
 https://opensource.com/article/20/4/pyenv
-Notes on a Github Gist
+Notes su un Github Gist
 https://gist.github.com/Geoyi/f55ed54d24cc9ff1c14bd95fac21c042
-Pyenv is a python installation manager. It allows you to install and run multiple python installations, on the same machine.
-Pyenv manages the different versions for you, so that you will avoid the chaos illustrated in the above picture.</description>
+Pyenv è un gestore di installazione di python. Permette di installare e eseguire più installazioni di python sulla stessa macchina.
+Pyenv gestisce le differenti versioni di python per te, in modo da evitare il chaos di dipendenze, versioni e installazioni illustrato nell&amp;rsquo;immagine iniziale.</description>
     </item>
     
   </channel>

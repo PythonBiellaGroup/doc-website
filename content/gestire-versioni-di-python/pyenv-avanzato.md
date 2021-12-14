@@ -13,27 +13,26 @@ In questa sezione avanzata sono presenti appunti, best practice e guide per appr
 
 [https://realpython.com/intro-to-pyenv/](https://realpython.com/intro-to-pyenv/)
 
-Pyenv with Poetry
+Pyenv con poetry
 
 [https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/](https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/)
 
-Guida per configurare pyenv on Mac
+Guida per configurare pyenv su Mac
 
 [https://opensource.com/article/20/4/pyenv](https://opensource.com/article/20/4/pyenv)
 
-Notes on a Github Gist
+Notes su un Github Gist
 
 [https://gist.github.com/Geoyi/f55ed54d24cc9ff1c14bd95fac21c042](https://gist.github.com/Geoyi/f55ed54d24cc9ff1c14bd95fac21c042)
 
-Pyenv is a python installation manager. It allows you to install and run multiple python installations, on the same machine.
+Pyenv è un gestore di installazione di python. Permette di installare e eseguire più installazioni di python sulla stessa macchina.
 
-Pyenv manages the different versions for you, so that you will avoid the chaos illustrated in the above picture. Don't ever again install a python version any other way!
+Pyenv gestisce le differenti versioni di python per te, in modo da evitare il chaos di dipendenze, versioni e installazioni illustrato nell'immagine iniziale.
 
-Perchè non utilizzare python installato di default nel proprio sistema operativo? 
+**Perchè non utilizzare python installato di default nel proprio sistema operativo?**
+- Perchè possono creare problemi nei progetti, ognuno ha la propria versione e ci possono essere problemi di migrazione e riproducibilità quando si usano in contesti di produzione.
 
-Perchè possono creare problemi nei progetti, ognuno ha la propria versione e ci possono essere problemi di migrazione e riproducibilità quando si usano in contesti di produzione.
-
-Cosa ci consente di fare pyenv? (flusso operativo)
+**Cosa ci consente di fare pyenv? (flusso operativo)**
 
 1. installare Python nel proprio user space
 2. installare versioni multiple di python
@@ -44,141 +43,16 @@ Cosa ci consente di fare pyenv? (flusso operativo)
 
 ## Installare Pyenv
 
-Pyenv builds Python from source, which means you’ll need build dependencies to actually use pyenv. The build dependencies vary by platform
+Per installare Pyenv vi rimandiamo alla documentazione ufficiale su Github.  
+Questo perchè le modalità di installazione cambiano a seconda della versione e del sistema operativo e stare al passo con gli aggiornamenti è sempre complicato.
 
-Il modo migliore per installare pyenv è quello di clonare direttamente il progetto dalla repository ufficiale e inserire all'interno delle variabili di ambiente il path dove avete clonato il progetto.
+Più avanti in questa guida trovate esempi di utilizzo con Pyenv più avanzati.
 
-Questa modalità di installazione si può applicare su tutti i sistemi operativi.
-
-Su windows si può comunque utilizzare choco oppure si può utilizzare brew per installarlo su mac.
-
-Su Linux il modo migliore è sempre quello di passare tramite git.
-
-**Ubuntu/Debian**
-
-[https://www.liquidweb.com/kb/how-to-install-pyenv-on-ubuntu-18-04/](https://www.liquidweb.com/kb/how-to-install-pyenv-on-ubuntu-18-04/)
-
-Installare pyenv su WSL: [https://www.techtronic.us/install-python-pyenv-on-wsl-ubuntu/](https://www.techtronic.us/install-python-pyenv-on-wsl-ubuntu/)
-
-Installare i requisiti (se non già stato fatto)
-
-```bash
-#before it's important to update
-sudo apt install update -y
-
-#then install packages and other infos
-sudo apt-get install -y git gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev zlib1g-dev libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl libffi-dev
-```
-
-Clonare la repository Git e inserire all'interno delle variabili di ambiente della shell i path relativi a pyenv.
-
-```bash
-#Clone the repository
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-
-#or use the pyenv official installer (it's ok, simpler, but you can have problems)
-curl https://pyenv.run | bash
-
-##--BASH--
-#Launch the following commands to add into env variables the installation
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n eval "$(pyenv init -)"\nfi' >> ~/.bashrc
-
-##---ZSH----
-#If you are using zsh
-#You can use the bash commands also with zsh
-echo 'PATH=$(pyenv root)/shims:$PATH' >> ~/.zshrc
-
-#Reactivate the shell
-#For bash
-source ~/.bashrc
-#For zsh
-source ~/.zshrc
-
-##Verify the installation
-pyenv install --list
-
-```
-
-This will install `pyenv` along with a few plugins that are useful:
-
-1. **`pyenv`**: The actual `pyenv` application
-2. **`pyenv-virtualenv`**: Plugin for `pyenv` and virtual environments
-3. **`pyenv-update`**: Plugin for updating `pyenv`
-4. **`pyenv-doctor`**: Plugin to verify that `pyenv` and build dependencies are installed
-5. **`pyenv-which-ext`**: Plugin to automatically lookup system commands
-
-**Mac** 
-
-```bash
-#Required Homebrew
-# Install pyenv.
-brew install pyenv
-
-#Now it's important to set the pyenv with the bash o zsh
-
-##---BASH---
-# Add pyenv initializer to shell startup script.
-echo -e '\nif command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi' >> ~/.bash_profile
-
-# Reload your profile.
-source ~/.bash_profile
-
-##---ZSH----
-#If you are using zsh
-echo 'PATH=$(pyenv root)/shims:$PATH' >> ~/.zshrc
-
-```
-
-**Windows** (consigliato utilizzare una WSL - windows subsystem linux)
-
-Attenzione: utilizzare Powershell in modalità amministratore per non avere problemi di compatibilità
-
-Pur troppo bisogna utilizzare una versione diversa, non quella originale. È stato realizzata una distribuzione apposta sempre dai creatori di pyenv.
-
-[http://evaholmes.com/how-to-set-up-pyenv-and-poetry-on-windows-10-for-python-project-management/](http://evaholmes.com/how-to-set-up-pyenv-and-poetry-on-windows-10-for-python-project-management/)
-
-[https://github.com/pyenv-win/pyenv-win](https://github.com/pyenv-win/pyenv-win)
-
-```bash
-# Step 1: choose one of the two types of installations
-
-# 1 - With chocolatey
-choco install pyenv-win
-
-# 2 - Install using Git (need to install git first)
-
-#with powershell
-git clone https://github.com/pyenv-win/pyenv-win.git "$HOME/.pyenv"
-
-#with cmd
-git clone https://github.com/pyenv-win/pyenv-win.git "%USERPROFILE%\.pyenv"
-```
-
-```bash
-# Step 2
-
-#Add this to Path System Environment Variables
-C:\Users\Anguz\.pyenv\pyenv-win\bin
-C:\Users\Anguz\.pyenv\pyenv-win\shims
-
-####OLD STUFF NOT WORKING#####
-#Add path to environment variables
-[System.Environment]::SetEnvironmentVariable('PYENV',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
-[System.Environment]::SetEnvironmentVariable('PYENV_HOME',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
-
-#Add the possibility to launch the commands with the terminal
-[System.Environment]::SetEnvironmentVariable('PYENV_HOME',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
-
-#Remember to relaunch the terminal after this commands
-```
+La guida di riferimento per l'installazione la potete trovare: [qui](https://github.com/pyenv/pyenv#installation)
 
 **Verificare installazione di Pyenv**
 
-Da terminale fare
+Una volta installato e configurato correttamente sul vostro terminale terminale fare:
 
 ```bash
 pyenv --version
@@ -320,3 +194,5 @@ Elenco delle librerie base da installare (necessario creare progetto base per co
 - Isort
 - Pylint
 - Pytest
+
+A tal proposito sui vostri progetti suggeriamo di utilizzare Poetry per gestire le dipendenze e le librerie necessarie (sia di sviluppo che di produzione.

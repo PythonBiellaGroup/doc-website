@@ -10,7 +10,13 @@ Consente di andare al di là della semplice gestione delle dipendenze, con funzi
 
 ## **Installare poetry e includere l'installazione**
 
-Prima di installare poetry fare riferimento anche alla !(guida ufficiale)[https://python-poetry.org/docs/#installation] che spesso è più aggiornata, soprattutto al cambio delle varie versioni
+Per installare Poetry è importante fare riferimento alla guida ufficiale che descrive i passi per i vari sistemi operativi.
+
+Non riportiamo volutamente i passi necessari all'installazione siccome cambiano spesso con i nuovi aggiornamenti e le nuove versioni.
+
+A tal proposito il sito di riferimento è: [documentazione ufficiale](https://python-poetry.org/docs/#installation)
+
+<!-- Prima di installare poetry fare riferimento anche alla !(guida ufficiale)[https://python-poetry.org/docs/#installation] che spesso è più aggiornata, soprattutto al cambio delle varie versioni
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
@@ -67,7 +73,7 @@ pipx upgrade poetry
 # Uninstall poetry with pipx
 pipx uninstall poetry
 
-```
+``` -->
 
 ## Creare un progetto python utilizzando Poetry
 
@@ -343,7 +349,7 @@ run = "wsgi:main"
 issues = "https://github.com/jeydi/"
 ```
 
-# Aggiornare poetry
+## Aggiornare poetry
 
 Aggiornare poetry all'ultima versione stabile è semplice
 
@@ -355,7 +361,7 @@ poetry self update
 poetry self update --preview
 ```
 
-# Cancella poetry
+## Cancella poetry
 
 Per cancellare e rimuovere poetry è possibile eseguire questi comandi
 
@@ -368,7 +374,7 @@ python get-poetry.py --uninstall
 POETRY_UNINSTALL=1 python get-poetry.py
 ```
 
-# Abilitare il completamento per bash o zsh
+## Abilitare il completamento per bash o zsh
 
 Poetry supporta il completamento automatico da terminale per diverse CLI come: bash, zsh o fish.
 
@@ -407,7 +413,7 @@ plugins(
     )
 ```
 
-# Deploy
+## Deploy
 
 Come utilizzare poetry con Docker in fase di deploy? 
 
@@ -417,7 +423,56 @@ Ecco alcuni link interessanti
 - docker caching: [https://pythonspeed.com/articles/poetry-vs-docker-caching/](https://pythonspeed.com/articles/poetry-vs-docker-caching/)
 - Production Ready Docker packaging for python developers: [https://pythonspeed.com/docker/#articles-the-basics-of-docker-packaging](https://pythonspeed.com/docker/#articles-the-basics-of-docker-packaging)
 
-# Documentazione e link utili
+A tal proposito condividiamo qui un `Dockerfile` di esempio in modo da poter utilizzare questo come base per il deploy (anche per immagini in produzione)
+
+**Dockerfile**
+```bash
+FROM python:3.8
+
+# Metadata
+LABEL name="PBG Poetry Example"
+LABEL maintainer="PBG"
+LABEL version="0.1"
+
+ARG YOUR_ENV="virtualenv"
+
+ENV YOUR_ENV=${YOUR_ENV} \
+    PYTHONFAULTHANDLER=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONHASHSEED=random \
+    PIP_NO_CACHE_DIR=off \
+    PIP_DISABLE_PIP_VERSION_CHECK=on \
+    PIP_DEFAULT_TIMEOUT=100 \
+    POETRY_VERSION=1.1.6 \
+    LC_ALL=C.UTF-8 \
+    LANG=C.UTF-8
+
+# System deps:
+RUN DEBIAN_FRONTEND=noninteractive apt update && apt install -y libpq-dev gcc
+
+# Install poetry
+RUN pip install "poetry==$POETRY_VERSION"
+
+# Copy only requirements to cache them in docker layer
+WORKDIR /app
+
+#Copy all the project files
+COPY . .
+# Install libraries 
+RUN poetry config virtualenvs.create false \
+    && poetry install $(test "$YOUR_ENV" = production) --no-dev --no-interaction --no-ansi
+
+# Set the launching script exec
+RUN chmod +x launch.sh
+
+# Launch the script for cron
+CMD ["bash", "launch.sh"]
+
+# Launch main python script
+# CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8000", "core.app:app"]
+```
+
+## Documentazione e link utili
 
 Documentazione ufficiale (fatta molto bene) **:** [https://python-poetry.org/docs/basic-usage/](https://python-poetry.org/docs/basic-usage/)
 

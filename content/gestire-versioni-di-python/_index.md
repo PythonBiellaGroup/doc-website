@@ -11,7 +11,7 @@ tags = ["versions","pyenv"]
 
 # Gestire le versioni di Python
 
-In questa prima sezione vediamo come gestire le proprie installazioni di python all'interno della macchina sfruttando: pyenv
+In questa prima sezione vediamo come gestire le proprie installazioni di python all'interno della macchina sfruttando: **pyenv**
 
 ![PythonEnvMeme](./images/python-env.png)
 

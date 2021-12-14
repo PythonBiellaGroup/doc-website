@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.90.1" />
     <meta name="description" content="Python Biella Group Reference Website and Guides">
 <meta name="author" content="Andrea Guzzo">
 
@@ -11,22 +11,22 @@
     <title>Poetry Advance :: Benvenuto</title>
 
     
-    <link href="/css/nucleus.css?1631712719" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1631712719" rel="stylesheet">
-    <link href="/css/hybrid.css?1631712719" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1631712719" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1631712719" rel="stylesheet">
-    <link href="/css/auto-complete.css?1631712719" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1631712719" rel="stylesheet">
-    <link href="/css/theme.css?1631712719" rel="stylesheet">
-    <link href="/css/tabs.css?1631712719" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1631712719" rel="stylesheet">
+    <link href="/css/nucleus.css?1639501593" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1639501593" rel="stylesheet">
+    <link href="/css/hybrid.css?1639501593" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1639501593" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1639501593" rel="stylesheet">
+    <link href="/css/auto-complete.css?1639501593" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1639501593" rel="stylesheet">
+    <link href="/css/theme.css?1639501593" rel="stylesheet">
+    <link href="/css/tabs.css?1639501593" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1639501593" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1631712719" rel="stylesheet">
+    <link href="/css/theme-blue.css?1639501593" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1631712719"></script>
+    <script src="/js/jquery-3.3.1.min.js?1639501593"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1631712719"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1631712719"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1639501593"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1639501593"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.it\/\/it";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1631712719"></script>
+<script type="text/javascript" src="/js/search.js?1639501593"></script>
 
     
   </div>
@@ -908,6 +908,11 @@
     <li><a href="#aggiungere-poetry-ad-un-progetto-esistente-con-dei-requirementstxt">Aggiungere poetry ad un progetto esistente (con dei requirements.txt)</a></li>
     <li><a href="#poetry-in-vscode"><strong>Poetry in VSCode</strong></a></li>
     <li><a href="#un-esempio-di-pyprojecttoml">Un esempio di Pyproject.toml</a></li>
+    <li><a href="#aggiornare-poetry">Aggiornare poetry</a></li>
+    <li><a href="#cancella-poetry">Cancella poetry</a></li>
+    <li><a href="#abilitare-il-completamento-per-bash-o-zsh">Abilitare il completamento per bash o zsh</a></li>
+    <li><a href="#deploy">Deploy</a></li>
+    <li><a href="#documentazione-e-link-utili">Documentazione e link utili</a></li>
   </ul>
 </nav>
     </div>
@@ -935,48 +940,20 @@
 <p>Poetry è il più sofisticato sistema di gestione delle dipendenze su Python disponibile (nel 2020).</p>
 <p>Consente di andare al di là della semplice gestione delle dipendenze, con funzioni come: generare .lock files, consentire di fare scaffolding dei progetti con molte possibilità di personalizzazione, il tutto disponibile via CLI.</p>
 <h2 id="installare-poetry-e-includere-linstallazione"><strong>Installare poetry e includere l&rsquo;installazione</strong></h2>
-<p>Prima di installare poetry fare riferimento anche alla !(guida ufficiale)[https://python-poetry.org/docs/#installation] che spesso è più aggiornata, soprattutto al cambio delle varie versioni</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
-
-<span style="color:#75715e">#aggiungere poetry alle variabili di ambiente della sessione shell corrente</span>
-source $HOME/.poetry/env
-
-<span style="color:#75715e">#controllare se poetry è installato correttamente</span>
-poetry --version
-</code></pre></div><p>Per installare poetry usando windows è possibile lanciare lo stesso comando usando la <code>git bash</code> in modo da poter usare il comando <code>curl</code> (attenzione: conviene utilizzare git bash come amministratore)</p>
-<p><a href="http://evaholmes.com/how-to-set-up-pyenv-and-poetry-on-windows-10-for-python-project-management/">http://evaholmes.com/how-to-set-up-pyenv-and-poetry-on-windows-10-for-python-project-management/</a></p>
-<p>Dopo l&rsquo;installazione aggiungete la seguente variabile d&rsquo;ambiente nelle variabili di percorso all&rsquo;interno delle variabili di sistema</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#sostituite &lt;nomeutente&gt; con il vostro utente</span>
-C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\&lt;</span>nomeutente&gt;<span style="color:#ae81ff">\.</span>poetry<span style="color:#ae81ff">\b</span>in
-
-</code></pre></div><p>Su windows è possibile anche usare lo script di installazione di powershell</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">(</span>Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing<span style="color:#f92672">)</span>.Content | python -
-</code></pre></div><p>Per controllare la versione corrente di poetry installata nel sistema è possibile fare:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">poetry --version
-</code></pre></div><p>Di default poetry è installato nella home directory specifica del vostro utente. Se si desidera cambiare l&rsquo;impostazione è possibile definire la seguente variabile d&rsquo;ambiente <code>POETRY-HOME</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">POETRY_HOME<span style="color:#f92672">=</span>/etc/poetry python <span style="color:#f92672">[</span>get-poetry.py<span style="color:#f92672">](</span>http://get-poetry.py/<span style="color:#f92672">)</span>
-</code></pre></div><p>È anche possibile installare Poetry con <code>pip</code> o con <code>pipx</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Install poetry with pip</span>
-pip install --user poetry
-
-<span style="color:#75715e"># Install poetry with pipx</span>
-pipx install poetry
-
-<span style="color:#75715e"># Upgrade poetry with pipx</span>
-pipx upgrade poetry
-
-<span style="color:#75715e"># Uninstall poetry with pipx</span>
-pipx uninstall poetry
-
-</code></pre></div><h2 id="creare-un-progetto-python-utilizzando-poetry">Creare un progetto python utilizzando Poetry</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">poetry new poetry-tutorial-project
+<p>Per installare Poetry è importante fare riferimento alla guida ufficiale che descrive i passi per i vari sistemi operativi.</p>
+<p>Non riportiamo volutamente i passi necessari all&rsquo;installazione siccome cambiano spesso con i nuovi aggiornamenti e le nuove versioni.</p>
+<p>A tal proposito il sito di riferimento è: <a href="https://python-poetry.org/docs/#installation">documentazione ufficiale</a></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="creare-un-progetto-python-utilizzando-poetry">Creare un progetto python utilizzando Poetry</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">poetry new poetry-tutorial-project
 </code></pre></div><p>La ricetta segreta di ogni progetto costruito con poetry è la creazione di un file chiamato <code>pyproject.toml</code> . All&rsquo;interno di questo file è possibile definire tutto quello che esiste all&rsquo;interno del progetto: metadati, dipendenze, librerie, scripts e molto altro&hellip;</p>
 <p>Se siete a vostro agio con node.js possiamo considerare il file pyproject.toml come un package.json del progetto.</p>
 <p><strong>Composizione di poetry (file toml)</strong></p>
 <p>Documentazione: <a href="https://python-poetry.org/docs/pyproject/">https://python-poetry.org/docs/pyproject/</a></p>
 <ul>
 <li><em>[tool.poetry]</em> = semplice metadato informativo riguardo al package che state sviluppando (come il package name, descrizione, autore, dettagli, &hellip;). Alcune impostazioni sono utili solamente se pensate di pubblicare il vostro pacchetto su Pypi.</li>
-<li><em>[tool.poetry.dependencies]</em> = Consente di definire le dipendenze dell&rsquo;applicazione che sono assolutamente necessarie per lanciare il vostro programma. È anche possibile impostare una versione particolare del pacchetto che volete installare (such as Flask = &ldquo;1.0.0&rdquo;), Se invece si vuole semplicemente definire l&rsquo;ultima versione è possibile inserire solamente &ldquo;*&quot;. È anche possibile specificare la versione di Python richiesta per lanciare il progetto e la vostra applicazione.</li>
+<li><em>[tool.poetry.dependencies]</em> = Consente di definire le dipendenze dell&rsquo;applicazione che sono assolutamente necessarie per lanciare il vostro programma. È anche possibile impostare una versione particolare del pacchetto che volete installare (such as Flask = &ldquo;1.0.0&rdquo;), Se invece si vuole semplicemente definire l&rsquo;ultima versione è possibile inserire solamente &ldquo;*&rdquo;. È anche possibile specificare la versione di Python richiesta per lanciare il progetto e la vostra applicazione.</li>
 <li><em>[tool.poetry.dev-dependencies]</em> = Le Dev dependencies sono tutte le librerie che servono agli sviluppatori per costruire e programmare il progetto, ma che non devono essere portare in produzione. Queste dipendenze non servono per lanciare l&rsquo;applicazione e non verranno scaricate se l&rsquo;applicazione viene &ldquo;buildata&rdquo; di default.</li>
 <li><em>[build-system]</em> = Questa sezione è raramente utilizzata, modificatela solamente se avete intenzione di aggiornare Poetry.</li>
 <li><em>[tool.poetry.scripts]</em> = Qui è dove si specificano gli entry point dell&rsquo;applicazione, assegnando una funzione all&rsquo;interno dei moduli necessaria a lanciare l&rsquo;applicazione. L&rsquo;esempio utilizza: run = &ldquo;wsgi:main&rdquo; che specifica che vogliamo creare un comando &ldquo;run&rdquo; che cercherà all&rsquo;interno del file: &ldquo;<a href="http://wsgi.py/">wsgi.py</a>&rdquo; una funzione chiamata: main(). Con questa impostazione è possibile lanciare l&rsquo;applicazione utilizzando la CLI scrivendo: <em><code>poetry run</code></em></li>
@@ -1015,7 +992,7 @@ pipx uninstall poetry
 <p>Pubblica l&rsquo;output della build all&rsquo;interno di una repository esterna (come ad esempio Pypi)</p>
 <h2 id="poetry-getting-started">Poetry Getting Started</h2>
 <p>Vediamo adesso come fare per inizializzare poetry all&rsquo;interno di un nuovo progetto</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">##Inizializziamo poetry all&#39;interno di una cartella</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">##Inizializziamo poetry all&#39;interno di una cartella</span>
 poetry init
 
 <span style="color:#75715e">#Oppure creiamo un nuovo progetto (crea anche una sotto cartella)</span>
@@ -1060,7 +1037,7 @@ exit
 <span style="color:#75715e">#Rimuovere un ambiente virtuale (venv) utilizzanto poetry</span>
 poetry env remove &lt;python&gt;
 </code></pre></div><h2 id="aggiungere-poetry-ad-un-progetto-esistente-con-dei-requirementstxt">Aggiungere poetry ad un progetto esistente (con dei requirements.txt)</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
 <span style="color:#75715e">#inizializzare poetry all&#39;interno di una directory</span>
 poetry init
 
@@ -1073,15 +1050,15 @@ poetry config virtualenvs.in-project true
 cat requirements.txt|xargs poetry add
 <span style="color:#75715e"># Non è &#34;bellissimo&#34; e potrebbe non funzionare</span>
 </code></pre></div><p><strong>Generare da poetry un file: requirements.txt</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">poetry export -f requirements.txt &gt; requirements.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">poetry export -f requirements.txt &gt; requirements.txt
 
 <span style="color:#75715e">#Un esempio più completo</span>
 poetry export -f requirements.txt --output reqtest.txt --without-hashes
 <span style="color:#75715e">#crea un file: reqtest.txt differente</span>
-<span style="color:#75715e">#senza gli hash (ovvero senza la firma delle librerie)</span> 
+<span style="color:#75715e">#senza gli hash (ovvero senza la firma delle librerie) </span>
 <span style="color:#75715e">#è meno safe perchè con gli hash pip potrebbe avere problemi nell&#39;installazione</span>
 </code></pre></div><p>Attenzione può accadere in alcune situazioni di dover aggiornare pip per installare alcune librerie, per farlo una volta creato e attivato il vostro virtualenvironment con python fare:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Aggiornare pip</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Aggiornare pip</span>
 python -m pip install --upgrade pip
 </code></pre></div><p>Questo problema può verificarsi appena lanciate un&rsquo;installazione di una libreria oppure fate <code>poetry install</code> o <code>poetry update</code>.</p>
 <p><strong>ATTENZIONE</strong>: non chiamate nessun file o modulo, oppure il vostro progetto come un nome di una libreria che installerete utilizzando poetry.</p>
@@ -1097,7 +1074,7 @@ python -m pip install --upgrade pip
 <li>All&rsquo;interno della cartella creare un file chiamato: <code>settings.json</code></li>
 <li>Inserire nel file la seguente configurazione</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">{</span>
     <span style="color:#e6db74">&#34;python.pythonPath&#34;</span>: <span style="color:#e6db74">&#34;&lt;path dell&#39;ambiente venv copiato&gt;&#34;</span>
 <span style="color:#f92672">}</span>
 </code></pre></div><ul>
@@ -1107,7 +1084,7 @@ python -m pip install --upgrade pip
 <p>Ricordarsi di non pushare sulla vostra repository git remota le configurazioni di vscode appena create per non sovrascrivere quelle dei colleghi (inserite la cartella .vscode nel file <code>gitignore</code>)</p>
 <p>Un altro metodo</p>
 <p>Lanciare il progetto da terminale</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#dire a poetry di generare in locale il virtualenv</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#dire a poetry di generare in locale il virtualenv</span>
 poetry config virtualenvs.in-project true --local
 poetry config virtualenvs.create true --local
 poetry config settings.virtualenvs.in-project true
@@ -1116,13 +1093,13 @@ poetry config settings.virtualenvs.in-project true
 poetry install
 </code></pre></div><p>In questo modo generete un cartella chiamata: virtualenv all&rsquo;interno del progetto, in questo modo vscode capirà che questo è il default virtualenv da utilizzare invece di quello globale</p>
 <p>Se si vuole fermare l&rsquo;utilizzo del .venv all&rsquo;interno del progetto è possibile fare:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#tell poetry not to use venv inside the proj folder</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#tell poetry not to use venv inside the proj folder</span>
 poetry config virtualenvs.in-project false --local
 poetry config virtualenvs.create false --local
 poetry config settings.virtualenvs.in-project false
 </code></pre></div><h2 id="un-esempio-di-pyprojecttoml">Un esempio di Pyproject.toml</h2>
 <p>Ecco un esempio di file pyproject.toml che potete utilizzare sui vostri progetti (ovviamente con gli opportuni cambiamenti e personalizzazioni)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>tool.poetry<span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>tool.poetry<span style="color:#f92672">]</span>
 name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;poetry-tutorial-project&#34;</span>
 version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.1.0&#34;</span>
 description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple python project built with poetry&#34;</span>
@@ -1162,25 +1139,25 @@ run <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;wsgi:m
 
 <span style="color:#f92672">[</span>tool.poetry.urls<span style="color:#f92672">]</span>
 issues <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://github.com/jeydi/&#34;</span>
-</code></pre></div><h1 id="aggiornare-poetry">Aggiornare poetry</h1>
+</code></pre></div><h2 id="aggiornare-poetry">Aggiornare poetry</h2>
 <p>Aggiornare poetry all&rsquo;ultima versione stabile è semplice</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Aggiornare poetry all&#39;ultima versione stabile</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Aggiornare poetry all&#39;ultima versione stabile</span>
 poetry self update
 
 <span style="color:#75715e">#Lanciare questo comando se invece volete installare la preview di poetry</span>
 poetry self update --preview
-</code></pre></div><h1 id="cancella-poetry">Cancella poetry</h1>
+</code></pre></div><h2 id="cancella-poetry">Cancella poetry</h2>
 <p>Per cancellare e rimuovere poetry è possibile eseguire questi comandi</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Uninstall poetry</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Uninstall poetry</span>
 python get-poetry.py --uninstall
 
 <span style="color:#75715e"># Another method (optional)</span>
 <span style="color:#75715e"># Setting the POETRY_UNINSTALL env variable befor executing the installer</span>
 POETRY_UNINSTALL<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> python get-poetry.py
-</code></pre></div><h1 id="abilitare-il-completamento-per-bash-o-zsh">Abilitare il completamento per bash o zsh</h1>
+</code></pre></div><h2 id="abilitare-il-completamento-per-bash-o-zsh">Abilitare il completamento per bash o zsh</h2>
 <p>Poetry supporta il completamento automatico da terminale per diverse CLI come: bash, zsh o fish.</p>
 <p>Se volete avere ulteriori dettagli su queste funzionalità potete lanciare: <code>poetry help completions</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">poetry completions bash &gt; /etc/bash_completion.d/poetry.bash-completion
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">poetry completions bash &gt; /etc/bash_completion.d/poetry.bash-completion
 
 <span style="color:#75715e"># Bash (Homebrew)</span>
 poetry completions bash &gt; <span style="color:#66d9ef">$(</span>brew --prefix<span style="color:#66d9ef">)</span>/etc/bash_completion.d/poetry.bash-completion
@@ -1194,13 +1171,13 @@ poetry completions zsh &gt; $ZSH_CUSTOM/plugins/poetry/_poetry
 </code></pre></div><p>Dovrete riavviare la shell per poter vedere le modifiche</p>
 <p>Attenzione (alcuni dettagli):</p>
 <p>For <code>zsh</code> you must add the following line into <code>~/.zshrc</code> profile before <code>compinit</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fpath<span style="color:#f92672">+=</span>~/.zfunc
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fpath<span style="color:#f92672">+=</span>~/.zfunc
 </code></pre></div><p>For <code>oh-my-zsh</code> you must then enable poetry in your <code>~/.zshrc</code> plugin</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">plugins<span style="color:#f92672">(</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">plugins<span style="color:#f92672">(</span>
     poetry
     ...
     <span style="color:#f92672">)</span>
-</code></pre></div><h1 id="deploy">Deploy</h1>
+</code></pre></div><h2 id="deploy">Deploy</h2>
 <p>Come utilizzare poetry con Docker in fase di deploy?</p>
 <p>Ecco alcuni link interessanti</p>
 <ul>
@@ -1208,7 +1185,52 @@ poetry completions zsh &gt; $ZSH_CUSTOM/plugins/poetry/_poetry
 <li>docker caching: <a href="https://pythonspeed.com/articles/poetry-vs-docker-caching/">https://pythonspeed.com/articles/poetry-vs-docker-caching/</a></li>
 <li>Production Ready Docker packaging for python developers: <a href="https://pythonspeed.com/docker/#articles-the-basics-of-docker-packaging">https://pythonspeed.com/docker/#articles-the-basics-of-docker-packaging</a></li>
 </ul>
-<h1 id="documentazione-e-link-utili">Documentazione e link utili</h1>
+<p>A tal proposito condividiamo qui un <code>Dockerfile</code> di esempio in modo da poter utilizzare questo come base per il deploy (anche per immagini in produzione)</p>
+<p><strong>Dockerfile</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">FROM python:3.8
+
+<span style="color:#75715e"># Metadata</span>
+LABEL name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;PBG Poetry Example&#34;</span>
+LABEL maintainer<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;PBG&#34;</span>
+LABEL version<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0.1&#34;</span>
+
+ARG YOUR_ENV<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;virtualenv&#34;</span>
+
+ENV YOUR_ENV<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>YOUR_ENV<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    PYTHONFAULTHANDLER<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    PYTHONUNBUFFERED<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    PYTHONHASHSEED<span style="color:#f92672">=</span>random <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    PIP_NO_CACHE_DIR<span style="color:#f92672">=</span>off <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    PIP_DISABLE_PIP_VERSION_CHECK<span style="color:#f92672">=</span>on <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    PIP_DEFAULT_TIMEOUT<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    POETRY_VERSION<span style="color:#f92672">=</span>1.1.6 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    LC_ALL<span style="color:#f92672">=</span>C.UTF-8 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    LANG<span style="color:#f92672">=</span>C.UTF-8
+
+<span style="color:#75715e"># System deps:</span>
+RUN DEBIAN_FRONTEND<span style="color:#f92672">=</span>noninteractive apt update <span style="color:#f92672">&amp;&amp;</span> apt install -y libpq-dev gcc
+
+<span style="color:#75715e"># Install poetry</span>
+RUN pip install <span style="color:#e6db74">&#34;poetry==</span>$POETRY_VERSION<span style="color:#e6db74">&#34;</span>
+
+<span style="color:#75715e"># Copy only requirements to cache them in docker layer</span>
+WORKDIR /app
+
+<span style="color:#75715e">#Copy all the project files</span>
+COPY . .
+<span style="color:#75715e"># Install libraries </span>
+RUN poetry config virtualenvs.create false <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> poetry install <span style="color:#66d9ef">$(</span>test <span style="color:#e6db74">&#34;</span>$YOUR_ENV<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> production<span style="color:#66d9ef">)</span> --no-dev --no-interaction --no-ansi
+
+<span style="color:#75715e"># Set the launching script exec</span>
+RUN chmod +x launch.sh
+
+<span style="color:#75715e"># Launch the script for cron</span>
+CMD <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;bash&#34;</span>, <span style="color:#e6db74">&#34;launch.sh&#34;</span><span style="color:#f92672">]</span>
+
+<span style="color:#75715e"># Launch main python script</span>
+<span style="color:#75715e"># CMD [&#34;gunicorn&#34;, &#34;-w&#34;, &#34;4&#34;, &#34;-b&#34;, &#34;0.0.0.0:8000&#34;, &#34;core.app:app&#34;]</span>
+</code></pre></div><h2 id="documentazione-e-link-utili">Documentazione e link utili</h2>
 <p>Documentazione ufficiale (fatta molto bene) <strong>:</strong> <a href="https://python-poetry.org/docs/basic-usage/">https://python-poetry.org/docs/basic-usage/</a></p>
 <p><a href="https://hackersandslackers.com/python-poetry-package-manager/">https://hackersandslackers.com/python-poetry-package-manager/</a></p>
 <p><a href="https://www.youtube.com/watch?v=QX_Nhu1zhlg&amp;ab_channel=PyGotham2019">https://www.youtube.com/watch?v=QX_Nhu1zhlg&amp;ab_channel=PyGotham2019</a></p>
@@ -1719,19 +1741,19 @@ poetry completions zsh &gt; $ZSH_CUSTOM/plugins/poetry/_poetry
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1631712719"></script>
-    <script src="/js/perfect-scrollbar.min.js?1631712719"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1631712719"></script>
-    <script src="/js/jquery.sticky.js?1631712719"></script>
-    <script src="/js/featherlight.min.js?1631712719"></script>
-    <script src="/js/highlight.pack.js?1631712719"></script>
+    <script src="/js/clipboard.min.js?1639501593"></script>
+    <script src="/js/perfect-scrollbar.min.js?1639501593"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1639501593"></script>
+    <script src="/js/jquery.sticky.js?1639501593"></script>
+    <script src="/js/featherlight.min.js?1639501593"></script>
+    <script src="/js/highlight.pack.js?1639501593"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1631712719"></script>
-    <script src="/js/learn.js?1631712719"></script>
-    <script src="/js/hugo-learn.js?1631712719"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1639501593"></script>
+    <script src="/js/learn.js?1639501593"></script>
+    <script src="/js/hugo-learn.js?1639501593"></script>
     
         
-            <script src="/mermaid/mermaid.js?1631712719"></script>
+            <script src="/mermaid/mermaid.js?1639501593"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

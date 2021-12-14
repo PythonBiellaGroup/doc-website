@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.90.1" />
     <meta name="description" content="Python Biella Group Reference Website and Guides">
 <meta name="author" content="Andrea Guzzo">
 
@@ -11,22 +11,22 @@
     <title>Poetry :: Benvenuto</title>
 
     
-    <link href="/css/nucleus.css?1631712719" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1631712719" rel="stylesheet">
-    <link href="/css/hybrid.css?1631712719" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1631712719" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1631712719" rel="stylesheet">
-    <link href="/css/auto-complete.css?1631712719" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1631712719" rel="stylesheet">
-    <link href="/css/theme.css?1631712719" rel="stylesheet">
-    <link href="/css/tabs.css?1631712719" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1631712719" rel="stylesheet">
+    <link href="/css/nucleus.css?1639501593" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1639501593" rel="stylesheet">
+    <link href="/css/hybrid.css?1639501593" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1639501593" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1639501593" rel="stylesheet">
+    <link href="/css/auto-complete.css?1639501593" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1639501593" rel="stylesheet">
+    <link href="/css/theme.css?1639501593" rel="stylesheet">
+    <link href="/css/tabs.css?1639501593" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1639501593" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1631712719" rel="stylesheet">
+    <link href="/css/theme-blue.css?1639501593" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1631712719"></script>
+    <script src="/js/jquery-3.3.1.min.js?1639501593"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1631712719"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1631712719"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1639501593"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1639501593"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.it\/\/it";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1631712719"></script>
+<script type="text/javascript" src="/js/search.js?1639501593"></script>
 
     
   </div>
@@ -942,7 +942,7 @@
 <p>Il cuore di Poetry è il file <code>pyproject.toml</code> che viene creato all&rsquo;interno del progetto al momento dell&rsquo;inizializzazione.</p>
 <p>Questo file consente di definire tutte le caratteristiche di progetto e di gestire l&rsquo;intero progetto (come se usassimo un package.json su javascript per intenderci)</p>
 <p>Vediamo quindi come usare Poetry in un <strong>nuovo progetto</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Inizializzare poetry all&#39;interno di una cartella</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Inizializzare poetry all&#39;interno di una cartella</span>
 poetry init
 
 <span style="color:#75715e"># Oppure creare un nuovo progetto</span>
@@ -972,11 +972,11 @@ poetry show -v
 <span style="color:#75715e">#Uscire da una shell lanciata da poetry</span>
 exit
 </code></pre></div><p>Attenzione: su windows utilizzando PowerShell quando fate: <code>poetry shell</code> in automatico vi butta fuori da powershell e vi farà usare cmd.</p>
-<p>È un bug noto e comunque c'è un modo per risolverlo (un workaround)</p>
+<p>È un bug noto e comunque c&rsquo;è un modo per risolverlo (un workaround)</p>
 <p><a href="https://github.com/python-poetry/poetry/issues/2030">https://github.com/python-poetry/poetry/issues/2030</a></p>
 <p>Come usare poetry in un progetto già esistente?</p>
 <p>Magari che contiene già un <code>requirements.txt</code> file</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Inizializzare poetry all&#39;interno di una directory</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Inizializzare poetry all&#39;interno di una directory</span>
 poetry init
 
 <span style="color:#75715e"># Se vuoi mantenere il .venv all&#39;interno della cartella di progetto fare:</span>
@@ -987,10 +987,10 @@ cat requirements.txt|xargs poetry add
 
 <span style="color:#75715e"># Se non esiste un requirements.txt continuare con classico format</span>
 </code></pre></div><p><strong>Generate poetry requirements.txt</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Creare un file requirements.txt dalla configurazione di poetry</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Creare un file requirements.txt dalla configurazione di poetry</span>
 poetry export -f requirements.txt --output requirements.txt
 </code></pre></div><p>Esempio di pyproject.toml</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>tool.poetry<span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>tool.poetry<span style="color:#f92672">]</span>
 name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;poetry-tutorial-project&#34;</span>
 version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.1.0&#34;</span>
 description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple python project built with poetry&#34;</span>
@@ -1033,7 +1033,7 @@ issues <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;htt
 </code></pre></div><h5 id="attenzione">Attenzione:</h5>
 <p>Per alcune librerie (ad esempio pandas), potrebbero esserci dei problemi di versionamento rispetto alle librerie dipendenti.
 A tal proposito si consiglia di installare anche pip come dipendenza e aggiornarlo all&rsquo;ultima versione.</p>
-<pre><code>#Installare pip
+<pre tabindex="0"><code>#Installare pip
 poetry add pip
 
 #Oppure aggiornare pip una volta creato il .venv con poetry
@@ -1541,19 +1541,19 @@ pip install --upgrade pip
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1631712719"></script>
-    <script src="/js/perfect-scrollbar.min.js?1631712719"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1631712719"></script>
-    <script src="/js/jquery.sticky.js?1631712719"></script>
-    <script src="/js/featherlight.min.js?1631712719"></script>
-    <script src="/js/highlight.pack.js?1631712719"></script>
+    <script src="/js/clipboard.min.js?1639501593"></script>
+    <script src="/js/perfect-scrollbar.min.js?1639501593"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1639501593"></script>
+    <script src="/js/jquery.sticky.js?1639501593"></script>
+    <script src="/js/featherlight.min.js?1639501593"></script>
+    <script src="/js/highlight.pack.js?1639501593"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1631712719"></script>
-    <script src="/js/learn.js?1631712719"></script>
-    <script src="/js/hugo-learn.js?1631712719"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1639501593"></script>
+    <script src="/js/learn.js?1639501593"></script>
+    <script src="/js/hugo-learn.js?1639501593"></script>
     
         
-            <script src="/mermaid/mermaid.js?1631712719"></script>
+            <script src="/mermaid/mermaid.js?1639501593"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

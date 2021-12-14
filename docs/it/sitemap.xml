@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://pythonbiellagroup.it/it/gestire-versioni-di-python/</loc>
     <lastmod>2021-06-24T19:19:56+02:00</lastmod>
@@ -15,139 +14,85 @@
                 hreflang="it"
                 href="https://pythonbiellagroup.it/it/gestire-versioni-di-python/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/gestire-dipendenze/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/struttura-di-progetto/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/code-style/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/documentare-il-codice/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/visual-studio-code/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/repl/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/code-style/black/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/struttura-di-progetto/import-relativi/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/visual-studio-code/installare-un-linter/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/gestire-versioni-di-python/pyenv/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/materiale-utile/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/gestire-dipendenze/virtualenv/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/gestire-dipendenze/pyenv-virtualenv/</loc>
     <lastmod>2021-06-24T19:48:12+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/code-style/flake8/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/struttura-di-progetto/import-circolari/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/gestire-versioni-di-python/pyenv-avanzato/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/visual-studio-code/utilizzare-una-versione-di-python/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/code-style/bandit/</loc>
     <lastmod>2021-06-25T19:55:25+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/gestire-dipendenze/poetry/</loc>
     <lastmod>2021-06-24T19:48:20+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/visual-studio-code/aggiungere-code-al-terminale/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/struttura-di-progetto/cookiecutter/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/gestire-dipendenze/poetry-advance/</loc>
     <lastmod>2021-06-24T19:48:30+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/struttura-di-progetto/costruire-un-progetto/</loc>
     <lastmod>2021-05-10T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/visual-studio-code/usare-il-debbuger/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/gestire-dipendenze/pipx/</loc>
     <lastmod>2021-06-24T19:48:38+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/visual-studio-code/testing/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/pyenv/</loc>
     <lastmod>2021-06-24T19:19:56+02:00</lastmod>
     <xhtml:link
@@ -160,9 +105,7 @@
                 hreflang="it"
                 href="https://pythonbiellagroup.it/it/tags/pyenv/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/</loc>
     <lastmod>2021-06-24T19:19:56+02:00</lastmod>
     <xhtml:link
@@ -175,9 +118,7 @@
                 hreflang="it"
                 href="https://pythonbiellagroup.it/it/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/versions/</loc>
     <lastmod>2021-06-24T19:19:56+02:00</lastmod>
     <xhtml:link
@@ -190,54 +131,34 @@
                 hreflang="it"
                 href="https://pythonbiellagroup.it/it/tags/versions/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/code/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/dipendenze/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/docs/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/documentazione/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/estensioni/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/extra/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/ide/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/ipython/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/mkdocs/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
     <xhtml:link
@@ -250,34 +171,22 @@
                 hreflang="it"
                 href="https://pythonbiellagroup.it/it/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/repl/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/settings/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/style/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/venv/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/vscode/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -290,5 +199,4 @@
                 href="https://pythonbiellagroup.it/it/categories/"
                 />
   </url>
-  
 </urlset>

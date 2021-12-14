@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.90.1" />
     <meta name="description" content="Python Biella Group Reference Website and Guides">
 <meta name="author" content="Andrea Guzzo">
 
@@ -11,22 +11,22 @@
     <title>Import circolari :: Benvenuto</title>
 
     
-    <link href="/css/nucleus.css?1631712719" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1631712719" rel="stylesheet">
-    <link href="/css/hybrid.css?1631712719" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1631712719" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1631712719" rel="stylesheet">
-    <link href="/css/auto-complete.css?1631712719" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1631712719" rel="stylesheet">
-    <link href="/css/theme.css?1631712719" rel="stylesheet">
-    <link href="/css/tabs.css?1631712719" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1631712719" rel="stylesheet">
+    <link href="/css/nucleus.css?1639501593" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1639501593" rel="stylesheet">
+    <link href="/css/hybrid.css?1639501593" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1639501593" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1639501593" rel="stylesheet">
+    <link href="/css/auto-complete.css?1639501593" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1639501593" rel="stylesheet">
+    <link href="/css/theme.css?1639501593" rel="stylesheet">
+    <link href="/css/tabs.css?1639501593" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1639501593" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1631712719" rel="stylesheet">
+    <link href="/css/theme-blue.css?1639501593" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1631712719"></script>
+    <script src="/js/jquery-3.3.1.min.js?1639501593"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1631712719"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1631712719"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1639501593"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1639501593"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.it\/\/it";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1631712719"></script>
+<script type="text/javascript" src="/js/search.js?1639501593"></script>
 
     
   </div>
@@ -925,7 +925,7 @@
 
 <h2 id="import-circolari">Import circolari</h2>
 <p>Questo è un problema molto grave in un progetto e l&rsquo;errore accade quando a partire da un modulo si cerca di importare l&rsquo;altro e viceversa (crendo appunto una circolarità negli import).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># file_a.py</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># file_a.py</span>
 <span style="color:#f92672">from</span> file_b <span style="color:#f92672">import</span> hello_world
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span>():
@@ -935,14 +935,14 @@
     <span style="color:#66d9ef">return</span> hello_world()
 
 first_program()
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># file_b.py</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># file_b.py</span>
 <span style="color:#f92672">from</span> file_a <span style="color:#f92672">import</span> hello
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello_world</span>():
 
     <span style="color:#66d9ef">return</span> hello() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; world&#34;</span>
 </code></pre></div><p>Quando si lancia <code>python file_a.py</code> si avrà il seguente errore:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Traceback <span style="color:#f92672">(</span>most recent call last<span style="color:#f92672">)</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Traceback <span style="color:#f92672">(</span>most recent call last<span style="color:#f92672">)</span>:
   File <span style="color:#e6db74">&#34;file_a.py&#34;</span>, line 1, in &lt;module&gt;
     from file_b import hello_world
   File <span style="color:#e6db74">&#34;/my_module/file_b.py&#34;</span>, line 2, in &lt;module&gt;
@@ -1450,19 +1450,19 @@ ImportError: cannot import name <span style="color:#e6db74">&#39;hello_world&#39
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1631712719"></script>
-    <script src="/js/perfect-scrollbar.min.js?1631712719"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1631712719"></script>
-    <script src="/js/jquery.sticky.js?1631712719"></script>
-    <script src="/js/featherlight.min.js?1631712719"></script>
-    <script src="/js/highlight.pack.js?1631712719"></script>
+    <script src="/js/clipboard.min.js?1639501593"></script>
+    <script src="/js/perfect-scrollbar.min.js?1639501593"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1639501593"></script>
+    <script src="/js/jquery.sticky.js?1639501593"></script>
+    <script src="/js/featherlight.min.js?1639501593"></script>
+    <script src="/js/highlight.pack.js?1639501593"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1631712719"></script>
-    <script src="/js/learn.js?1631712719"></script>
-    <script src="/js/hugo-learn.js?1631712719"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1639501593"></script>
+    <script src="/js/learn.js?1639501593"></script>
+    <script src="/js/hugo-learn.js?1639501593"></script>
     
         
-            <script src="/mermaid/mermaid.js?1631712719"></script>
+            <script src="/mermaid/mermaid.js?1639501593"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
