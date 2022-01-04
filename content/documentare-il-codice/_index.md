@@ -7,7 +7,7 @@ pre = "<b>4. </b>"
 tags = ["documentazione","mkdocs","docs"]
 +++
 
-### Sezione 4
+### Sezione 4s
 
 # Come documentare il proprio codice
 

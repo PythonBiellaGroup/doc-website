@@ -77,7 +77,7 @@ poetry init
 poetry config virtualenvs.in-project true
 
 ## Import requirements.txt libraries all'interno di poetry
-cat requirements.txt|xargs poetry add
+poetry add $( cat requirements.txt )
 
 # Se non esiste un requirements.txt continuare con classico format
 ```
