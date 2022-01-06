@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.90.1" />
+    <meta name="description" content="Python Biella Group Reference Website and Guides">
+<meta name="author" content="Andrea Guzzo">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Pyenv Advanced :: Python Biella Group</title>
+
+    
+    <link href="/css/nucleus.css?1641493526" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1641493526" rel="stylesheet">
+    <link href="/css/hybrid.css?1641493526" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1641493526" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1641493526" rel="stylesheet">
+    <link href="/css/auto-complete.css?1641493526" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1641493526" rel="stylesheet">
+    <link href="/css/theme.css?1641493526" rel="stylesheet">
+    <link href="/css/tabs.css?1641493526" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1641493526" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1641493526" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1641493526"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/en/gestire-versioni-di-python/pyenv-avanzato/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="https://pythonbiellagroup.github.io/ModernPythonDevelopment/images/logo.png" width="130px"/>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1641493526"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1641493526"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/pythonbiellagroup.it\/\/en";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1641493526"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/gestire-versioni-di-python/" title="Manage Python&#39;s versions" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/en/gestire-versioni-di-python/">
+          <b>1. </b>Manage Python&#39;s versions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-versioni-di-python/pyenv-avanzato/" title="Pyenv Advanced" class="dd-item active">
+        <a href="/en/gestire-versioni-di-python/pyenv-avanzato/">
+        Pyenv Advanced
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-versioni-di-python/pyenv/" title="Pyenv Beginner" class="dd-item ">
+        <a href="/en/gestire-versioni-di-python/pyenv/">
+        Pyenv Beginner
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/gestire-dipendenze/" title="Manage Dependecies" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/gestire-dipendenze/">
+          <b>2. </b>Manage Dependecies
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-dipendenze/virtualenv/" title="Virtualenv" class="dd-item ">
+        <a href="/en/gestire-dipendenze/virtualenv/">
+        Virtualenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-dipendenze/pyenv-virtualenv/" title="Pyenv-virtualenv" class="dd-item ">
+        <a href="/en/gestire-dipendenze/pyenv-virtualenv/">
+        Pyenv-virtualenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-dipendenze/poetry/" title="Poetry" class="dd-item ">
+        <a href="/en/gestire-dipendenze/poetry/">
+        Poetry
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-dipendenze/poetry-advance/" title="Poetry Advance" class="dd-item ">
+        <a href="/en/gestire-dipendenze/poetry-advance/">
+        Poetry Advance
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-dipendenze/pipx/" title="Pipx" class="dd-item ">
+        <a href="/en/gestire-dipendenze/pipx/">
+        Pipx
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/struttura-di-progetto/" title="Project Structure" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/struttura-di-progetto/">
+          <b>3. </b>Project Structure
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/struttura-di-progetto/import-relativi/" title="Relative Imports" class="dd-item ">
+        <a href="/en/struttura-di-progetto/import-relativi/">
+        Relative Imports
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/struttura-di-progetto/import-circolari/" title="Circular Imports" class="dd-item ">
+        <a href="/en/struttura-di-progetto/import-circolari/">
+        Circular Imports
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/struttura-di-progetto/cookiecutter/" title="cookiecutter" class="dd-item ">
+        <a href="/en/struttura-di-progetto/cookiecutter/">
+        cookiecutter
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/struttura-di-progetto/costruire-un-progetto/" title="Build a project" class="dd-item ">
+        <a href="/en/struttura-di-progetto/costruire-un-progetto/">
+        Build a project
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/code-style/" title="Code Styles" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/code-style/">
+          <b>4. </b>Code Styles
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/code-style/black/" title="Black" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/code-style/black/">
+          Black
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/code-style/flake8/" title="Flake8" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/code-style/flake8/">
+          Flake8
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/code-style/bandit/" title="Bandit" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/code-style/bandit/">
+          Bandit
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/documentare-il-codice/" title="Document code" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/documentare-il-codice/">
+          <b>4. </b>Document code
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/visual-studio-code/" title="Visual Studio Code" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/visual-studio-code/">
+          <b>5. </b>Visual Studio Code
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/visual-studio-code/installare-un-linter/" title="linter installation" class="dd-item ">
+        <a href="/en/visual-studio-code/installare-un-linter/">
+        linter installation
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/visual-studio-code/utilizzare-una-versione-di-python/" title="Make us of a Python version" class="dd-item ">
+        <a href="/en/visual-studio-code/utilizzare-una-versione-di-python/">
+        Make us of a Python version
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/visual-studio-code/aggiungere-code-al-terminale/" title="Add tails to terminal" class="dd-item ">
+        <a href="/en/visual-studio-code/aggiungere-code-al-terminale/">
+        Add tails to terminal
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/visual-studio-code/usare-il-debbuger/" title="debugger usage" class="dd-item ">
+        <a href="/en/visual-studio-code/usare-il-debbuger/">
+        debugger usage
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/visual-studio-code/testing/" title="Testing framework" class="dd-item ">
+        <a href="/en/visual-studio-code/testing/">
+        Testing framework
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/repl/" title="REPL" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/repl/">
+          <b>6. </b>REPL
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/materiale-utile/" title="Useful Materials" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/materiale-utile/">
+          <b>X. </b>Useful Materials
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://pythonbiellagroup.it/en/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="it" value="https://pythonbiellagroup.it/it/gestire-versioni-di-python/pyenv-avanzato/">Italiano</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="https://pythonbiellagroup.it/en/gestire-versioni-di-python/pyenv-avanzato/" selected>English</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/PythonBiellaGroup" data-icon="octicon-star" data-show-count="true" aria-label="Star pocc/tshark.dev on GitHub">Github</a>
+
+    <p>Copyright 2021 - <a href="https://github.com/PythonBiellaGroup">PythonBiellaGroup</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>Python Biella Group</a> > <a href='/en/gestire-versioni-di-python/'>Manage Python's versions</a> > Pyenv Advanced
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#useful-documentation">Useful documentation</a></li>
+    <li><a href="#pyenv-installation">Pyenv installation</a>
+      <ul>
+        <li><a href="#install-python">Install Python</a></li>
+      </ul>
+    </li>
+    <li><a href="#use-a-specific-version-of-pyenv">Use a specific version of Pyenv</a>
+      <ul>
+        <li><a href="#-attention---in-windows-10">⚠ Attention ⚠  IN WINDOWS 10</a></li>
+      </ul>
+    </li>
+    <li><a href="#using-pyenv-to-create-virtualenvs">Using pyenv to create virtualenvs</a></li>
+    <li><a href="#pyenv-with-poetry">Pyenv with Poetry</a>
+      <ul>
+        <li><a href="#bonus-utilizzare-oh-my-zsh">Bonus: utilizzare oh-my-zsh</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Pyenv Advanced
+            </h1>
+          
+
+        
+
+
+<p>In this advanced section, you&rsquo;ll find tips, best practices, and guides to help you learn everything there is to know about Pyenv.</p>
+<h2 id="useful-documentation">Useful documentation</h2>
+<p><a href="https://realpython.com/intro-to-pyenv/">https://realpython.com/intro-to-pyenv/</a></p>
+<p>Pyenv with poetry</p>
+<p><a href="https://blog.jayway.com/2019/12/28/pyenv-salvatori-nel-caos-pitone/">https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/</a></p>
+<p>Instructions for configuring Pyenv on a Mac.</p>
+<p><a href="https://opensource.com/article/20/4/pyenv">https://opensource.com/article/20/4/pyenv</a></p>
+<p>Take note of a Github Gist.</p>
+<p><a href="https://gist.github.com/Geoyi/f55ed54d24cc9ff1c14bd95fac21c042">https://gist.github.com/Geoyi/f55ed54d24cc9ff1c14bd95fac21c042</a></p>
+<p>Pyenv is a Python installation manager. Allow and execute other Python installations on the same machine.</p>
+<p>Pyenv manages the many Python versions for you, avoiding the chaos of dependencies, versions, and installations seen in the first image.</p>
+<p><strong>Why don&rsquo;t you use Python, which is installed by default on your operating system?</strong></p>
+<ul>
+<li>Because they might cause problems in projects, each has their own version, and there may be migration and reproducibility issues when they are used in production.</li>
+</ul>
+<p><strong>What does pyenv allow us to do? (operational flow)</strong></p>
+<ol>
+<li>Do not use Python in your own user space.</li>
+<li>Install multiple Python versions.</li>
+<li>Specify which Python version will be used for a project.</li>
+<li>Easily switch between different versions of the software.</li>
+</ol>
+<p><img src="./images/python-pyramid.png" alt="PythonPyramid"></p>
+<h2 id="pyenv-installation">Pyenv installation</h2>
+<p>To install Pyenv, please refer to the official documentation on Github. This is due to the fact that installation methods might change accordingly to your operating system and between its versions.</p>
+<p>More advanced Pyenv usage may be found forward in this guide.</p>
+<p>You may get the installation reference guide at: <a href="https://github.com/pyenv/pyenv#installation">here</a>.</p>
+<p><strong>Pyenv installation verification</strong></p>
+<p>Once installed and properly configured on your terminal, perform the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv --version
+</code></pre></div><h3 id="install-python">Install Python</h3>
+<p>Visualize python versions (here gets the 3.* ones only)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv install --list | grep <span style="color:#e6db74">&#34; 3\.[678]&#34;</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv install -v 3.7.2
+</code></pre></div><p>Visualize where Python versions are installed</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls ~/.pyenv/versions/
+</code></pre></div><p>Disinstall a version of Pyhton</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv uninstall &lt;version&gt;
+</code></pre></div><p>Every time a new version of Python with pyenv is installed on Windows (or other operating systems), it is vital to rehash.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># rehash to update shims</span>
+pyenv rehash
+</code></pre></div><p>Disinstall vesrion of Python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># See all Python installation</span>
+<span style="color:#75715e"># visualizzare le versioni di pyenv installate</span>
+
+pyenv versions
+
+<span style="color:#75715e">#disinstallare una determinata versione</span>
+pyenv uninstall &lt;versione&gt;
+</code></pre></div><h2 id="use-a-specific-version-of-pyenv">Use a specific version of Pyenv</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Visualize the installed (available) versions</span>
+pyenv versions
+
+<span style="color:#75715e"># Visualize the active version of python with pyenv</span>
+pyenv which python
+
+<span style="color:#75715e"># Set a global Python version with pyenv</span>
+pyenv global &lt;version&gt;
+
+<span style="color:#75715e"># If you want to come back to the system default</span>
+pyenv global system
+</code></pre></div><p>You can also specify a local python pyenv version for each project within the project folder by performing the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv local &lt;version&gt;
+</code></pre></div><p>Or set the version of a particular Python shell</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv shell &lt;version&gt;
+</code></pre></div><h3 id="-attention---in-windows-10">⚠ Attention ⚠  IN WINDOWS 10</h3>
+<p>After installing the Python global version of pyenv, remove any references to the basic Python that were previously installed from the environment variable <strong>PATH</strong>.</p>
+<h2 id="using-pyenv-to-create-virtualenvs">Using pyenv to create virtualenvs</h2>
+<p>Pyenv offers a wonderful plugin called <code>pyenv-virtualenv</code> that allows you to easily manage the numerous virtualenvs.</p>
+<p>A virtualenv can be managed in a variety of ways (pyenv allows you to manage all 3 in a very simple and convenient way)</p>
+<ul>
+<li><strong>pyenv</strong> manages multiple versions of Python itself.</li>
+<li><strong>virtualenv/venv</strong> manages virtual environments for a specific Python version.</li>
+<li><strong>pyenv-virtualenv</strong> manages virtual environments for across varying versions of Python.</li>
+</ul>
+<p>create a virtualenv</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv virtualenv &lt;python_version&gt; &lt;environment_name&gt;
+
+<span style="color:#75715e">#&lt;pythonversion&gt; is optional</span>
+</code></pre></div><p>Activate a virtualenv</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv local myproject
+
+<span style="color:#75715e">#verify python version</span>
+pyenv which python
+
+<span style="color:#75715e">#verify pip version</span>
+pyenv which pip
+</code></pre></div><p>Then you may activate or deactivate a specific virtualenv (a bit like what happens with anaconda)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv activate &lt;environment_name&gt;
+
+pyenv deactivate
+</code></pre></div><p>Con pyenv is even possible to use concurrently different pyhton versions at the same time&hellip;</p>
+<h2 id="pyenv-with-poetry">Pyenv with Poetry</h2>
+<p><a href="https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/">https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/</a></p>
+<h3 id="bonus-utilizzare-oh-my-zsh">Bonus: utilizzare oh-my-zsh</h3>
+<p>You may use pyenv as a plugin on oh-my-zsh by adding <code>pyenv</code> inside the plugins section of the configuration file.</p>
+<p><strong>Info:</strong> Prevent conda from starting by default</p>
+<p><code>conda config --set auto_activate_base false</code></p>
+<h1 id="base-libraries-to-install">base libraries to install</h1>
+<p>Installed base libraries list (you need to create base project to configure these libraries)</p>
+<ul>
+<li>Bandit</li>
+<li>Black</li>
+<li>Poetry</li>
+<li>Flake8</li>
+<li>Mypy</li>
+<li>Isort</li>
+<li>Pylint</li>
+<li>Pytest</li>
+</ul>
+<p>Fot this purpose, we recommend that you use Poetry on your projects to manage the necessary dependencies and libraries (both development and production).</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/en/gestire-versioni-di-python/" title="Manage Python&#39;s versions"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/en/gestire-versioni-di-python/pyenv/" title="Pyenv Beginner" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1641493526"></script>
+    <script src="/js/perfect-scrollbar.min.js?1641493526"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1641493526"></script>
+    <script src="/js/jquery.sticky.js?1641493526"></script>
+    <script src="/js/featherlight.min.js?1641493526"></script>
+    <script src="/js/highlight.pack.js?1641493526"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1641493526"></script>
+    <script src="/js/learn.js?1641493526"></script>
+    <script src="/js/hugo-learn.js?1641493526"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1641493526"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

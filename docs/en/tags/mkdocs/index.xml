@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mkdocs on Python Biella Group</title>
+    <link>https://pythonbiellagroup.it/en/tags/mkdocs/</link>
+    <description>Recent content in mkdocs on Python Biella Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/en/tags/mkdocs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Document code</title>
+      <link>https://pythonbiellagroup.it/en/documentare-il-codice/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/documentare-il-codice/</guid>
+      <description>Section 4 how to document code There are many and different ways to document code. The basic idea behind code documentation is to communicate to others what you are doing in the easiest and immediate way as possibile. The most of the time however you are going to communicate directly to&amp;hellip; you 😇! So do yourself a favor, be nice to yourself by documenting your code.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manage Dependecies on Python Biella Group</title>
+    <link>https://pythonbiellagroup.it/en/gestire-dipendenze/</link>
+    <description>Recent content in Manage Dependecies on Python Biella Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/en/gestire-dipendenze/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Virtualenv</title>
+      <link>https://pythonbiellagroup.it/en/gestire-dipendenze/virtualenv/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-dipendenze/virtualenv/</guid>
+      <description>Packaging (and Enviroments) Virtualenv
+Pipenv vs virtualenv: https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853
+Venv: https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-environments-a53d1e191490
+# install virtualenv pip install virtualenv # prior launching the command below be sure to have conda and exxecute: conda activate development # conda version has to he &amp;gt;= desidered version # generate a new virtualenv in a specific path virtualenv --python=3.6 &amp;lt;path_nome_env&amp;gt; #### UNIX (mac and linux) source &amp;lt;path_nome_env&amp;gt;/bin/activate #### WINDOWS &amp;lt;path_nome_env&amp;gt;\scripts\activate #### Visual Studio Code  #(install Microsoft Python Extension and then click on python in the bottom tab) #Windows navigate to -&amp;gt; &amp;lt;path_nome_env&amp;gt;\scripts\&amp;lt;python3.</description>
+    </item>
+    
+    <item>
+      <title>Pyenv-virtualenv</title>
+      <link>https://pythonbiellagroup.it/en/gestire-dipendenze/pyenv-virtualenv/</link>
+      <pubDate>Thu, 24 Jun 2021 19:48:12 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-dipendenze/pyenv-virtualenv/</guid>
+      <description>Pyenv, in conjunction with a pyenv-virtualenv module, provides an even more powerful tool for creating virtual environments.
+# Create virtual env pyenv virtualenv 3.7.4 my-project # List virtual venvs pyenv virtualenvs # Activate venvs pyenv activate my-project # deactivate venvs pyenv deactivate Other helpful and interesting utilities than virtualenv and pyenv-virtualenv include:
+ conda (which also includes the &amp;lsquo;conda&amp;rsquo; package manager), which is quite intrusive. the virtualfish virtualenvwrapper pipenv: featured in many tutorials, but it is very badly maintained (the current version dates back to 2018 with 300+ outstanding issues) and can create various difficulties in a project (along with several debates associated to the project: https://github.</description>
+    </item>
+    
+    <item>
+      <title>Poetry</title>
+      <link>https://pythonbiellagroup.it/en/gestire-dipendenze/poetry/</link>
+      <pubDate>Thu, 24 Jun 2021 19:48:20 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-dipendenze/poetry/</guid>
+      <description>https://python-poetry.org/
+Poetry is a new approach of organizing Python projects that adapts to the most popular current languages and frameworks (such as node with npm or nuget for .NET)
+It is, in essence, a package and dependency management tool, allowing you to manage packages, dependencies, and versions by merging both python version management in a specific project with the relevant dependencies, as well as introducing much more complex notions.
+The following are the most essential elements introduced by Poetry:</description>
+    </item>
+    
+    <item>
+      <title>Poetry Advance</title>
+      <link>https://pythonbiellagroup.it/en/gestire-dipendenze/poetry-advance/</link>
+      <pubDate>Thu, 24 Jun 2021 19:48:30 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-dipendenze/poetry-advance/</guid>
+      <description>Poetry is the most sofisticated Python dependency system available (up to 2020)
+It allows you to go beyond simple dependency management, with functions such as: generate.lock files, allow project scaffolding with many customization possibilities, all available via CLI.
+poetry installation &amp;amp; init It is critical to consult to the official guide that details the processes for the various operating systems before installing Poetry.
+We do not intentionally disclose installation instructions because they frequently change with new updates and versions.</description>
+    </item>
+    
+    <item>
+      <title>Pipx</title>
+      <link>https://pythonbiellagroup.it/en/gestire-dipendenze/pipx/</link>
+      <pubDate>Thu, 24 Jun 2021 19:48:38 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-dipendenze/pipx/</guid>
+      <description>&amp;ldquo;A project should have its own dependencies and should rest on its own legs, it should be atomic.&amp;rdquo;
+Well, that is certainly true, but it is even truer that there are some libraries that are pretty always used thoroughout your projects. In this case these libraries should be somewhat global to you system instead of local.
+An example could be linter and code formatters e.g. black or flake8
+Thankfully there is pipx which creates a &amp;ldquo;global version&amp;rdquo; of the library you are installing, making it available at any time in any venv.</description>
+    </item>
+    
+  </channel>
+</rss>

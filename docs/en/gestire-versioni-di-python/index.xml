@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Manage versions of Python on Python Biella Group</title>
+    <title>Manage Python&#39;s versions on Python Biella Group</title>
     <link>https://pythonbiellagroup.it/en/gestire-versioni-di-python/</link>
-    <description>Recent content in Manage versions of Python on Python Biella Group</description>
+    <description>Recent content in Manage Python&#39;s versions on Python Biella Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Jun 2021 19:19:56 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/en/gestire-versioni-di-python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pyenv Advanced</title>
+      <link>https://pythonbiellagroup.it/en/gestire-versioni-di-python/pyenv-avanzato/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-versioni-di-python/pyenv-avanzato/</guid>
+      <description>In this advanced section, you&amp;rsquo;ll find tips, best practices, and guides to help you learn everything there is to know about Pyenv.
+Useful documentation https://realpython.com/intro-to-pyenv/
+Pyenv with poetry
+https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/
+Instructions for configuring Pyenv on a Mac.
+https://opensource.com/article/20/4/pyenv
+Take note of a Github Gist.
+https://gist.github.com/Geoyi/f55ed54d24cc9ff1c14bd95fac21c042
+Pyenv is a Python installation manager. Allow and execute other Python installations on the same machine.
+Pyenv manages the many Python versions for you, avoiding the chaos of dependencies, versions, and installations seen in the first image.</description>
+    </item>
+    
+    <item>
+      <title>Pyenv Beginner</title>
+      <link>https://pythonbiellagroup.it/en/gestire-versioni-di-python/pyenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-versioni-di-python/pyenv/</guid>
+      <description>Pyenv allows you to handle several versions of Python installed on your PC in a very simple and fast manner.
+It&amp;rsquo;s basic and unobtrusive, and it works on any operating system.
+ Allows you to modify the ** global version of Python ** or the ** local version of Python ** for each project or user. Enables you to maintain a local version of each project with its own Python version.</description>
+    </item>
+    
   </channel>
 </rss>

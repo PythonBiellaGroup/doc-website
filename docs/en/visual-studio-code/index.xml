@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visual Studio Code on Python Biella Group</title>
+    <link>https://pythonbiellagroup.it/en/visual-studio-code/</link>
+    <description>Recent content in Visual Studio Code on Python Biella Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/en/visual-studio-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linter installation</title>
+      <link>https://pythonbiellagroup.it/en/visual-studio-code/installare-un-linter/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/visual-studio-code/installare-un-linter/</guid>
+      <description>As previously said, linter are your best friends for ensuring that everything is in order when writing the code.
+To select a linter, go to the command line (press F1 or &amp;lsquo;ùCTRL + SHIFT + P or go to View &amp;gt; Command Palette) and type: &amp;gt; python: Select Linter . Select the linter that you want (we recommend flake 8).</description>
+    </item>
+    
+    <item>
+      <title>Make us of a Python version</title>
+      <link>https://pythonbiellagroup.it/en/visual-studio-code/utilizzare-una-versione-di-python/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/visual-studio-code/utilizzare-una-versione-di-python/</guid>
+      <description>When you open a.py file within a project, you will be prompted to choose a certain version of Python, which you can also see at the bottom right of vscode. It is possible to pick a Python version by pressing on the writing.
+Always open the Command Palette (by hitting the F1 key or CTRL + SHIFT + P or typing View&amp;gt; Command Palette) and type: &amp;gt; python: Select Interpreter to choose the best Python interpreter for you ( for example your .</description>
+    </item>
+    
+    <item>
+      <title>Add tails to terminal</title>
+      <link>https://pythonbiellagroup.it/en/visual-studio-code/aggiungere-code-al-terminale/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/visual-studio-code/aggiungere-code-al-terminale/</guid>
+      <description>A very interesting feature of Visual Studio Code is the addition of the command code file or folder&amp;gt; to the terminal, which opens a vscode window based on either file or folder on which you want to work (for example, by doing code. you may open the current cartella within vscode).
+To do so, open the Command Palette and execute (closely) the following command: Shell command: Add the command &#39;code&#39; to the PATH</description>
+    </item>
+    
+    <item>
+      <title>debugger usage</title>
+      <link>https://pythonbiellagroup.it/en/visual-studio-code/usare-il-debbuger/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/visual-studio-code/usare-il-debbuger/</guid>
+      <description>It is possible to create a specific configuration of debugger settings for each project in order to debug on vscode and so launch different files.
+Furthermore, while you are in the debug section, VSCode provides a tool that allows you to generate a specific configuration based on the framework or functionality that you are attempting to use via a template.
+Using this procedure, a file called launch.json will be created within the project&amp;rsquo;s directory: .</description>
+    </item>
+    
+    <item>
+      <title>Testing framework</title>
+      <link>https://pythonbiellagroup.it/en/visual-studio-code/testing/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/visual-studio-code/testing/</guid>
+      <description>After installing the Python extension, a new feature appears within VSCode: the ability to run tests through an interface with Python.
+To use this feature, open the Command Palette and select Python: Configure Tests. From the list of test frameworks that will be displayed, choose your preferred framework (say pytest).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,5 +7,187 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linter installation</title>
+      <link>https://pythonbiellagroup.it/en/visual-studio-code/installare-un-linter/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/visual-studio-code/installare-un-linter/</guid>
+      <description>As previously said, linter are your best friends for ensuring that everything is in order when writing the code.
+To select a linter, go to the command line (press F1 or &amp;lsquo;ùCTRL + SHIFT + P or go to View &amp;gt; Command Palette) and type: &amp;gt; python: Select Linter . Select the linter that you want (we recommend flake 8).</description>
+    </item>
+    
+    <item>
+      <title>Relative Imports</title>
+      <link>https://pythonbiellagroup.it/en/struttura-di-progetto/import-relativi/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/struttura-di-progetto/import-relativi/</guid>
+      <description>There exist mainly a couple of ways to import Python modules
+ Absolutes Import : from module/models/user import get_user Relative Import : from ..models/user import get_user  Both methods have pros and cons; nevertheless, I prefer Absolute Import since it is easier to understand and apply (making the code much cleaner and compliant).
+Also, if you utilize relative imports, you may see the following error:
+Value Error: attempted relative import beyond top-level package</description>
+    </item>
+    
+    <item>
+      <title>Virtualenv</title>
+      <link>https://pythonbiellagroup.it/en/gestire-dipendenze/virtualenv/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-dipendenze/virtualenv/</guid>
+      <description>Packaging (and Enviroments) Virtualenv
+Pipenv vs virtualenv: https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853
+Venv: https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-environments-a53d1e191490
+# install virtualenv pip install virtualenv # prior launching the command below be sure to have conda and exxecute: conda activate development # conda version has to he &amp;gt;= desidered version # generate a new virtualenv in a specific path virtualenv --python=3.6 &amp;lt;path_nome_env&amp;gt; #### UNIX (mac and linux) source &amp;lt;path_nome_env&amp;gt;/bin/activate #### WINDOWS &amp;lt;path_nome_env&amp;gt;\scripts\activate #### Visual Studio Code  #(install Microsoft Python Extension and then click on python in the bottom tab) #Windows navigate to -&amp;gt; &amp;lt;path_nome_env&amp;gt;\scripts\&amp;lt;python3.</description>
+    </item>
+    
+    <item>
+      <title>Pyenv-virtualenv</title>
+      <link>https://pythonbiellagroup.it/en/gestire-dipendenze/pyenv-virtualenv/</link>
+      <pubDate>Thu, 24 Jun 2021 19:48:12 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-dipendenze/pyenv-virtualenv/</guid>
+      <description>Pyenv, in conjunction with a pyenv-virtualenv module, provides an even more powerful tool for creating virtual environments.
+# Create virtual env pyenv virtualenv 3.7.4 my-project # List virtual venvs pyenv virtualenvs # Activate venvs pyenv activate my-project # deactivate venvs pyenv deactivate Other helpful and interesting utilities than virtualenv and pyenv-virtualenv include:
+ conda (which also includes the &amp;lsquo;conda&amp;rsquo; package manager), which is quite intrusive. the virtualfish virtualenvwrapper pipenv: featured in many tutorials, but it is very badly maintained (the current version dates back to 2018 with 300+ outstanding issues) and can create various difficulties in a project (along with several debates associated to the project: https://github.</description>
+    </item>
+    
+    <item>
+      <title>Circular Imports</title>
+      <link>https://pythonbiellagroup.it/en/struttura-di-progetto/import-circolari/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/struttura-di-progetto/import-circolari/</guid>
+      <description>Circular Imports This is a severe issue in a project, and the error arises when you try to import one module from another, and vice versa (creating a circularity in the imports).
+# file_a.py from file_b import hello_world def hello(): return &amp;#34;hello&amp;#34; def first_program(): return hello_world() first_program() # file_b.py from file_a import hello def hello_world(): return hello() + &amp;#34; world&amp;#34; When you are lunching python file_a.py you will encounter the following error:</description>
+    </item>
+    
+    <item>
+      <title>Make us of a Python version</title>
+      <link>https://pythonbiellagroup.it/en/visual-studio-code/utilizzare-una-versione-di-python/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/visual-studio-code/utilizzare-una-versione-di-python/</guid>
+      <description>When you open a.py file within a project, you will be prompted to choose a certain version of Python, which you can also see at the bottom right of vscode. It is possible to pick a Python version by pressing on the writing.
+Always open the Command Palette (by hitting the F1 key or CTRL + SHIFT + P or typing View&amp;gt; Command Palette) and type: &amp;gt; python: Select Interpreter to choose the best Python interpreter for you ( for example your .</description>
+    </item>
+    
+    <item>
+      <title>Pyenv Advanced</title>
+      <link>https://pythonbiellagroup.it/en/gestire-versioni-di-python/pyenv-avanzato/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-versioni-di-python/pyenv-avanzato/</guid>
+      <description>In this advanced section, you&amp;rsquo;ll find tips, best practices, and guides to help you learn everything there is to know about Pyenv.
+Useful documentation https://realpython.com/intro-to-pyenv/
+Pyenv with poetry
+https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/
+Instructions for configuring Pyenv on a Mac.
+https://opensource.com/article/20/4/pyenv
+Take note of a Github Gist.
+https://gist.github.com/Geoyi/f55ed54d24cc9ff1c14bd95fac21c042
+Pyenv is a Python installation manager. Allow and execute other Python installations on the same machine.
+Pyenv manages the many Python versions for you, avoiding the chaos of dependencies, versions, and installations seen in the first image.</description>
+    </item>
+    
+    <item>
+      <title>Poetry</title>
+      <link>https://pythonbiellagroup.it/en/gestire-dipendenze/poetry/</link>
+      <pubDate>Thu, 24 Jun 2021 19:48:20 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-dipendenze/poetry/</guid>
+      <description>https://python-poetry.org/
+Poetry is a new approach of organizing Python projects that adapts to the most popular current languages and frameworks (such as node with npm or nuget for .NET)
+It is, in essence, a package and dependency management tool, allowing you to manage packages, dependencies, and versions by merging both python version management in a specific project with the relevant dependencies, as well as introducing much more complex notions.
+The following are the most essential elements introduced by Poetry:</description>
+    </item>
+    
+    <item>
+      <title>Add tails to terminal</title>
+      <link>https://pythonbiellagroup.it/en/visual-studio-code/aggiungere-code-al-terminale/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/visual-studio-code/aggiungere-code-al-terminale/</guid>
+      <description>A very interesting feature of Visual Studio Code is the addition of the command code file or folder&amp;gt; to the terminal, which opens a vscode window based on either file or folder on which you want to work (for example, by doing code. you may open the current cartella within vscode).
+To do so, open the Command Palette and execute (closely) the following command: Shell command: Add the command &#39;code&#39; to the PATH</description>
+    </item>
+    
+    <item>
+      <title>cookiecutter</title>
+      <link>https://pythonbiellagroup.it/en/struttura-di-progetto/cookiecutter/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/struttura-di-progetto/cookiecutter/</guid>
+      <description>Returning to the initial topic of project structure in Python (and many other languages and / or frameworks), each project is unique, however some projects have certain similar aspects.
+For example, they frequently include a file with a list of dependencies and some tests, a web application requires a &amp;ldquo;main&amp;rdquo; and we want our team to have a structure that drives development in order for diverse projects to conform ( or at least try to do it).</description>
+    </item>
+    
+    <item>
+      <title>Poetry Advance</title>
+      <link>https://pythonbiellagroup.it/en/gestire-dipendenze/poetry-advance/</link>
+      <pubDate>Thu, 24 Jun 2021 19:48:30 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-dipendenze/poetry-advance/</guid>
+      <description>Poetry is the most sofisticated Python dependency system available (up to 2020)
+It allows you to go beyond simple dependency management, with functions such as: generate.lock files, allow project scaffolding with many customization possibilities, all available via CLI.
+poetry installation &amp;amp; init It is critical to consult to the official guide that details the processes for the various operating systems before installing Poetry.
+We do not intentionally disclose installation instructions because they frequently change with new updates and versions.</description>
+    </item>
+    
+    <item>
+      <title>Build a project</title>
+      <link>https://pythonbiellagroup.it/en/struttura-di-progetto/costruire-un-progetto/</link>
+      <pubDate>Mon, 10 May 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/struttura-di-progetto/costruire-un-progetto/</guid>
+      <description>How to set up project with acquired tools? Let&amp;rsquo;s go through all of the procedures required to create a Python project using the tools shown in this article.
+This tutorial is intended to assist people who are approaching this new technique of carrying out projects using Python for the first time in order to develop a first version of the project that is up and running.
+It also intends to readily bring other members of the team to use these tools in order for them to become acquainted with them as soon as possible, therefore creating a legitimate reference for the project.</description>
+    </item>
+    
+    <item>
+      <title>debugger usage</title>
+      <link>https://pythonbiellagroup.it/en/visual-studio-code/usare-il-debbuger/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/visual-studio-code/usare-il-debbuger/</guid>
+      <description>It is possible to create a specific configuration of debugger settings for each project in order to debug on vscode and so launch different files.
+Furthermore, while you are in the debug section, VSCode provides a tool that allows you to generate a specific configuration based on the framework or functionality that you are attempting to use via a template.
+Using this procedure, a file called launch.json will be created within the project&amp;rsquo;s directory: .</description>
+    </item>
+    
+    <item>
+      <title>Pipx</title>
+      <link>https://pythonbiellagroup.it/en/gestire-dipendenze/pipx/</link>
+      <pubDate>Thu, 24 Jun 2021 19:48:38 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-dipendenze/pipx/</guid>
+      <description>&amp;ldquo;A project should have its own dependencies and should rest on its own legs, it should be atomic.&amp;rdquo;
+Well, that is certainly true, but it is even truer that there are some libraries that are pretty always used thoroughout your projects. In this case these libraries should be somewhat global to you system instead of local.
+An example could be linter and code formatters e.g. black or flake8
+Thankfully there is pipx which creates a &amp;ldquo;global version&amp;rdquo; of the library you are installing, making it available at any time in any venv.</description>
+    </item>
+    
+    <item>
+      <title>Testing framework</title>
+      <link>https://pythonbiellagroup.it/en/visual-studio-code/testing/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/visual-studio-code/testing/</guid>
+      <description>After installing the Python extension, a new feature appears within VSCode: the ability to run tests through an interface with Python.
+To use this feature, open the Command Palette and select Python: Configure Tests. From the list of test frameworks that will be displayed, choose your preferred framework (say pytest).</description>
+    </item>
+    
+    <item>
+      <title>Pyenv Beginner</title>
+      <link>https://pythonbiellagroup.it/en/gestire-versioni-di-python/pyenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-versioni-di-python/pyenv/</guid>
+      <description>Pyenv allows you to handle several versions of Python installed on your PC in a very simple and fast manner.
+It&amp;rsquo;s basic and unobtrusive, and it works on any operating system.
+ Allows you to modify the ** global version of Python ** or the ** local version of Python ** for each project or user. Enables you to maintain a local version of each project with its own Python version.</description>
+    </item>
+    
   </channel>
 </rss>

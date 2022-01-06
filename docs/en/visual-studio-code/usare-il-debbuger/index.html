@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.90.1" />
+    <meta name="description" content="Python Biella Group Reference Website and Guides">
+<meta name="author" content="Andrea Guzzo">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>debugger usage :: Python Biella Group</title>
+
+    
+    <link href="/css/nucleus.css?1641493526" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1641493526" rel="stylesheet">
+    <link href="/css/hybrid.css?1641493526" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1641493526" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1641493526" rel="stylesheet">
+    <link href="/css/auto-complete.css?1641493526" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1641493526" rel="stylesheet">
+    <link href="/css/theme.css?1641493526" rel="stylesheet">
+    <link href="/css/tabs.css?1641493526" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1641493526" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1641493526" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1641493526"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/en/visual-studio-code/usare-il-debbuger/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="https://pythonbiellagroup.github.io/ModernPythonDevelopment/images/logo.png" width="130px"/>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1641493526"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1641493526"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/pythonbiellagroup.it\/\/en";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1641493526"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/gestire-versioni-di-python/" title="Manage Python&#39;s versions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/gestire-versioni-di-python/">
+          <b>1. </b>Manage Python&#39;s versions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-versioni-di-python/pyenv-avanzato/" title="Pyenv Advanced" class="dd-item ">
+        <a href="/en/gestire-versioni-di-python/pyenv-avanzato/">
+        Pyenv Advanced
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-versioni-di-python/pyenv/" title="Pyenv Beginner" class="dd-item ">
+        <a href="/en/gestire-versioni-di-python/pyenv/">
+        Pyenv Beginner
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/gestire-dipendenze/" title="Manage Dependecies" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/gestire-dipendenze/">
+          <b>2. </b>Manage Dependecies
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-dipendenze/virtualenv/" title="Virtualenv" class="dd-item ">
+        <a href="/en/gestire-dipendenze/virtualenv/">
+        Virtualenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-dipendenze/pyenv-virtualenv/" title="Pyenv-virtualenv" class="dd-item ">
+        <a href="/en/gestire-dipendenze/pyenv-virtualenv/">
+        Pyenv-virtualenv
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-dipendenze/poetry/" title="Poetry" class="dd-item ">
+        <a href="/en/gestire-dipendenze/poetry/">
+        Poetry
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-dipendenze/poetry-advance/" title="Poetry Advance" class="dd-item ">
+        <a href="/en/gestire-dipendenze/poetry-advance/">
+        Poetry Advance
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/gestire-dipendenze/pipx/" title="Pipx" class="dd-item ">
+        <a href="/en/gestire-dipendenze/pipx/">
+        Pipx
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/struttura-di-progetto/" title="Project Structure" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/struttura-di-progetto/">
+          <b>3. </b>Project Structure
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/struttura-di-progetto/import-relativi/" title="Relative Imports" class="dd-item ">
+        <a href="/en/struttura-di-progetto/import-relativi/">
+        Relative Imports
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/struttura-di-progetto/import-circolari/" title="Circular Imports" class="dd-item ">
+        <a href="/en/struttura-di-progetto/import-circolari/">
+        Circular Imports
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/struttura-di-progetto/cookiecutter/" title="cookiecutter" class="dd-item ">
+        <a href="/en/struttura-di-progetto/cookiecutter/">
+        cookiecutter
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/struttura-di-progetto/costruire-un-progetto/" title="Build a project" class="dd-item ">
+        <a href="/en/struttura-di-progetto/costruire-un-progetto/">
+        Build a project
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/code-style/" title="Code Styles" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/code-style/">
+          <b>4. </b>Code Styles
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/code-style/black/" title="Black" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/code-style/black/">
+          Black
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/code-style/flake8/" title="Flake8" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/code-style/flake8/">
+          Flake8
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/code-style/bandit/" title="Bandit" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/code-style/bandit/">
+          Bandit
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/documentare-il-codice/" title="Document code" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/documentare-il-codice/">
+          <b>4. </b>Document code
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/visual-studio-code/" title="Visual Studio Code" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/en/visual-studio-code/">
+          <b>5. </b>Visual Studio Code
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/visual-studio-code/installare-un-linter/" title="linter installation" class="dd-item ">
+        <a href="/en/visual-studio-code/installare-un-linter/">
+        linter installation
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/visual-studio-code/utilizzare-una-versione-di-python/" title="Make us of a Python version" class="dd-item ">
+        <a href="/en/visual-studio-code/utilizzare-una-versione-di-python/">
+        Make us of a Python version
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/visual-studio-code/aggiungere-code-al-terminale/" title="Add tails to terminal" class="dd-item ">
+        <a href="/en/visual-studio-code/aggiungere-code-al-terminale/">
+        Add tails to terminal
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/visual-studio-code/usare-il-debbuger/" title="debugger usage" class="dd-item active">
+        <a href="/en/visual-studio-code/usare-il-debbuger/">
+        debugger usage
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/visual-studio-code/testing/" title="Testing framework" class="dd-item ">
+        <a href="/en/visual-studio-code/testing/">
+        Testing framework
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/repl/" title="REPL" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/repl/">
+          <b>6. </b>REPL
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/materiale-utile/" title="Useful Materials" class="dd-item
+        
+        
+        
+        ">
+      <a href="/en/materiale-utile/">
+          <b>X. </b>Useful Materials
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://pythonbiellagroup.it/en/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="it" value="https://pythonbiellagroup.it/it/visual-studio-code/usare-il-debbuger/">Italiano</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="https://pythonbiellagroup.it/en/visual-studio-code/usare-il-debbuger/" selected>English</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/PythonBiellaGroup" data-icon="octicon-star" data-show-count="true" aria-label="Star pocc/tshark.dev on GitHub">Github</a>
+
+    <p>Copyright 2021 - <a href="https://github.com/PythonBiellaGroup">PythonBiellaGroup</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>Python Biella Group</a> > <a href='/en/visual-studio-code/'>Visual Studio Code</a> > debugger usage
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              debugger usage
+            </h1>
+          
+
+        
+
+
+<p>It is possible to create a specific configuration of debugger settings for each project in order to debug on vscode and so launch different files.</p>
+<p>Furthermore, while you are in the debug section, VSCode provides a tool that allows you to generate a specific configuration based on the framework or functionality that you are attempting to use via a template.</p>
+<p>Using this procedure, a file called <code>launch.json</code> will be created within the project&rsquo;s directory: <code>.vscode</code>, which may be corrupted.</p>
+<p>An example of configuration (con flask e con un file singolo)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">{</span>
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid<span style="color:#f92672">=</span><span style="color:#ae81ff">830387</span>
+  <span style="color:#e6db74">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;0.2.0&#34;</span>,
+  <span style="color:#e6db74">&#34;configurations&#34;</span>: <span style="color:#f92672">[</span>
+    <span style="color:#f92672">{</span>
+      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Python: Current File&#34;</span>,
+      <span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;python&#34;</span>,
+      <span style="color:#e6db74">&#34;request&#34;</span>: <span style="color:#e6db74">&#34;launch&#34;</span>,
+      <span style="color:#e6db74">&#34;program&#34;</span>: <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
+      <span style="color:#e6db74">&#34;console&#34;</span>: <span style="color:#e6db74">&#34;integratedTerminal&#34;</span>
+    <span style="color:#f92672">}</span>,
+    <span style="color:#f92672">{</span>
+      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Flask Backend&#34;</span>,
+      <span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;python&#34;</span>,
+      <span style="color:#e6db74">&#34;request&#34;</span>: <span style="color:#e6db74">&#34;launch&#34;</span>,
+      <span style="color:#e6db74">&#34;port&#34;</span>: 8000,
+      <span style="color:#e6db74">&#34;host&#34;</span>: <span style="color:#e6db74">&#34;localhost&#34;</span>,
+      <span style="color:#e6db74">&#34;program&#34;</span>: <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>workspaceFolder<span style="color:#e6db74">}</span><span style="color:#e6db74">/server.py&#34;</span>,
+      <span style="color:#e6db74">&#34;console&#34;</span>: <span style="color:#e6db74">&#34;integratedTerminal&#34;</span>,
+      <span style="color:#e6db74">&#34;env&#34;</span>: <span style="color:#f92672">{</span>
+        <span style="color:#e6db74">&#34;API_ENDPOINT_PORT&#34;</span>: <span style="color:#e6db74">&#34;8000&#34;</span>,
+        <span style="color:#e6db74">&#34;VERBOSITY&#34;</span>: <span style="color:#e6db74">&#34;debug&#34;</span>,
+        <span style="color:#e6db74">&#34;PLANT&#34;</span>: <span style="color:#e6db74">&#34;demo&#34;</span>
+      <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">]</span>
+<span style="color:#f92672">}</span> 
+</code></pre></div>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/en/visual-studio-code/aggiungere-code-al-terminale/" title="Add tails to terminal"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/en/visual-studio-code/testing/" title="Testing framework" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1641493526"></script>
+    <script src="/js/perfect-scrollbar.min.js?1641493526"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1641493526"></script>
+    <script src="/js/jquery.sticky.js?1641493526"></script>
+    <script src="/js/featherlight.min.js?1641493526"></script>
+    <script src="/js/highlight.pack.js?1641493526"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1641493526"></script>
+    <script src="/js/learn.js?1641493526"></script>
+    <script src="/js/hugo-learn.js?1641493526"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1641493526"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

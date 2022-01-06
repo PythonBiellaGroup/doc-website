@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dipendenze on Python Biella Group</title>
+    <link>https://pythonbiellagroup.it/en/tags/dipendenze/</link>
+    <description>Recent content in dipendenze on Python Biella Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/en/tags/dipendenze/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manage Dependecies</title>
+      <link>https://pythonbiellagroup.it/en/gestire-dipendenze/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/gestire-dipendenze/</guid>
+      <description>Section 2 Manage Dependencies In order to correctly manage dependecies from python 3.3 there exist a module named venv which is able to create a virtual environemnt inside your project.
+This is actually old school, still many people is using that nowadays.
+python -m venv my-virtualenv The command inits a directory my-virtualenv whose files are:
+ python binary pip/easy_install/wheel binary activation script binary files utilizzate da Python  Then you are required to activate the virtual envirnoment:</description>
+    </item>
+    
+    <item>
+      <title>Project Structure</title>
+      <link>https://pythonbiellagroup.it/en/struttura-di-progetto/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/struttura-di-progetto/</guid>
+      <description>Section 3 Project Structure How should a Python project be organized?
+This is certainly a fairly common question, but it is also extremely difficult to answer because there is no proper answer.
+Python does not require the adoption of a certain structure, but there are some best practices to bear in mind and considerations you may (and frequently should) make.
+In Python, a Module is a container that houses all of the functions or classes that you need to import elsewhere in order to reuse what you&amp;rsquo;ve written.</description>
+    </item>
+    
+  </channel>
+</rss>

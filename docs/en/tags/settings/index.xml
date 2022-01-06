@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>settings on Python Biella Group</title>
+    <link>https://pythonbiellagroup.it/en/tags/settings/</link>
+    <description>Recent content in settings on Python Biella Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/en/tags/settings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visual Studio Code</title>
+      <link>https://pythonbiellagroup.it/en/visual-studio-code/</link>
+      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/visual-studio-code/</guid>
+      <description>Visual Studio Code A code editor is an essential tool for every programmer and the tool with which we spend the majority of our time.
+The choice of an editor with which to write code is frequently a sensitive matter that sparks heated debate among programmers.
+As you are aware, there are other editors available, and you are free to use whatever you like, but after several years of using Sublime Text and Pycharm, I highly advise you to use Visual Studio Code.</description>
+    </item>
+    
+  </channel>
+</rss>

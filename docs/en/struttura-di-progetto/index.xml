@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project Structure on Python Biella Group</title>
+    <link>https://pythonbiellagroup.it/en/struttura-di-progetto/</link>
+    <description>Recent content in Project Structure on Python Biella Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 20:10:53 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/en/struttura-di-progetto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Relative Imports</title>
+      <link>https://pythonbiellagroup.it/en/struttura-di-progetto/import-relativi/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/struttura-di-progetto/import-relativi/</guid>
+      <description>There exist mainly a couple of ways to import Python modules
+ Absolutes Import : from module/models/user import get_user Relative Import : from ..models/user import get_user  Both methods have pros and cons; nevertheless, I prefer Absolute Import since it is easier to understand and apply (making the code much cleaner and compliant).
+Also, if you utilize relative imports, you may see the following error:
+Value Error: attempted relative import beyond top-level package</description>
+    </item>
+    
+    <item>
+      <title>Circular Imports</title>
+      <link>https://pythonbiellagroup.it/en/struttura-di-progetto/import-circolari/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/struttura-di-progetto/import-circolari/</guid>
+      <description>Circular Imports This is a severe issue in a project, and the error arises when you try to import one module from another, and vice versa (creating a circularity in the imports).
+# file_a.py from file_b import hello_world def hello(): return &amp;#34;hello&amp;#34; def first_program(): return hello_world() first_program() # file_b.py from file_a import hello def hello_world(): return hello() + &amp;#34; world&amp;#34; When you are lunching python file_a.py you will encounter the following error:</description>
+    </item>
+    
+    <item>
+      <title>cookiecutter</title>
+      <link>https://pythonbiellagroup.it/en/struttura-di-progetto/cookiecutter/</link>
+      <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/struttura-di-progetto/cookiecutter/</guid>
+      <description>Returning to the initial topic of project structure in Python (and many other languages and / or frameworks), each project is unique, however some projects have certain similar aspects.
+For example, they frequently include a file with a list of dependencies and some tests, a web application requires a &amp;ldquo;main&amp;rdquo; and we want our team to have a structure that drives development in order for diverse projects to conform ( or at least try to do it).</description>
+    </item>
+    
+    <item>
+      <title>Build a project</title>
+      <link>https://pythonbiellagroup.it/en/struttura-di-progetto/costruire-un-progetto/</link>
+      <pubDate>Mon, 10 May 2021 23:54:10 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/en/struttura-di-progetto/costruire-un-progetto/</guid>
+      <description>How to set up project with acquired tools? Let&amp;rsquo;s go through all of the procedures required to create a Python project using the tools shown in this article.
+This tutorial is intended to assist people who are approaching this new technique of carrying out projects using Python for the first time in order to develop a first version of the project that is up and running.
+It also intends to readily bring other members of the team to use these tools in order for them to become acquainted with them as soon as possible, therefore creating a legitimate reference for the project.</description>
+    </item>
+    
+  </channel>
+</rss>
