@@ -4,6 +4,19 @@ date: 2021-06-24T19:48:20+02:00
 weight: 300
 draft: false
 ---
+
+<!-- Hotjar Tracking Code for https://pythonbiellagroup.it -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2847436,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
 [https://python-poetry.org/](https://python-poetry.org/)
 
 Poetry è un nuovo modo di gestire progetti con Python che si adatta ai linguaggi e ai framework moderni più famosi (come ad esempio node con npm o nuget per .NET)

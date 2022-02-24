@@ -6,6 +6,19 @@ weight: 400
 draft: false
 
 ---
+
+<!-- Hotjar Tracking Code for https://pythonbiellagroup.it -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2847436,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
 It is possible to create a specific configuration of debugger settings for each project in order to debug on vscode and so launch different files.
 
 Furthermore, while you are in the debug section, VSCode provides a tool that allows you to generate a specific configuration based on the framework or functionality that you are attempting to use via a template.

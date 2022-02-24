@@ -6,6 +6,19 @@ weight: 300
 draft: false
 
 ---
+
+<!-- Hotjar Tracking Code for https://pythonbiellagroup.it -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2847436,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
 Returning to the initial topic of project structure in Python (and many other languages and / or frameworks), each project is unique, however some projects have certain similar aspects.
 
 For example, they frequently include a file with a list of dependencies and some tests, a web application requires a "main" and we want our team to have a structure that drives development in order for diverse projects to conform ( or at least try to do it).

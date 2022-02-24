@@ -4,6 +4,19 @@ date: 2021-06-24T19:48:30+02:00
 weight: 400
 draft: false
 ---
+
+<!-- Hotjar Tracking Code for https://pythonbiellagroup.it -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2847436,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
 Poetry è il più sofisticato sistema di gestione delle dipendenze su Python disponibile (nel 2020). 
 
 Consente di andare al di là della semplice gestione delle dipendenze, con funzioni come: generare .lock files, consentire di fare scaffolding dei progetti con molte possibilità di personalizzazione, il tutto disponibile via CLI.
@@ -302,6 +315,41 @@ poetry config virtualenvs.create false --local
 poetry config settings.virtualenvs.in-project false
 ```
 
+### Installare poetry nella cartella di progetto (*)
+
+Un'impostazione molto utile per poetry (anche con vscode) è quella di dire a poetry di installare il virtualenv python con le rispettive librerie all'interno della cartella di progetto.
+
+Questo è molto comodo perchè ad esempio con vscode vi basta inserire l'impostazione:
+```
+"python.pythonPath": "${workspaceFolder}/.venv/bin/python"
+```
+Per attivare il virtualenv nel vostro progetto in modo automatico.
+
+**Attention**: ricordatevi sempre di inserire `.venv` all'interno del file: `.gitignore` per non pushare sulla vostra repository tutto il virtualenv!!
+
+Per fare questo, il modo più semplice è fare da terminale: `poetry config virtualenvs.in-project true`.
+
+Ma se volete attivarlo di default potete aggiungere un file: `poetry.toml` nella cartella di progetto così formato:
+```bash
+[virtualenvs]
+create = true
+in-project = true
+
+```
+
+In questo modo tutte le volte che si farà: `poetry install` verrà installato poetry nella cartella di progetto in automatico.
+
+Per visualizzare tutte le possibili configurazioni installate su una repository è possibile usare il comando:
+```bash
+# visualize all the configurations
+poetry config --list
+```
+
+Per rimuovere delle configurazioni invece è possibile fare:
+```bash
+    poetry config --unset repo.foo
+```
+
 ## Un esempio di Pyproject.toml
 
 Ecco un esempio di file pyproject.toml che potete utilizzare sui vostri progetti (ovviamente con gli opportuni cambiamenti e personalizzazioni)
@@ -471,6 +519,27 @@ CMD ["bash", "launch.sh"]
 # Launch main python script
 # CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8000", "core.app:app"]
 ```
+
+## Standardizzare le impostazioni
+
+Su Poetry è possibile standardizzare le impostazioni di poetry per un determinto progetto all'interno di un file, evitando che lo sviluppatore o una pipeline di rilascio debba lanciare manualmente dei comandi per configurare poetry.
+
+Per fare questo è possibile creare un file chiamato: `poetry.toml` all'interno del progetto.
+
+Un esempio di file può essere questo:
+```toml
+[virtualenvs]
+in-project = true
+create = true
+```
+
+Queste impostazioni consentono di creare un .venv all'interno del progetto senza lanciare manualmente il comando di creazione del venv all'interno del progetto da terminale.
+
+Con questo file è possibile fare overriding di tutte le impostazioni di poetry.
+
+Per vedere l'elenco delle impostazioni che è possibile inserire, fare riferimento a questa documentazione:
+- https://python-poetry.org/docs/configuration/
+
 
 ## Documentazione e link utili
 

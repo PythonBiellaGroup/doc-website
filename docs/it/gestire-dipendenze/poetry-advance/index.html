@@ -11,22 +11,22 @@
     <title>Poetry Advance :: Benvenuto</title>
 
     
-    <link href="/css/nucleus.css?1641493525" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1641493525" rel="stylesheet">
-    <link href="/css/hybrid.css?1641493525" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1641493525" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1641493525" rel="stylesheet">
-    <link href="/css/auto-complete.css?1641493525" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1641493525" rel="stylesheet">
-    <link href="/css/theme.css?1641493525" rel="stylesheet">
-    <link href="/css/tabs.css?1641493525" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1641493525" rel="stylesheet">
+    <link href="/css/nucleus.css?1645695839" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1645695839" rel="stylesheet">
+    <link href="/css/hybrid.css?1645695839" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1645695839" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1645695839" rel="stylesheet">
+    <link href="/css/auto-complete.css?1645695839" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1645695839" rel="stylesheet">
+    <link href="/css/theme.css?1645695839" rel="stylesheet">
+    <link href="/css/tabs.css?1645695839" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1645695839" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1641493525" rel="stylesheet">
+    <link href="/css/theme-blue.css?1645695839" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1641493525"></script>
+    <script src="/js/jquery-3.3.1.min.js?1645695839"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1641493525"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1641493525"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1645695839"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1645695839"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.it\/\/it";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1641493525"></script>
+<script type="text/javascript" src="/js/search.js?1645695839"></script>
 
     
   </div>
@@ -740,6 +740,32 @@
  
   
     
+    <li data-nav-id="/it/creare-pacchetti-python/" title="Creare pacchetti Python" class="dd-item
+        
+        
+        
+        ">
+      <a href="/it/creare-pacchetti-python/">
+          <b>2. </b>Creare pacchetti Python
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
     <li data-nav-id="/it/materiale-utile/" title="Materiale utile" class="dd-item
         
         
@@ -918,12 +944,17 @@
     <li><a href="#buildare-e-pubblicare-il-pacchetto-progetto"><strong>Buildare e pubblicare il pacchetto (progetto)</strong></a></li>
     <li><a href="#poetry-getting-started">Poetry Getting Started</a></li>
     <li><a href="#aggiungere-poetry-ad-un-progetto-esistente-con-dei-requirementstxt">Aggiungere poetry ad un progetto esistente (con dei requirements.txt)</a></li>
-    <li><a href="#poetry-in-vscode"><strong>Poetry in VSCode</strong></a></li>
+    <li><a href="#poetry-in-vscode"><strong>Poetry in VSCode</strong></a>
+      <ul>
+        <li><a href="#installare-poetry-nella-cartella-di-progetto-">Installare poetry nella cartella di progetto (*)</a></li>
+      </ul>
+    </li>
     <li><a href="#un-esempio-di-pyprojecttoml">Un esempio di Pyproject.toml</a></li>
     <li><a href="#aggiornare-poetry">Aggiornare poetry</a></li>
     <li><a href="#cancella-poetry">Cancella poetry</a></li>
     <li><a href="#abilitare-il-completamento-per-bash-o-zsh">Abilitare il completamento per bash o zsh</a></li>
     <li><a href="#deploy">Deploy</a></li>
+    <li><a href="#standardizzare-le-impostazioni">Standardizzare le impostazioni</a></li>
     <li><a href="#documentazione-e-link-utili">Documentazione e link utili</a></li>
   </ul>
 </nav>
@@ -949,6 +980,9 @@
         
 
 
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>Poetry è il più sofisticato sistema di gestione delle dipendenze su Python disponibile (nel 2020).</p>
 <p>Consente di andare al di là della semplice gestione delle dipendenze, con funzioni come: generare .lock files, consentire di fare scaffolding dei progetti con molte possibilità di personalizzazione, il tutto disponibile via CLI.</p>
 <h2 id="installare-poetry-e-includere-linstallazione"><strong>Installare poetry e includere l&rsquo;installazione</strong></h2>
@@ -1109,6 +1143,24 @@ poetry install
 poetry config virtualenvs.in-project false --local
 poetry config virtualenvs.create false --local
 poetry config settings.virtualenvs.in-project false
+</code></pre></div><h3 id="installare-poetry-nella-cartella-di-progetto-">Installare poetry nella cartella di progetto (*)</h3>
+<p>Un&rsquo;impostazione molto utile per poetry (anche con vscode) è quella di dire a poetry di installare il virtualenv python con le rispettive librerie all&rsquo;interno della cartella di progetto.</p>
+<p>Questo è molto comodo perchè ad esempio con vscode vi basta inserire l&rsquo;impostazione:</p>
+<pre tabindex="0"><code>&quot;python.pythonPath&quot;: &quot;${workspaceFolder}/.venv/bin/python&quot;
+</code></pre><p>Per attivare il virtualenv nel vostro progetto in modo automatico.</p>
+<p><strong>Attention</strong>: ricordatevi sempre di inserire <code>.venv</code> all&rsquo;interno del file: <code>.gitignore</code> per non pushare sulla vostra repository tutto il virtualenv!!</p>
+<p>Per fare questo, il modo più semplice è fare da terminale: <code>poetry config virtualenvs.in-project true</code>.</p>
+<p>Ma se volete attivarlo di default potete aggiungere un file: <code>poetry.toml</code> nella cartella di progetto così formato:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>virtualenvs<span style="color:#f92672">]</span>
+create <span style="color:#f92672">=</span> true
+in-project <span style="color:#f92672">=</span> true
+
+</code></pre></div><p>In questo modo tutte le volte che si farà: <code>poetry install</code> verrà installato poetry nella cartella di progetto in automatico.</p>
+<p>Per visualizzare tutte le possibili configurazioni installate su una repository è possibile usare il comando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># visualize all the configurations</span>
+poetry config --list
+</code></pre></div><p>Per rimuovere delle configurazioni invece è possibile fare:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    poetry config --unset repo.foo
 </code></pre></div><h2 id="un-esempio-di-pyprojecttoml">Un esempio di Pyproject.toml</h2>
 <p>Ecco un esempio di file pyproject.toml che potete utilizzare sui vostri progetti (ovviamente con gli opportuni cambiamenti e personalizzazioni)</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>tool.poetry<span style="color:#f92672">]</span>
@@ -1242,7 +1294,20 @@ CMD <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;bash&#3
 
 <span style="color:#75715e"># Launch main python script</span>
 <span style="color:#75715e"># CMD [&#34;gunicorn&#34;, &#34;-w&#34;, &#34;4&#34;, &#34;-b&#34;, &#34;0.0.0.0:8000&#34;, &#34;core.app:app&#34;]</span>
-</code></pre></div><h2 id="documentazione-e-link-utili">Documentazione e link utili</h2>
+</code></pre></div><h2 id="standardizzare-le-impostazioni">Standardizzare le impostazioni</h2>
+<p>Su Poetry è possibile standardizzare le impostazioni di poetry per un determinto progetto all&rsquo;interno di un file, evitando che lo sviluppatore o una pipeline di rilascio debba lanciare manualmente dei comandi per configurare poetry.</p>
+<p>Per fare questo è possibile creare un file chiamato: <code>poetry.toml</code> all&rsquo;interno del progetto.</p>
+<p>Un esempio di file può essere questo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">virtualenvs</span>]
+<span style="color:#a6e22e">in-project</span> = <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">create</span> = <span style="color:#66d9ef">true</span>
+</code></pre></div><p>Queste impostazioni consentono di creare un .venv all&rsquo;interno del progetto senza lanciare manualmente il comando di creazione del venv all&rsquo;interno del progetto da terminale.</p>
+<p>Con questo file è possibile fare overriding di tutte le impostazioni di poetry.</p>
+<p>Per vedere l&rsquo;elenco delle impostazioni che è possibile inserire, fare riferimento a questa documentazione:</p>
+<ul>
+<li><a href="https://python-poetry.org/docs/configuration/">https://python-poetry.org/docs/configuration/</a></li>
+</ul>
+<h2 id="documentazione-e-link-utili">Documentazione e link utili</h2>
 <p>Documentazione ufficiale (fatta molto bene) <strong>:</strong> <a href="https://python-poetry.org/docs/basic-usage/">https://python-poetry.org/docs/basic-usage/</a></p>
 <p><a href="https://hackersandslackers.com/python-poetry-package-manager/">https://hackersandslackers.com/python-poetry-package-manager/</a></p>
 <p><a href="https://www.youtube.com/watch?v=QX_Nhu1zhlg&amp;ab_channel=PyGotham2019">https://www.youtube.com/watch?v=QX_Nhu1zhlg&amp;ab_channel=PyGotham2019</a></p>
@@ -1731,6 +1796,22 @@ CMD <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;bash&#3
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
 
@@ -1753,19 +1834,19 @@ CMD <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;bash&#3
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1641493525"></script>
-    <script src="/js/perfect-scrollbar.min.js?1641493525"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1641493525"></script>
-    <script src="/js/jquery.sticky.js?1641493525"></script>
-    <script src="/js/featherlight.min.js?1641493525"></script>
-    <script src="/js/highlight.pack.js?1641493525"></script>
+    <script src="/js/clipboard.min.js?1645695839"></script>
+    <script src="/js/perfect-scrollbar.min.js?1645695839"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1645695839"></script>
+    <script src="/js/jquery.sticky.js?1645695839"></script>
+    <script src="/js/featherlight.min.js?1645695839"></script>
+    <script src="/js/highlight.pack.js?1645695839"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1641493525"></script>
-    <script src="/js/learn.js?1641493525"></script>
-    <script src="/js/hugo-learn.js?1641493525"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1645695839"></script>
+    <script src="/js/learn.js?1645695839"></script>
+    <script src="/js/hugo-learn.js?1645695839"></script>
     
         
-            <script src="/mermaid/mermaid.js?1641493525"></script>
+            <script src="/mermaid/mermaid.js?1645695839"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

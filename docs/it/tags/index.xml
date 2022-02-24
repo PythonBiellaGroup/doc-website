@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Benvenuto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Jun 2021 19:19:56 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/it/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jan 2022 15:12:00 +0200</lastBuildDate><atom:link href="https://pythonbiellagroup.it/it/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dipendenze</title>
+      <link>https://pythonbiellagroup.it/it/tags/dipendenze/</link>
+      <pubDate>Wed, 19 Jan 2022 15:12:00 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/it/tags/dipendenze/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>venv</title>
+      <link>https://pythonbiellagroup.it/it/tags/venv/</link>
+      <pubDate>Wed, 19 Jan 2022 15:12:00 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/it/tags/venv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>versions</title>
+      <link>https://pythonbiellagroup.it/it/tags/versions/</link>
+      <pubDate>Wed, 19 Jan 2022 15:12:00 +0200</pubDate>
+      
+      <guid>https://pythonbiellagroup.it/it/tags/versions/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>pyenv</title>
       <link>https://pythonbiellagroup.it/it/tags/pyenv/</link>
@@ -17,29 +44,11 @@
     </item>
     
     <item>
-      <title>versions</title>
-      <link>https://pythonbiellagroup.it/it/tags/versions/</link>
-      <pubDate>Thu, 24 Jun 2021 19:19:56 +0200</pubDate>
-      
-      <guid>https://pythonbiellagroup.it/it/tags/versions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>code</title>
       <link>https://pythonbiellagroup.it/it/tags/code/</link>
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
       <guid>https://pythonbiellagroup.it/it/tags/code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dipendenze</title>
-      <link>https://pythonbiellagroup.it/it/tags/dipendenze/</link>
-      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
-      
-      <guid>https://pythonbiellagroup.it/it/tags/dipendenze/</guid>
       <description></description>
     </item>
     
@@ -130,15 +139,6 @@
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
       <guid>https://pythonbiellagroup.it/it/tags/style/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>venv</title>
-      <link>https://pythonbiellagroup.it/it/tags/venv/</link>
-      <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
-      
-      <guid>https://pythonbiellagroup.it/it/tags/venv/</guid>
       <description></description>
     </item>
     

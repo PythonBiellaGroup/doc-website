@@ -12,6 +12,40 @@ Per segnalare modifiche, problematiche o qualsiasi altra informazione consigliam
 Per qualsiasi altra modifica legata al tema e al funzionamento generale di Hugo (framework su cui si basa il sito web) è consigliato leggere la documentazione di riferimento dello strumento:
 - https://gohugo.io/documentation/
 
+## Features già implementate
+
+- costruzione e deploy del sito su un dominio custom
+- code-styling
+- come gestire le dipendenze su python (poetry, pip, pipenv, pipx, virtualenv)
+- come gestire differenti versioni di python (pyenv)
+- materiale utile di approfondimento
+- Python REPL
+- come strutturare un progetto
+- visual studio code
+
+## Prossime features che verranno implementate
+
+- costruire un make file
+- come creare un pacchetto python
+- miglioramento sezione vscode
+- aggiunta dev container su vscode
+- traduzioni in inglese
+- nuova sezione python base con guide e suggerimenti per iniziare
+- documentare il codice (con mkdocs e sphinx)
+- template di python (python-skeleton)
+- miglioramento della sezione su cookiecutter
+- come strutturare il codice python (aggiunta a come strutturare un progetto)
+- migliorare sezione di code styling
+- docker containers e compose con python
+- ci/cd con python (gitlab e github)
+- creare test con pytest
+- type checking
+- come usare python su r (esempio con librerie sui dati)
+
+- miglioramento url e indicizzazione (con aggiunta di google analytics)
+- miglioramento traduzione in inglese
+- miglioramento del readme
+
 ## Come collaborare?
 
 Se vuoi aiutarci nel mantenere questo sito consigliamo di guardare le issue aperte su github e contribuire nella loro risoluzione, oltre a segnalare nuove issue.
@@ -27,3 +61,14 @@ Se vuoi aiutarci nel mantenere questo sito consigliamo di guardare le issue aper
 
 
 Grazie mille!
+
+
+## Ringraziamenti
+
+Per questo progetto ringraziamo tutta la community di Python Biella Group, in particolare:
+- Andrea Guzzo: per il supporto nell'organizzazione
+- Mario Nardi: per il supporto nell'organizzazione
+- Maria Teresa Panunzio: per il supporto nell'organizzazione
+- Calogero Galipò: per l'aiuto nella costruzione del sito
+- Andrea Biancini: per la revisione di alcune sezioni
+- Niccolo Salvini: per le traduzioni in inglese

@@ -93,6 +93,9 @@
                 href="https://pythonbiellagroup.it/it/repl/"
                 />
   </url><url>
+    <loc>https://pythonbiellagroup.it/it/creare-pacchetti-python/</loc>
+    <lastmod>2022-01-19T15:12:00+02:00</lastmod>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/code-style/black/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
     <xhtml:link
@@ -353,6 +356,58 @@
                 href="https://pythonbiellagroup.it/it/visual-studio-code/testing/"
                 />
   </url><url>
+    <loc>https://pythonbiellagroup.it/it/tags/dipendenze/</loc>
+    <lastmod>2022-01-19T15:12:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pythonbiellagroup.it/en/tags/dipendenze/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://pythonbiellagroup.it/it/tags/dipendenze/"
+                />
+  </url><url>
+    <loc>https://pythonbiellagroup.it/it/tags/</loc>
+    <lastmod>2022-01-19T15:12:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pythonbiellagroup.it/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://pythonbiellagroup.it/it/tags/"
+                />
+  </url><url>
+    <loc>https://pythonbiellagroup.it/it/tags/venv/</loc>
+    <lastmod>2022-01-19T15:12:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pythonbiellagroup.it/en/tags/venv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://pythonbiellagroup.it/it/tags/venv/"
+                />
+  </url><url>
+    <loc>https://pythonbiellagroup.it/it/tags/versions/</loc>
+    <lastmod>2022-01-19T15:12:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pythonbiellagroup.it/en/tags/versions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://pythonbiellagroup.it/it/tags/versions/"
+                />
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/pyenv/</loc>
     <lastmod>2021-06-24T19:19:56+02:00</lastmod>
     <xhtml:link
@@ -366,32 +421,6 @@
                 href="https://pythonbiellagroup.it/it/tags/pyenv/"
                 />
   </url><url>
-    <loc>https://pythonbiellagroup.it/it/tags/</loc>
-    <lastmod>2021-06-24T19:19:56+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://pythonbiellagroup.it/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://pythonbiellagroup.it/it/tags/"
-                />
-  </url><url>
-    <loc>https://pythonbiellagroup.it/it/tags/versions/</loc>
-    <lastmod>2021-06-24T19:19:56+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://pythonbiellagroup.it/en/tags/versions/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://pythonbiellagroup.it/it/tags/versions/"
-                />
-  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/code/</loc>
     <lastmod>2021-03-28T20:10:53+02:00</lastmod>
     <xhtml:link
@@ -403,19 +432,6 @@
                 rel="alternate"
                 hreflang="it"
                 href="https://pythonbiellagroup.it/it/tags/code/"
-                />
-  </url><url>
-    <loc>https://pythonbiellagroup.it/it/tags/dipendenze/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://pythonbiellagroup.it/en/tags/dipendenze/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://pythonbiellagroup.it/it/tags/dipendenze/"
                 />
   </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/docs/</loc>
@@ -559,19 +575,6 @@
                 rel="alternate"
                 hreflang="it"
                 href="https://pythonbiellagroup.it/it/tags/style/"
-                />
-  </url><url>
-    <loc>https://pythonbiellagroup.it/it/tags/venv/</loc>
-    <lastmod>2021-03-28T20:10:53+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://pythonbiellagroup.it/en/tags/venv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://pythonbiellagroup.it/it/tags/venv/"
                 />
   </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/vscode/</loc>
