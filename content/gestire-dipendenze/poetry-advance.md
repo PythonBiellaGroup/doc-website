@@ -461,6 +461,40 @@ plugins(
     )
 ```
 
+## Creare un python package con Poetry
+
+Uno dei vantaggi più grandi nell'uso di Poetry è la possibilità di creare dei python package in maniera molto facile e veloce.
+
+
+## Utilizzare strumenti con poetry
+
+Con poetry inoltre è possibile utilizzare alcuni strumenti utili per linting, controllo e test del codice come:
+- black
+- flake8
+- mypy
+
+
+## Integrazione con pytest
+
+Poetry inoltre supporta l'integrazione con pytest e permette di definire degli argomenti per i test che possono tornare utili soprattutto nel caso di applicazioni molto grandi e corpose che richiedono una maggiore copertura dei casi di test.
+
+
+
+## Esempio di un pyproject.toml completo
+
+Vediamo un esempio di un file pyproject.toml completo con tutte le funzionalità illustrate precedentemente.
+
+```yaml
+
+
+```
+
+## Come funziona un poetry.toml
+
+All'interno di un poetry.toml troverete la definizione di tutti i vostri pacchetti e librerie installate all'interno del progetto.
+
+Questo file è molto utile 
+
 ## Deploy
 
 Come utilizzare poetry con Docker in fase di deploy? 
@@ -491,7 +525,7 @@ ENV YOUR_ENV=${YOUR_ENV} \
     PIP_NO_CACHE_DIR=off \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=100 \
-    POETRY_VERSION=1.1.6 \
+    POETRY_VERSION=1.1.13 \
     LC_ALL=C.UTF-8 \
     LANG=C.UTF-8
 

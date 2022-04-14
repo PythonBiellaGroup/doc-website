@@ -24,3 +24,14 @@ tags = ["documentazione","mkdocs","docs"]
 # Come documentare il proprio codice
 
 Ci sono moltissimi strumenti di documentazione del codice e tanti altri modi per farlo.
+
+Tre degli strumenti più utilizzati per documentare il proprio codice sono:
+- Python classico: utilizzando docstrings, commenti , ..
+- Sphinx
+- MKDocs
+
+In questa sezione vedremo il funzionamento di **mkdocs** per costruire documentazione automatica a partire dal proprio codice python mettendola a disposizione su un sito web.
+
+## Perchè documentare il codice è importante?
+
+

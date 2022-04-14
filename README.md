@@ -22,17 +22,19 @@ Per qualsiasi altra modifica legata al tema e al funzionamento generale di Hugo 
 - Python REPL
 - come strutturare un progetto
 - visual studio code
+- traduzioni in inglese
 
 ## Prossime features che verranno implementate
 
 - costruire un make file
-- come creare un pacchetto python
+- come creare un pacchetto python (con poetry)
 - miglioramento sezione vscode
 - aggiunta dev container su vscode
-- traduzioni in inglese
+- aggiunta sezione con anaconda: anche come disabilitarlo e non attivarlo automaticamente
 - nuova sezione python base con guide e suggerimenti per iniziare
 - documentare il codice (con mkdocs e sphinx)
 - template di python (python-skeleton)
+- aggiunta novità con python (dalla 3.7 alla 3.10)
 - miglioramento della sezione su cookiecutter
 - come strutturare il codice python (aggiunta a come strutturare un progetto)
 - migliorare sezione di code styling
@@ -40,11 +42,33 @@ Per qualsiasi altra modifica legata al tema e al funzionamento generale di Hugo 
 - ci/cd con python (gitlab e github)
 - creare test con pytest
 - type checking
+- aggiunta sezione template (skeleton)
 - come usare python su r (esempio con librerie sui dati)
+- github pipeline per python
+- gitlab pipeline per python
+- aggiunta sezione su python base
+  - cheatsheet
+  - concetti più importanti
+- aggiungere sezione su concetti avanzati python
+  - lambda
+  - decorators
+  - args e kwargs
+  - comprehension
+  - descriptors
+  - iterators
+  - generators
+  - metaclasses
+- framework e tool utili
+  - typer
+  - fastapi
+  - streamlit
+  - tqdm
+  - pandas
+  - airflow (concetti base)
 
 - miglioramento url e indicizzazione (con aggiunta di google analytics)
-- miglioramento traduzione in inglese
-- miglioramento del readme
+
+Nel futuro ci piacerebbe passare direttamente a mkdocs material invece di usare Hugo per avere tutto pythonic
 
 ## Come collaborare?
 
@@ -66,7 +90,7 @@ Grazie mille!
 ## Ringraziamenti
 
 Per questo progetto ringraziamo tutta la community di Python Biella Group, in particolare:
-- Andrea Guzzo: per il supporto nell'organizzazione
+- Andrea Guzzo: per il supporto nell'organizzazione, creazione e ideazione del sito
 - Mario Nardi: per il supporto nell'organizzazione
 - Maria Teresa Panunzio: per il supporto nell'organizzazione
 - Calogero Galipò: per l'aiuto nella costruzione del sito
