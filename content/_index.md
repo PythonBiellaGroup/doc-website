@@ -23,15 +23,21 @@ chapter = false
 
 Questo sito ha l'obiettivo di raccogliere la conoscenza e tutto quello che viene raccolto dalla community rispetto a librerie, metodi, tecnologie e buone pratiche.
 
-Per qualsiasi segnalazione vi ricordiamo di far riferimento alla repository di github: https://github.com/PythonBiellaGroup/ModernPythonDevelopment segnalando errori, richieste ed eventuali modifiche.
+Per qualsiasi informazione su questo progetto o su qualsiasi segnalazione, puoi fare riferimento alla nostra [GitHub page](https://github.com/PythonBiellaGroup/ModernPythonDevelopment).
+Puoi usare questa [issue page](https://github.com/PythonBiellaGroup/ModernPythonDevelopment/issues) per segnalare nuove idee, features, modifiche, aggiunte oppure problemi o bug nel sito.
 
 
-Per interagire con noi puoi trovarci su questi canali
-[![](https://img.shields.io/badge/-Telegram-informational?style=for-the-badge&logo=telegram&logoColor=white&color=0088cc)](https://t.me/joinchat/UZJZzGFKWf9JGGx5
+Puoi trovare tutti i nostri contatti, [materiale e informazioni su questo link](https://linktr.ee/PythonBiellaGroup)
+In particolare puoi trovare informazioni su:
+- Canale telegram che usiamo per comunicare e discutere all'interno della community
+- Canale youtube con tutti i video e le registrazioni delle serate
+- Github: con tutto il nostro codice e materiale open source
+- Tutti i nostri canali e contatti social
+<!-- [![](https://img.shields.io/badge/-Telegram-informational?style=for-the-badge&logo=telegram&logoColor=white&color=0088cc)](https://t.me/joinchat/UZJZzGFKWf9JGGx5
 )  
 [![](https://img.shields.io/youtube/channel/subscribers/UCkvQcNjmC_duLhvDxeUPJAg?label=Youtube)](https://www.youtube.com/channel/UCkvQcNjmC_duLhvDxeUPJAg)
 [![](https://img.shields.io/badge/Website-Il%20nostro%20blog-informational)](https://pythonbiella.herokuapp.com/
-)
+) -->
 
 --------------------------
 ## 🚀 **Progetti e Repository**
@@ -51,6 +57,6 @@ Contribuisci alla community!
 
 Proponi un tuo intervento su quello che ti piace  
 Aiutarci con il nostro blog, social, community e repository  
-Contattaci su Telegram!
+[Contattaci su Telegram!](https://linktr.ee/PythonBiellaGroup)
 
 Ma soprattutto: **Grazie di essere qui**

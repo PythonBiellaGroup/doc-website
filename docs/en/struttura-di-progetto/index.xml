@@ -26,7 +26,7 @@ Value Error: attempted relative import beyond top-level package</description>
       
       <guid>https://pythonbiellagroup.it/en/struttura-di-progetto/import-circolari/</guid>
       <description>Circular Imports This is a severe issue in a project, and the error arises when you try to import one module from another, and vice versa (creating a circularity in the imports).
-# file_a.py from file_b import hello_world def hello(): return &amp;#34;hello&amp;#34; def first_program(): return hello_world() first_program() # file_b.py from file_a import hello def hello_world(): return hello() + &amp;#34; world&amp;#34; When you are lunching python file_a.py you will encounter the following error:</description>
+# file_a.py from file_b import hello_world  def hello():  return &amp;#34;hello&amp;#34;  def first_program():  return hello_world()  first_program() # file_b.py from file_a import hello  def hello_world():   return hello() + &amp;#34; world&amp;#34; When you are lunching python file_a.</description>
     </item>
     
     <item>

@@ -356,6 +356,9 @@
                 href="https://pythonbiellagroup.it/it/visual-studio-code/testing/"
                 />
   </url><url>
+    <loc>https://pythonbiellagroup.it/it/gestire-dipendenze/anaconda/</loc>
+    <lastmod>2022-04-09T12:04:00+02:00</lastmod>
+  </url><url>
     <loc>https://pythonbiellagroup.it/it/tags/dipendenze/</loc>
     <lastmod>2022-01-19T15:12:00+02:00</lastmod>
     <xhtml:link
@@ -589,6 +592,8 @@
                 hreflang="it"
                 href="https://pythonbiellagroup.it/it/tags/vscode/"
                 />
+  </url><url>
+    <loc>https://pythonbiellagroup.it/it/struttura-di-progetto/makefile/</loc>
   </url><url>
     <loc>https://pythonbiellagroup.it/it/categories/</loc>
     <xhtml:link

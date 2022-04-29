@@ -2,6 +2,9 @@
 
 Sito web della community PythonBiellaGroup che ha l'obiettivo di raccogliere la conoscenza e tutto quello che viene raccolto dalla community legato a librerie, metodi e tecnologie sempre legate a Python all'interno di uno strumento fruibile online da tutti e tradotto in Italiano.
 
+Tutti i nostri contatti e link:
+- https://linktr.ee/PythonBiellaGroup
+
 Il Sito web è disponibile online a questo indirizzo:
 - https://pythonbiellagroup.it
 

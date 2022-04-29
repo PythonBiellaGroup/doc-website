@@ -23,14 +23,22 @@ chapter = false
 
 This website's goal is to collect feedbacks and share community knowledge with respect to libraries, caveats, best practices and new technologies.
 
-For any issues we would like to refer to out GitHub: https://github.com/PythonBiellaGroup/ModernPythonDevelopment. There is the place where feature requests and bugs are reported.
+For any issues we would like to refer to our [GitHub page](https://github.com/PythonBiellaGroup/ModernPythonDevelopment).
+You can use the [issue page](https://github.com/PythonBiellaGroup/ModernPythonDevelopment/issues) to submit new features, idea, arguments and to report bugs and problems.
 
-You're are also warmly welcomed to join on these socials:
+You can find all our contacts, [material and information on this link](https://linktr.ee/PythonBiellaGroup)
+In particular you can find information on:
+- Telegram channel that we use to communicate and discuss within the community
+- YouTube channel with all the videos and recordings of the evenings
+- Github: with all our code and open source material
+- All our channels and social contacts
+
+<!-- You're are also warmly welcomed to join on these socials:
 [![](https://img.shields.io/badge/-Telegram-informational?style=for-the-badge&logo=telegram&logoColor=white&color=0088cc)](https://t.me/joinchat/UZJZzGFKWf9JGGx5
 )  
 [![](https://img.shields.io/youtube/channel/subscribers/UCkvQcNjmC_duLhvDxeUPJAg?label=Youtube)](https://www.youtube.com/channel/UCkvQcNjmC_duLhvDxeUPJAg)
 [![](https://img.shields.io/badge/Website-Il%20nostro%20blog-informational)](https://pythonbiella.herokuapp.com/
-)
+) -->
 
 --------------------------
 ## 🚀 **Projects & Repositories**

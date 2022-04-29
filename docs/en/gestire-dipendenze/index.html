@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.90.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta name="description" content="Python Biella Group Reference Website and Guides">
 <meta name="author" content="Andrea Guzzo">
 
@@ -21,22 +21,22 @@
       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
     
-    <link href="/css/nucleus.css?1645696479" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645696479" rel="stylesheet">
-    <link href="/css/hybrid.css?1645696479" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645696479" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645696479" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645696479" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645696479" rel="stylesheet">
-    <link href="/css/theme.css?1645696479" rel="stylesheet">
-    <link href="/css/tabs.css?1645696479" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645696479" rel="stylesheet">
+    <link href="/css/nucleus.css?1651232412" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1651232412" rel="stylesheet">
+    <link href="/css/hybrid.css?1651232412" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1651232412" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1651232412" rel="stylesheet">
+    <link href="/css/auto-complete.css?1651232412" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1651232412" rel="stylesheet">
+    <link href="/css/theme.css?1651232412" rel="stylesheet">
+    <link href="/css/tabs.css?1651232412" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1651232412" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645696479" rel="stylesheet">
+    <link href="/css/theme-blue.css?1651232412" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645696479"></script>
+    <script src="/js/jquery-3.3.1.min.js?1651232412"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645696479"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645696479"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1651232412"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1651232412"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.it\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645696479"></script>
+<script type="text/javascript" src="/js/search.js?1651232412"></script>
 
     
   </div>
@@ -925,8 +925,8 @@
 <h1 id="manage-dependencies">Manage Dependencies</h1>
 <p>In order to correctly manage dependecies from python 3.3 there exist a module named <strong>venv</strong> which is able to create a virtual environemnt inside your project.</p>
 <p>This is actually old school, still many people is using that nowadays.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python -m venv my-virtualenv
-</code></pre></div><p>The command inits a directory <code>my-virtualenv</code> whose files are:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m venv my-virtualenv
+</span></span></code></pre></div><p>The command inits a directory <code>my-virtualenv</code> whose files are:</p>
 <ul>
 <li>python binary</li>
 <li>pip/easy_install/wheel binary</li>
@@ -934,30 +934,30 @@
 <li>binary files utilizzate da Python</li>
 </ul>
 <p>Then you are required to activate the virtual envirnoment:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># On Linux and Mac</span>
-source ./my-virtualenv/bin/activate
-
-<span style="color:#75715e"># On Windows</span>
-my-virtualenv<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate.bat
-
-<span style="color:#75715e"># Deactivate virtualenv</span>
-deactivate
-</code></pre></div><p>Virtual ENVinonments are software abstractions that make your analysis portable and reproducible. As a matter of fact with venvs you are able to produce  <code>requirements.txt</code> files which contains the steps to install dependencies on your machine.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># On Linux and Mac</span>
+</span></span><span style="display:flex;"><span>source ./my-virtualenv/bin/activate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># On Windows</span>
+</span></span><span style="display:flex;"><span>my-virtualenv<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate.bat
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Deactivate virtualenv</span>
+</span></span><span style="display:flex;"><span>deactivate
+</span></span></code></pre></div><p>Virtual ENVinonments are software abstractions that make your analysis portable and reproducible. As a matter of fact with venvs you are able to produce  <code>requirements.txt</code> files which contains the steps to install dependencies on your machine.</p>
 <p>This is for sure one of the easiest way to deal with dependencies, but there are some alternatives that allows you to have more control and supervise you while you are setting up your project.</p>
 <h2 id="pyenv-virtualenv">pyenv-virtualenv</h2>
 <p>Pyenv is a nice tool to build even more easily virtual environments though its plugin <code>pyenv-virtualenv</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># create a virtualenv</span>
-pyenv virtualenv 3.7.4 my-project
-
-<span style="color:#75715e"># list all venvs</span>
-pyenv virtualenvs
-
-<span style="color:#75715e"># activate virtualenv</span>
-pyenv activate my-project
-
-<span style="color:#75715e"># deactivate virtualenv</span>
-pyenv deactivate
-</code></pre></div><p>Beside virtualenv and pyenv-virtualenv there are also other interesting dependecy management tools, these are:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># create a virtualenv</span>
+</span></span><span style="display:flex;"><span>pyenv virtualenv 3.7.4 my-project
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># list all venvs</span>
+</span></span><span style="display:flex;"><span>pyenv virtualenvs
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># activate virtualenv</span>
+</span></span><span style="display:flex;"><span>pyenv activate my-project
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># deactivate virtualenv</span>
+</span></span><span style="display:flex;"><span>pyenv deactivate
+</span></span></code></pre></div><p>Beside virtualenv and pyenv-virtualenv there are also other interesting dependecy management tools, these are:</p>
 <ul>
 <li>conda (<code>conda</code> package manager) invasive AF</li>
 <li>virtualfish</li>
@@ -1465,19 +1465,19 @@ pyenv deactivate
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645696479"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645696479"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645696479"></script>
-    <script src="/js/jquery.sticky.js?1645696479"></script>
-    <script src="/js/featherlight.min.js?1645696479"></script>
-    <script src="/js/highlight.pack.js?1645696479"></script>
+    <script src="/js/clipboard.min.js?1651232412"></script>
+    <script src="/js/perfect-scrollbar.min.js?1651232412"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1651232412"></script>
+    <script src="/js/jquery.sticky.js?1651232412"></script>
+    <script src="/js/featherlight.min.js?1651232412"></script>
+    <script src="/js/highlight.pack.js?1651232412"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645696479"></script>
-    <script src="/js/learn.js?1645696479"></script>
-    <script src="/js/hugo-learn.js?1645696479"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1651232412"></script>
+    <script src="/js/learn.js?1651232412"></script>
+    <script src="/js/hugo-learn.js?1651232412"></script>
     
         
-            <script src="/mermaid/mermaid.js?1645696479"></script>
+            <script src="/mermaid/mermaid.js?1651232412"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

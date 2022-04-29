@@ -13,7 +13,10 @@
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
       <guid>https://pythonbiellagroup.it/it/documentare-il-codice/</guid>
-      <description>Sezione 4s Come documentare il proprio codice Ci sono moltissimi strumenti di documentazione del codice e tanti altri modi per farlo.</description>
+      <description>Sezione 4s Come documentare il proprio codice Ci sono moltissimi strumenti di documentazione del codice e tanti altri modi per farlo.
+Tre degli strumenti più utilizzati per documentare il proprio codice sono:
+ Python classico: utilizzando docstrings, commenti , .. Sphinx MKDocs  In questa sezione vedremo il funzionamento di mkdocs per costruire documentazione automatica a partire dal proprio codice python mettendola a disposizione su un sito web.
+Perchè documentare il codice è importante?</description>
     </item>
     
   </channel>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.90.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta name="description" content="Python Biella Group Reference Website and Guides">
 <meta name="author" content="Andrea Guzzo">
 
@@ -21,22 +21,22 @@
       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
     
-    <link href="/css/nucleus.css?1645696479" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645696479" rel="stylesheet">
-    <link href="/css/hybrid.css?1645696479" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645696479" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645696479" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645696479" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645696479" rel="stylesheet">
-    <link href="/css/theme.css?1645696479" rel="stylesheet">
-    <link href="/css/tabs.css?1645696479" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645696479" rel="stylesheet">
+    <link href="/css/nucleus.css?1651232412" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1651232412" rel="stylesheet">
+    <link href="/css/hybrid.css?1651232412" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1651232412" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1651232412" rel="stylesheet">
+    <link href="/css/auto-complete.css?1651232412" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1651232412" rel="stylesheet">
+    <link href="/css/theme.css?1651232412" rel="stylesheet">
+    <link href="/css/tabs.css?1651232412" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1651232412" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645696479" rel="stylesheet">
+    <link href="/css/theme-blue.css?1651232412" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645696479"></script>
+    <script src="/js/jquery-3.3.1.min.js?1651232412"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645696479"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645696479"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1651232412"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1651232412"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.it\/\/it";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645696479"></script>
+<script type="text/javascript" src="/js/search.js?1651232412"></script>
 
     
   </div>
@@ -299,6 +299,27 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/gestire-dipendenze/anaconda/" title="Anaconda" class="dd-item ">
+        <a href="/it/gestire-dipendenze/anaconda/">
+        Anaconda
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -410,6 +431,27 @@
       <li data-nav-id="/it/struttura-di-progetto/costruire-un-progetto/" title="Costruire un progetto" class="dd-item ">
         <a href="/it/struttura-di-progetto/costruire-un-progetto/">
         Costruire un progetto
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/struttura-di-progetto/makefile/" title="" class="dd-item ">
+        <a href="/it/struttura-di-progetto/makefile/">
+        
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -976,30 +1018,30 @@
 <p>Ecco quindi che viene in soccorso <code>pipx</code> che consente di installare queste librerie globali e usarle globalmente su tutta la macchina.</p>
 <p><a href="https://github.com/pipxproject/pipx">https://github.com/pipxproject/pipx</a></p>
 <p>Sostanzialmente quando volete installare delle librerie su tutta la macchina globalmente, invece di fare <code>pip install my_package</code> fate <code>pipx install my_package</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Lista di tutti i pacchetti</span>
-pipx list
-
-<span style="color:#75715e"># rimuovere un pacchetto</span>
-pipx uninstall my_package
-
-<span style="color:#75715e"># Lanciare una liberia o un comando</span>
-pipx run black my_file
-
-<span style="color:#75715e"># Si può anche specificare una determinata versione del pacchetto</span>
-pipx run --spec black<span style="color:#f92672">==</span>18.3a1 black --version
-</code></pre></div><p>Ogni volta che viene lanciato <code>pipx run my_package</code> quello che succede è che viene creato temporaneamente un virtualenvironment dentro al quale viene eseguito il comando per poi essere distrutto.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#Lista di tutti i pacchetti</span>
+</span></span><span style="display:flex;"><span>pipx list
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># rimuovere un pacchetto</span>
+</span></span><span style="display:flex;"><span>pipx uninstall my_package
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lanciare una liberia o un comando</span>
+</span></span><span style="display:flex;"><span>pipx run black my_file
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Si può anche specificare una determinata versione del pacchetto</span>
+</span></span><span style="display:flex;"><span>pipx run --spec black<span style="color:#f92672">==</span>18.3a1 black --version
+</span></span></code></pre></div><p>Ogni volta che viene lanciato <code>pipx run my_package</code> quello che succede è che viene creato temporaneamente un virtualenvironment dentro al quale viene eseguito il comando per poi essere distrutto.</p>
 <p>Su visual studio è importante fare questo settaggio se si vuole usare pipx (lo si fa una volta sola)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Installare il pacchetto</span>
-pipx install flake8
-
-<span style="color:#75715e"># visualizzare dove viene installato il pacchetto</span>
-which flake8
-&lt;path&gt;
-
-<span style="color:#75715e"># Copiare il path e dire a visual studio quale binario prendere</span>
-<span style="color:#75715e"># Dentro al file settings.json (vedere come si fa a prendere) inserire</span>
-<span style="color:#e6db74">&#34;python.linting.flake8Path&#34;</span>: <span style="color:#e6db74">&#34;/Users/YOUR_USERNAME/.local/bin/flake8&#34;</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Installare il pacchetto</span>
+</span></span><span style="display:flex;"><span>pipx install flake8
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># visualizzare dove viene installato il pacchetto</span>
+</span></span><span style="display:flex;"><span>which flake8
+</span></span><span style="display:flex;"><span>&lt;path&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Copiare il path e dire a visual studio quale binario prendere</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Dentro al file settings.json (vedere come si fa a prendere) inserire</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;python.linting.flake8Path&#34;</span>: <span style="color:#e6db74">&#34;/Users/YOUR_USERNAME/.local/bin/flake8&#34;</span>
+</span></span></code></pre></div>
 
 <footer class="footline">
 	
@@ -1180,6 +1222,25 @@ which flake8
             
         
                     
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1188,8 +1249,18 @@ which flake8
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
-                        
+            
+            
+                
                     
                 
                 
@@ -1198,6 +1269,9 @@ which flake8
                     
                     
 
+                    
+            
+        
                     
                         
             
@@ -1504,7 +1578,7 @@ which flake8
 			<a class="nav nav-prev" href="/it/gestire-dipendenze/poetry-advance/" title="Poetry Advance"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/it/struttura-di-progetto/" title="Struttura di progetto" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/it/gestire-dipendenze/anaconda/" title="Anaconda" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1514,19 +1588,19 @@ which flake8
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645696479"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645696479"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645696479"></script>
-    <script src="/js/jquery.sticky.js?1645696479"></script>
-    <script src="/js/featherlight.min.js?1645696479"></script>
-    <script src="/js/highlight.pack.js?1645696479"></script>
+    <script src="/js/clipboard.min.js?1651232412"></script>
+    <script src="/js/perfect-scrollbar.min.js?1651232412"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1651232412"></script>
+    <script src="/js/jquery.sticky.js?1651232412"></script>
+    <script src="/js/featherlight.min.js?1651232412"></script>
+    <script src="/js/highlight.pack.js?1651232412"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645696479"></script>
-    <script src="/js/learn.js?1645696479"></script>
-    <script src="/js/hugo-learn.js?1645696479"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1651232412"></script>
+    <script src="/js/learn.js?1651232412"></script>
+    <script src="/js/hugo-learn.js?1651232412"></script>
     
         
-            <script src="/mermaid/mermaid.js?1645696479"></script>
+            <script src="/mermaid/mermaid.js?1651232412"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

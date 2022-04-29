@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.90.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta name="description" content="Python Biella Group Reference Website and Guides">
 <meta name="author" content="Andrea Guzzo">
 
@@ -21,22 +21,22 @@
       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
     
-    <link href="/css/nucleus.css?1645696479" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645696479" rel="stylesheet">
-    <link href="/css/hybrid.css?1645696479" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645696479" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645696479" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645696479" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645696479" rel="stylesheet">
-    <link href="/css/theme.css?1645696479" rel="stylesheet">
-    <link href="/css/tabs.css?1645696479" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645696479" rel="stylesheet">
+    <link href="/css/nucleus.css?1651232412" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1651232412" rel="stylesheet">
+    <link href="/css/hybrid.css?1651232412" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1651232412" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1651232412" rel="stylesheet">
+    <link href="/css/auto-complete.css?1651232412" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1651232412" rel="stylesheet">
+    <link href="/css/theme.css?1651232412" rel="stylesheet">
+    <link href="/css/tabs.css?1651232412" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1651232412" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645696479" rel="stylesheet">
+    <link href="/css/theme-blue.css?1651232412" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645696479"></script>
+    <script src="/js/jquery-3.3.1.min.js?1651232412"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645696479"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645696479"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1651232412"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1651232412"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.it\/\/it";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645696479"></script>
+<script type="text/javascript" src="/js/search.js?1651232412"></script>
 
     
   </div>
@@ -299,6 +299,27 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/gestire-dipendenze/anaconda/" title="Anaconda" class="dd-item ">
+        <a href="/it/gestire-dipendenze/anaconda/">
+        Anaconda
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -410,6 +431,27 @@
       <li data-nav-id="/it/struttura-di-progetto/costruire-un-progetto/" title="Costruire un progetto" class="dd-item ">
         <a href="/it/struttura-di-progetto/costruire-un-progetto/">
         Costruire un progetto
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/it/struttura-di-progetto/makefile/" title="" class="dd-item ">
+        <a href="/it/struttura-di-progetto/makefile/">
+        
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -978,33 +1020,33 @@
 <p><strong>Virtualenv</strong></p>
 <p>Pipenv vs virtualenv: <a href="https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853">https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853</a></p>
 <p>Venv: <a href="https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-environments-a53d1e191490">https://medium.com/@rahul3012_37725/a-very-basic-guide-to-python-virtual-environments-a53d1e191490</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># install virtualenv</span>
-pip install virtualenv
-
-<span style="color:#75715e">#Prima di lanciare il successivo comando controllare di essere su conda e fare:</span>
-conda activate development <span style="color:#75715e">#la versione di conda che usate deve essere &gt;= versione desiderata</span>
-
-<span style="color:#75715e"># generate a new virtualenv in a specific path</span>
-virtualenv --python<span style="color:#f92672">=</span>3.6 &lt;path_nome_env&gt;
-
-<span style="color:#75715e">#### UNIX (mac and linux)</span>
-source &lt;path_nome_env&gt;/bin/activate
-
-<span style="color:#75715e">#### WINDOWS</span>
-&lt;path_nome_env&gt;<span style="color:#ae81ff">\s</span>cripts<span style="color:#ae81ff">\a</span>ctivate
-
-<span style="color:#75715e">#### Visual Studio Code </span>
-<span style="color:#75715e">#(install Microsoft Python Extension and then click on python in the bottom tab)</span>
-<span style="color:#75715e">#Windows</span>
-navigate to -&gt; &lt;path_nome_env&gt;<span style="color:#ae81ff">\s</span>cripts<span style="color:#ae81ff">\&lt;</span>python3.6&gt;
-<span style="color:#75715e">#UNIX</span>
-navigate to -&gt; &lt;path_nome_env&gt;/bin/&lt;python3.6&gt;
-
-<span style="color:#75715e">#Warning: if you are using another python version, change python3.6 to your current version</span>
-
-<span style="color:#75715e">#Then install requirements.txt</span>
-pip install -r requirements.txt
-</code></pre></div><p>Prevent conda to activate default base environment by default <code>conda config --set auto_activate_base false</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># install virtualenv</span>
+</span></span><span style="display:flex;"><span>pip install virtualenv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Prima di lanciare il successivo comando controllare di essere su conda e fare:</span>
+</span></span><span style="display:flex;"><span>conda activate development <span style="color:#75715e">#la versione di conda che usate deve essere &gt;= versione desiderata</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># generate a new virtualenv in a specific path</span>
+</span></span><span style="display:flex;"><span>virtualenv --python<span style="color:#f92672">=</span>3.6 &lt;path_nome_env&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#### UNIX (mac and linux)</span>
+</span></span><span style="display:flex;"><span>source &lt;path_nome_env&gt;/bin/activate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#### WINDOWS</span>
+</span></span><span style="display:flex;"><span>&lt;path_nome_env&gt;<span style="color:#ae81ff">\s</span>cripts<span style="color:#ae81ff">\a</span>ctivate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#### Visual Studio Code </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#(install Microsoft Python Extension and then click on python in the bottom tab)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Windows</span>
+</span></span><span style="display:flex;"><span>navigate to -&gt; &lt;path_nome_env&gt;<span style="color:#ae81ff">\s</span>cripts<span style="color:#ae81ff">\&lt;</span>python3.6&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#UNIX</span>
+</span></span><span style="display:flex;"><span>navigate to -&gt; &lt;path_nome_env&gt;/bin/&lt;python3.6&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Warning: if you are using another python version, change python3.6 to your current version</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Then install requirements.txt</span>
+</span></span><span style="display:flex;"><span>pip install -r requirements.txt
+</span></span></code></pre></div><p>Prevent conda to activate default base environment by default <code>conda config --set auto_activate_base false</code></p>
 <p><a href="https://www.youtube.com/watch?v=asL0dbN6pAY">https://www.youtube.com/watch?v=asL0dbN6pAY</a></p>
 <p><a href="https://www.youtube.com/watch?v=1GIIaGbL9qQ">https://www.youtube.com/watch?v=1GIIaGbL9qQ</a></p>
 <p><strong>Inside the cheeseshop: How Python Packaging Works (Dustin Ingram)</strong> <a href="https://www.youtube.com/watch?v=AQsZsgJ30AE">https://www.youtube.com/watch?v=AQsZsgJ30AE</a></p>
@@ -1197,6 +1239,22 @@ pip install -r requirements.txt
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1212,6 +1270,22 @@ pip install -r requirements.txt
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1528,19 +1602,19 @@ pip install -r requirements.txt
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645696479"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645696479"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645696479"></script>
-    <script src="/js/jquery.sticky.js?1645696479"></script>
-    <script src="/js/featherlight.min.js?1645696479"></script>
-    <script src="/js/highlight.pack.js?1645696479"></script>
+    <script src="/js/clipboard.min.js?1651232412"></script>
+    <script src="/js/perfect-scrollbar.min.js?1651232412"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1651232412"></script>
+    <script src="/js/jquery.sticky.js?1651232412"></script>
+    <script src="/js/featherlight.min.js?1651232412"></script>
+    <script src="/js/highlight.pack.js?1651232412"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645696479"></script>
-    <script src="/js/learn.js?1645696479"></script>
-    <script src="/js/hugo-learn.js?1645696479"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1651232412"></script>
+    <script src="/js/learn.js?1651232412"></script>
+    <script src="/js/hugo-learn.js?1651232412"></script>
     
         
-            <script src="/mermaid/mermaid.js?1645696479"></script>
+            <script src="/mermaid/mermaid.js?1651232412"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
