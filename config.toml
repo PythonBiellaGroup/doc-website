@@ -32,27 +32,21 @@ home = [ "HTML", "RSS", "JSON"]
       weight = 1
     
     [[languages.it.menu.shortcuts]] 
-      name = "<i class='fas fa-bullhorn'></i> Blog"
-      identifier = "blog"
-      url = "https://pythonbiella.herokuapp.com/main/"
-      weight = 2
-    
-    [[languages.it.menu.shortcuts]] 
       name = "<i class='fab fa-github'></i> Github"
       identifier = "repo"
       url = "https://github.com/PythonBiellaGroup/"
       weight = 3
     
     [[languages.it.menu.shortcuts]] 
-      name = "<i class='fab fa-telegram'></i> Telegram"
+      name = "<i class='fab fa-telegram'></i> Contatti"
       identifier = "telegram"
-      url = "https://t.me/joinchat/AAAAAFGSWcxhSln_SRhseQ"
+      url = "https://linktr.ee/PythonBiellaGroup"
       weight = 4
 
     [[languages.it.menu.shortcuts]] 
       name = "<i class='fab fa-youtube'></i> Youtube"
       identifier = "youtube"
-      url = "https://www.youtube.com/channel/UCkvQcNjmC_duLhvDxeUPJAg"
+      url = "https://www.youtube.com/c/PythonBiellaGroup"
       weight = 5
   
   [languages.en]
@@ -65,3 +59,27 @@ home = [ "HTML", "RSS", "JSON"]
     identifier = "tag"
     url = "/tags"
     weight = 2
+
+  [[languages.en.menu.shortcuts]] 
+    name = "<i class='fas fa-tags'></i> Tag"
+    identifier = "tag"
+    url = "/tags"
+    weight = 1
+  
+  [[languages.en.menu.shortcuts]] 
+    name = "<i class='fab fa-github'></i> Github"
+    identifier = "repo"
+    url = "https://github.com/PythonBiellaGroup/"
+    weight = 3
+  
+  [[languages.en.menu.shortcuts]] 
+    name = "<i class='fab fa-telegram'></i> Contacts"
+    identifier = "telegram"
+    url = "https://linktr.ee/PythonBiellaGroup"
+    weight = 4
+
+  [[languages.en.menu.shortcuts]] 
+    name = "<i class='fab fa-youtube'></i> Youtube"
+    identifier = "youtube"
+    url = "https://www.youtube.com/c/PythonBiellaGroup"
+    weight = 5
