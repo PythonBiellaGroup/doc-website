@@ -73,7 +73,7 @@ poetry install
 # launch a file
 poetry run <script>
 
-# Visualize venv path for this project (e anche l'elenco delle librerie)
+# Visualize venv path for this project (and the dependencies list)
 poetry show -v
 
 # exit poetry
@@ -110,7 +110,7 @@ poetry add $( cat requirements.txt )
 poetry export -f requirements.txt --output requirements.txt
 ```
 
-Ezample of a pyproject.toml
+Example of a pyproject.toml
 
 ```bash
 [tool.poetry]
