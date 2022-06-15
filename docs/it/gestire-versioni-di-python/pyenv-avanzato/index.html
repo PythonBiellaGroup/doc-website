@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.96.0" />
+    <meta name="generator" content="Hugo 0.83.1" />
     <meta name="description" content="Python Biella Group Reference Website and Guides">
 <meta name="author" content="Andrea Guzzo">
 
@@ -21,22 +21,22 @@
       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
     
-    <link href="/css/nucleus.css?1651232715" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1651232715" rel="stylesheet">
-    <link href="/css/hybrid.css?1651232715" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1651232715" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1651232715" rel="stylesheet">
-    <link href="/css/auto-complete.css?1651232715" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1651232715" rel="stylesheet">
-    <link href="/css/theme.css?1651232715" rel="stylesheet">
-    <link href="/css/tabs.css?1651232715" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1651232715" rel="stylesheet">
+    <link href="/css/nucleus.css?1655311722" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1655311722" rel="stylesheet">
+    <link href="/css/hybrid.css?1655311722" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1655311722" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1655311722" rel="stylesheet">
+    <link href="/css/auto-complete.css?1655311722" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1655311722" rel="stylesheet">
+    <link href="/css/theme.css?1655311722" rel="stylesheet">
+    <link href="/css/tabs.css?1655311722" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1655311722" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1651232715" rel="stylesheet">
+    <link href="/css/theme-blue.css?1655311722" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1651232715"></script>
+    <script src="/js/jquery-3.3.1.min.js?1655311722"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1651232715"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1651232715"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1655311722"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1655311722"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.it\/\/it";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1651232715"></script>
+<script type="text/javascript" src="/js/search.js?1655311722"></script>
 
     
   </div>
@@ -1058,41 +1058,41 @@ Questo perchè le modalità di installazione cambiano a seconda della versione e
 <p>La guida di riferimento per l&rsquo;installazione la potete trovare: <a href="https://github.com/pyenv/pyenv#installation">qui</a></p>
 <p><strong>Verificare installazione di Pyenv</strong></p>
 <p>Una volta installato e configurato correttamente sul vostro terminale terminale fare:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyenv --version
-</span></span></code></pre></div><h3 id="install-python">Install Python</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv --version
+</code></pre></div><h3 id="install-python">Install Python</h3>
 <p>Visualize python versions</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyenv install --list | grep <span style="color:#e6db74">&#34; 3\.[678]&#34;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyenv install -v 3.7.2
-</span></span></code></pre></div><p>Visualizzare dove vengono installate le varie versioni su Python</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls ~/.pyenv/versions/
-</span></span></code></pre></div><p>Disinstallare una versione di Python</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyenv uninstall &lt;version&gt;
-</span></span></code></pre></div><p>Ogni volta che su windows (e altri sistemi operativi) si installa una nuova versione di Python con pyenv è importante anche fare rehash</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#rehash to update shims</span>
-</span></span><span style="display:flex;"><span>pyenv rehash
-</span></span></code></pre></div><p>Disinstallare una versione di python</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#visualizzare le versioni di pyenv installate</span>
-</span></span><span style="display:flex;"><span>pyenv versions
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#disinstallare una determinata versione</span>
-</span></span><span style="display:flex;"><span>pyenv uninstall &lt;versione&gt;
-</span></span></code></pre></div><h2 id="usare-una-versione-di-pyenv">Usare una versione di Pyenv</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#Visualize the installed (available) versions</span>
-</span></span><span style="display:flex;"><span>pyenv versions
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#Visualize the active version of python with pyenv</span>
-</span></span><span style="display:flex;"><span>pyenv which python
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#Set a global pyenv version</span>
-</span></span><span style="display:flex;"><span>pyenv global &lt;version&gt;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#If you want to come back to the system default</span>
-</span></span><span style="display:flex;"><span>pyenv global system
-</span></span></code></pre></div><p>È anche possibile impostare una versione di pyenv python locale per ogni progetto facendo all&rsquo;interno della cartella di progetto:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyenv local &lt;version&gt;
-</span></span></code></pre></div><p>Oppure impostare la versione di una determinata shell</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyenv shell &lt;version&gt;
-</span></span></code></pre></div><h3 id="importante-in-windows-10">IMPORTANTE IN WINDOWS 10</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv install --list | grep <span style="color:#e6db74">&#34; 3\.[678]&#34;</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv install -v 3.7.2
+</code></pre></div><p>Visualizzare dove vengono installate le varie versioni su Python</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls ~/.pyenv/versions/
+</code></pre></div><p>Disinstallare una versione di Python</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv uninstall &lt;version&gt;
+</code></pre></div><p>Ogni volta che su windows (e altri sistemi operativi) si installa una nuova versione di Python con pyenv è importante anche fare rehash</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#rehash to update shims</span>
+pyenv rehash
+</code></pre></div><p>Disinstallare una versione di python</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#visualizzare le versioni di pyenv installate</span>
+pyenv versions
+
+<span style="color:#75715e">#disinstallare una determinata versione</span>
+pyenv uninstall &lt;versione&gt;
+</code></pre></div><h2 id="usare-una-versione-di-pyenv">Usare una versione di Pyenv</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Visualize the installed (available) versions</span>
+pyenv versions
+
+<span style="color:#75715e">#Visualize the active version of python with pyenv</span>
+pyenv which python
+
+<span style="color:#75715e">#Set a global pyenv version</span>
+pyenv global &lt;version&gt;
+
+<span style="color:#75715e">#If you want to come back to the system default</span>
+pyenv global system
+</code></pre></div><p>È anche possibile impostare una versione di pyenv python locale per ogni progetto facendo all&rsquo;interno della cartella di progetto:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv local &lt;version&gt;
+</code></pre></div><p>Oppure impostare la versione di una determinata shell</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv shell &lt;version&gt;
+</code></pre></div><h3 id="importante-in-windows-10">IMPORTANTE IN WINDOWS 10</h3>
 <p>Dopo aver installato la versione di Python global di pyenv è necessario eliminare dalla variabile di ambiente <strong>PATH</strong> i riferimenti al Python base installato inizialmente.</p>
 <h2 id="virtualenvs-with-pyenv">Virtualenvs with pyenv</h2>
 <p>Pyenv ha un bellissimo plugin chiamato: <code>pyenv-virtualenv</code> che consente di gestire appunto i vari virtualenv in modo semplice.</p>
@@ -1103,22 +1103,22 @@ Questo perchè le modalità di installazione cambiano a seconda della versione e
 <li><strong>pyenv-virtualenv</strong> manages virtual environments for across varying versions of Python.</li>
 </ul>
 <p>Creare un virtualenv</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyenv virtualenv &lt;python_version&gt; &lt;environment_name&gt;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#&lt;pythonversion&gt; is optional</span>
-</span></span></code></pre></div><p>Attivare un virtualenv</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyenv local myproject
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#verify python version</span>
-</span></span><span style="display:flex;"><span>pyenv which python
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#verify pip version</span>
-</span></span><span style="display:flex;"><span>pyenv which pip
-</span></span></code></pre></div><p>È quindi possibile attivare o disattivare un particolare ambiente (virtualenv) (un po&rsquo; come succede con anaconda)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyenv activate &lt;environment_name&gt;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv deactivate
-</span></span></code></pre></div><p>Con pyenv è anche possibile utilizzare più versioni di python contemporaneamente&hellip;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv virtualenv &lt;python_version&gt; &lt;environment_name&gt;
+
+<span style="color:#75715e">#&lt;pythonversion&gt; is optional</span>
+</code></pre></div><p>Attivare un virtualenv</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv local myproject
+
+<span style="color:#75715e">#verify python version</span>
+pyenv which python
+
+<span style="color:#75715e">#verify pip version</span>
+pyenv which pip
+</code></pre></div><p>È quindi possibile attivare o disattivare un particolare ambiente (virtualenv) (un po' come succede con anaconda)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv activate &lt;environment_name&gt;
+
+pyenv deactivate
+</code></pre></div><p>Con pyenv è anche possibile utilizzare più versioni di python contemporaneamente&hellip;</p>
 <h2 id="pyenv-with-poetry">Pyenv with Poetry</h2>
 <p><a href="https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/">https://blog.jayway.com/2019/12/28/pyenv-poetry-saviours-in-the-python-chaos/</a></p>
 <h3 id="bonus-utilizzare-oh-my-zsh">Bonus: utilizzare oh-my-zsh</h3>
@@ -1682,19 +1682,19 @@ Questo perchè le modalità di installazione cambiano a seconda della versione e
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1651232715"></script>
-    <script src="/js/perfect-scrollbar.min.js?1651232715"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1651232715"></script>
-    <script src="/js/jquery.sticky.js?1651232715"></script>
-    <script src="/js/featherlight.min.js?1651232715"></script>
-    <script src="/js/highlight.pack.js?1651232715"></script>
+    <script src="/js/clipboard.min.js?1655311722"></script>
+    <script src="/js/perfect-scrollbar.min.js?1655311722"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1655311722"></script>
+    <script src="/js/jquery.sticky.js?1655311722"></script>
+    <script src="/js/featherlight.min.js?1655311722"></script>
+    <script src="/js/highlight.pack.js?1655311722"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1651232715"></script>
-    <script src="/js/learn.js?1651232715"></script>
-    <script src="/js/hugo-learn.js?1651232715"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1655311722"></script>
+    <script src="/js/learn.js?1655311722"></script>
+    <script src="/js/hugo-learn.js?1655311722"></script>
     
         
-            <script src="/mermaid/mermaid.js?1651232715"></script>
+            <script src="/mermaid/mermaid.js?1655311722"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.96.0" />
+    <meta name="generator" content="Hugo 0.83.1" />
     <meta name="description" content="Python Biella Group Reference Website and Guides">
 <meta name="author" content="Andrea Guzzo">
 
@@ -21,22 +21,22 @@
       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
     
-    <link href="/css/nucleus.css?1651232715" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1651232715" rel="stylesheet">
-    <link href="/css/hybrid.css?1651232715" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1651232715" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1651232715" rel="stylesheet">
-    <link href="/css/auto-complete.css?1651232715" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1651232715" rel="stylesheet">
-    <link href="/css/theme.css?1651232715" rel="stylesheet">
-    <link href="/css/tabs.css?1651232715" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1651232715" rel="stylesheet">
+    <link href="/css/nucleus.css?1655311722" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1655311722" rel="stylesheet">
+    <link href="/css/hybrid.css?1655311722" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1655311722" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1655311722" rel="stylesheet">
+    <link href="/css/auto-complete.css?1655311722" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1655311722" rel="stylesheet">
+    <link href="/css/theme.css?1655311722" rel="stylesheet">
+    <link href="/css/tabs.css?1655311722" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1655311722" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1651232715" rel="stylesheet">
+    <link href="/css/theme-blue.css?1655311722" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1651232715"></script>
+    <script src="/js/jquery-3.3.1.min.js?1655311722"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1651232715"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1651232715"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1655311722"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1655311722"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/pythonbiellagroup.it\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1651232715"></script>
+<script type="text/javascript" src="/js/search.js?1655311722"></script>
 
     
   </div>
@@ -976,23 +976,23 @@
 <li>flake8-bandit - introduce the capabilities of bandit inside flake8</li>
 </ul>
 <h2 id="flake8-installation">Flake8 installation</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install flake8
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># still pipx is preferred for a consistent workflow</span>
-</span></span><span style="display:flex;"><span>pipx install flake8
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># install extensions</span>
-</span></span><span style="display:flex;"><span>pip install flake8-docstrings flake8-isort
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># still pipx is preferred for a consistent workflow also for extension</span>
-</span></span><span style="display:flex;"><span>pipx inject flake8 flake8-docstrings flake8-isort flake8-bandit
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># If you run into a path error</span>
-</span></span><span style="display:flex;"><span>pipx ensurepath
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># .. then reboot terminal</span>
-</span></span></code></pre></div><p>Run Flake8</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>flake8 my_project <span style="color:#75715e">#my_project = workdir</span>
-</span></span></code></pre></div><p>To make the best use of Flake8 it is highly encouraged the VScode integration by launching <code>Python: Select Linter</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install flake8
+
+<span style="color:#75715e"># still pipx is preferred for a consistent workflow</span>
+pipx install flake8
+
+<span style="color:#75715e"># install extensions</span>
+pip install flake8-docstrings flake8-isort
+<span style="color:#75715e"># still pipx is preferred for a consistent workflow also for extension</span>
+pipx inject flake8 flake8-docstrings flake8-isort flake8-bandit
+
+<span style="color:#75715e"># If you run into a path error</span>
+pipx ensurepath
+
+<span style="color:#75715e"># .. then reboot terminal</span>
+</code></pre></div><p>Run Flake8</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">flake8 my_project <span style="color:#75715e">#my_project = workdir</span>
+</code></pre></div><p>To make the best use of Flake8 it is highly encouraged the VScode integration by launching <code>Python: Select Linter</code></p>
 <p>Managing big projects with Flake8 and its plugins and extensions could be a mess sometimes. However it comes to help the helpful library <code>FlakeHell</code>. Flakehell is wrapper around Flake which allows us to specify flake8 configuration directly inside the <code>pyproject.toml</code> (poetry library management file).</p>
 <p>⚠ Attention ⚠. flakehell is no longer maintained (2019), however you can still use it at your risk (compatibility issues).</p>
 <ul>
@@ -1511,19 +1511,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1651232715"></script>
-    <script src="/js/perfect-scrollbar.min.js?1651232715"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1651232715"></script>
-    <script src="/js/jquery.sticky.js?1651232715"></script>
-    <script src="/js/featherlight.min.js?1651232715"></script>
-    <script src="/js/highlight.pack.js?1651232715"></script>
+    <script src="/js/clipboard.min.js?1655311722"></script>
+    <script src="/js/perfect-scrollbar.min.js?1655311722"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1655311722"></script>
+    <script src="/js/jquery.sticky.js?1655311723"></script>
+    <script src="/js/featherlight.min.js?1655311723"></script>
+    <script src="/js/highlight.pack.js?1655311723"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1651232715"></script>
-    <script src="/js/learn.js?1651232715"></script>
-    <script src="/js/hugo-learn.js?1651232715"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1655311723"></script>
+    <script src="/js/learn.js?1655311723"></script>
+    <script src="/js/hugo-learn.js?1655311723"></script>
     
         
-            <script src="/mermaid/mermaid.js?1651232715"></script>
+            <script src="/mermaid/mermaid.js?1655311723"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
