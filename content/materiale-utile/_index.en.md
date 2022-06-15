@@ -23,7 +23,11 @@ tags = ["extra"]
 
 # Useful Materials
 
-Pycon 2020: [https://www.youtube.com/watch?v=ndi55Ig6-SI&list=PL7zLksDxo500pt5884WWGV6xxb5WqVR91&ab_channel=PyConUS](https://www.youtube.com/watch?v=ndi55Ig6-SI&list=PL7zLksDxo500pt5884WWGV6xxb5WqVR91&ab_channel=PyConUS)
+Pycon 2022: [https://www.youtube.com/playlist?list=PL2Uw4_HvXqvYeXy8ab7iRHjA-9HiYhRQl](https://www.youtube.com/playlist?list=PL2Uw4_HvXqvYeXy8ab7iRHjA-9HiYhRQl)
+
+Pycon 2021: [https://www.youtube.com/playlist?list=PL2Uw4_HvXqvYk1Y5P8kryoyd83L_0Uk5K](https://www.youtube.com/playlist?list=PL2Uw4_HvXqvYk1Y5P8kryoyd83L_0Uk5K)
+
+Pycon 2020: [https://www.youtube.com/playlist?list=PL2Uw4_HvXqvbpFquYIE57BEAqkQWk-iFg](https://www.youtube.com/playlist?list=PL2Uw4_HvXqvbpFquYIE57BEAqkQWk-iFg)
 
 Best Python 2020: [https://www.youtube.com/watch?v=tqUe0gcfqAU&list=PLCA4Z3rehf5nDNRqo4sLC_8KgU0tymlge&ab_channel=PyConUS](https://www.youtube.com/watch?v=tqUe0gcfqAU&list=PLCA4Z3rehf5nDNRqo4sLC_8KgU0tymlge&ab_channel=PyConUS)
 
