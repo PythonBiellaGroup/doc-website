@@ -3,7 +3,6 @@ title = "Creare pacchetti Python"
 date = 2022-01-19T15:12:00+02:00
 weight = 7
 chapter = true
-pre = "<b>2. </b>"
 tags = ["versions","venv","dipendenze"]
 +++
 
@@ -19,7 +18,7 @@ tags = ["versions","venv","dipendenze"]
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
-# Section 7
+# Python package
 
 ## Cosa sono i pacchetti di python?
 

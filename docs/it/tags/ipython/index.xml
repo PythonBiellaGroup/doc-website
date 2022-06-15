@@ -13,7 +13,7 @@
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
       <guid>https://pythonbiellagroup.it/it/repl/</guid>
-      <description>Sezione 6 REPL REPL vuol dire: READ - EVAL - PRINT - LOOP.
+      <description>REPL REPL vuol dire: READ - EVAL - PRINT - LOOP.
 Si riferisce a tutti gli strumenti che consentono di aprire una versione di Python daterminale e in modo dinamico provare codice e vederne subito il risultato in modo interattivo.
 Python REPL che viene installato di default insieme alla versione di python è carino, ma spesso molto basico e non conveniente da utilizzare per cose complicate.
 Ci sono alcune alternative, la più comune e popolare è certamente: iPython che è lo stesso REPL che gira dietro a Jupyter Notebooks e consente di utilizzare appunto la scrittura a Notebook.</description>

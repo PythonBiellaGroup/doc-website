@@ -13,7 +13,7 @@
       <pubDate>Sun, 28 Mar 2021 20:10:53 +0200</pubDate>
       
       <guid>https://pythonbiellagroup.it/en/code-style/</guid>
-      <description>Section 4 Code Style When you are collaborating on a code project with teammates It is highly recommended to agree on a same code style. That would directly help to quickly grasp others code and still being on the trail when code is left behign for a while.
+      <description>Code Style When you are collaborating on a code project with teammates It is highly recommended to agree on a same code style. That would directly help to quickly grasp others code and still being on the trail when code is left behign for a while.
 In Python we have two styles:
  PEP8 = Default python style guide PEP257 = Docstring style guide  Some coding rules according to PEP8</description>
     </item>

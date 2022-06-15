@@ -3,7 +3,6 @@ title = "Code Styles"
 date = 2021-03-28T20:10:53+02:00
 weight = 4
 chapter = true
-pre = "<b>4. </b>"
 tags = ["versions","code","style"]
 +++
 
@@ -18,8 +17,6 @@ tags = ["versions","code","style"]
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-
-### Section 4
 
 # Code Style
 

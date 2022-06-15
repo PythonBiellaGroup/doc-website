@@ -3,7 +3,6 @@ title = "Project Structure"
 date = 2021-03-28T20:10:53+02:00
 weight = 3
 chapter = true
-pre = "<b>3. </b>"
 tags = ["versions","venv","dipendenze"]
 +++
 
@@ -18,8 +17,6 @@ tags = ["versions","venv","dipendenze"]
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-
-### Section 3
 
 # Project Structure
 

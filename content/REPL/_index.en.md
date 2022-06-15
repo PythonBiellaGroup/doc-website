@@ -3,7 +3,6 @@ title = "REPL"
 date = 2021-03-28T20:10:53+02:00
 weight = 6
 chapter = true
-pre = "<b>6. </b>"
 tags = ["REPL","ipython"]
 +++
 
@@ -18,8 +17,6 @@ tags = ["REPL","ipython"]
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-
-### Sezione 6
 
 # REPL
 REPL stands for: READ - EVAL - PRINT - LOOP.

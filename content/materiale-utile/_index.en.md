@@ -3,7 +3,6 @@ title = "Useful Materials"
 date = 2021-03-28T20:10:53+02:00
 weight = 100
 chapter = true
-pre = "<b>X. </b>"
 tags = ["extra"]
 +++
 
@@ -18,8 +17,6 @@ tags = ["extra"]
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-
-### Extra Section
 
 # Useful Materials
 
