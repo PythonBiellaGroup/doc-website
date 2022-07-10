@@ -53,7 +53,7 @@ In particular you can find information on:
 
 ## 🤲 Do you want to help us? Are you excited about our project?
 
-let's contribute to the community!
+Let's contribute to the community!
 
 Please submit us your proposals, whatever you are interested in. 
 Help us building our network, blog, social and populate our repo.
@@ -61,3 +61,9 @@ For any additional enquiry, check out Telegram!
 
 
 But most of all: **A huge Thank You for being here**
+
+## ❤ Special thanks
+
+This site was inspired by Sebastian Witowski's site https://pycon.switowski.com/ and his Pycon 2020 talk https://youtu.be/WkUBx3g2QfQ.
+
+Check out the extended version of his workshop https://modernpythonprojects.com/ !
