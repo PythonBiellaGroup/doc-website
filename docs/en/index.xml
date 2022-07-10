@@ -147,10 +147,10 @@ It also intends to readily bring other members of the team to use these tools in
     
     <item>
       <title>debugger usage</title>
-      <link>https://pythonbiellagroup.it/en/visual-studio-code/usare-il-debbuger/</link>
+      <link>https://pythonbiellagroup.it/en/visual-studio-code/usare-il-debugger/</link>
       <pubDate>Sun, 28 Mar 2021 23:54:10 +0200</pubDate>
       
-      <guid>https://pythonbiellagroup.it/en/visual-studio-code/usare-il-debbuger/</guid>
+      <guid>https://pythonbiellagroup.it/en/visual-studio-code/usare-il-debugger/</guid>
       <description>It is possible to create a specific configuration of debugger settings for each project in order to debug on vscode and so launch different files.
 Furthermore, while you are in the debug section, VSCode provides a tool that allows you to generate a specific configuration based on the framework or functionality that you are attempting to use via a template.
 Using this procedure, a file called launch.json will be created within the project&amp;rsquo;s directory: .</description>

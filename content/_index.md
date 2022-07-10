@@ -63,6 +63,6 @@ Ma soprattutto: **Grazie di essere qui**
 
 ## ❤ Ringraziamento speciale
 
-Questo sito è stato ispirato dal sito di Sebastian Witowski  https://pycon.switowski.com/ e dal suo talk Pycon 2020 https://youtu.be/WkUBx3g2QfQ.
+Questo sito è stato ispirato dal sito di Sebastian Witowski  https://pycon.switowski.com/ e dal suo talk Pycon 2020 https://youtu.be/WkUBx3g2QfQ
 
-Date un occhiata alla versione estesa del suo workshop https://modernpythonprojects.com/ !
+Date un occhiata alla versione estesa del suo workshop https://modernpythonprojects.com/

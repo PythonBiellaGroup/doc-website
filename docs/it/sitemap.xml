@@ -317,17 +317,17 @@
                 href="https://pythonbiellagroup.it/it/struttura-di-progetto/costruire-un-progetto/"
                 />
   </url><url>
-    <loc>https://pythonbiellagroup.it/it/visual-studio-code/usare-il-debbuger/</loc>
+    <loc>https://pythonbiellagroup.it/it/visual-studio-code/usare-il-debugger/</loc>
     <lastmod>2021-03-28T23:54:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://pythonbiellagroup.it/en/visual-studio-code/usare-il-debbuger/"
+                href="https://pythonbiellagroup.it/en/visual-studio-code/usare-il-debugger/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://pythonbiellagroup.it/it/visual-studio-code/usare-il-debbuger/"
+                href="https://pythonbiellagroup.it/it/visual-studio-code/usare-il-debugger/"
                 />
   </url><url>
     <loc>https://pythonbiellagroup.it/it/gestire-dipendenze/pipx/</loc>
